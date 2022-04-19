@@ -59,7 +59,7 @@
 
         // The game config that is used by Phaser
         var config = {
-            type: Phaser.WEBGL,
+            type: Phaser.CANVAS,
             parent: 'phaser-example',
             width: 1000,
             height: 600,
@@ -155,11 +155,19 @@
             //this.load.image('clicked', '../assets/boton.png');
             this.load.image('btnFinal', '../assets/boton.png');
             
+            //Botones de premios inactivos
             this.load.image('btnObsequio', '../assets/obsequio inactivo.png');
             this.load.image('btnCincuentaMil', '../assets/50 inactivo.png')
             this.load.image('btnCienMil', '../assets/100 inactivo.png');
             this.load.image('btnDoscientosCincuentaMil', '../assets/250 inactivo.png')
             this.load.image('btnUnMillon', '../assets/millon inactivo.png')
+            
+            //Botones de premios activos
+            this.load.image('btnObsequioActivo', '../assets/obsequio activo.png');
+            this.load.image('btnCincuentaMilActivo', '../assets/50 activo.png')
+            this.load.image('btnCienMilActivo', '../assets/100 activo.png');
+            this.load.image('btnDoscientosCincuentaMilActivo', '../assets/250 activo.png')
+            this.load.image('btnUnMillonActivo', '../assets/millon activo.png')
 
             if (this.sys.game.device.os.desktop) {
 
@@ -280,7 +288,7 @@
                 //-------Creando animaciones---------->
 
                 //Animación para el timer con atlas y anims
-                timer = this.add.sprite(1325,85, 'timer').setScale(0.5);
+                timer = this.add.sprite(1325,85, 'timer').setScale(0.6);
                 
                 //Animación para el boton de jugabilidad - Solo con atlas
                 buttonStart = this.add.sprite(745,505, 'buttonstart').setScale(0.7);
@@ -392,13 +400,26 @@
                 //maquina para desktop
                 const maquina = this.add.image(750, 380, 'maquina-bonomania').setScale(0.7);
 
-                //Botones para desktop
+                //Botones para desktop - premios inactivos
                 btnObsequio = this.add.image(774, 450, 'btnObsequio').setScale(0.8);
                 btnCincuentaMil = this.add.image(774, 422, 'btnCincuentaMil').setScale(0.8);
                 btnCienMil = this.add.image(774, 395, 'btnCienMil').setScale(0.8);
                 btnDoscientosCincuentaMil = this.add.image(774, 367, 'btnDoscientosCincuentaMil').setScale(0.8);
                 btnUnMillon = this.add.image(774, 339, 'btnUnMillon').setScale(0.8);
                 
+                //Botones para desktop - premios activos
+                btnObsequioActivo = this.add.image(774, 450, 'btnObsequioActivo').setScale(0.8);
+                btnCincuentaMilActivo = this.add.image(774, 422, 'btnCincuentaMilActivo').setScale(0.8);
+                btnCienMilActivo = this.add.image(774, 395, 'btnCienMilActivo').setScale(0.8);
+                btnDoscientosCincuentaMilActivo = this.add.image(774, 367, 'btnDoscientosCincuentaMilActivo').setScale(0.8);
+                btnUnMillonActivo = this.add.image(774, 339, 'btnUnMillonActivo').setScale(0.8);
+                
+                btnObsequioActivo.visible=false;
+                btnCincuentaMilActivo.visible=false;
+                btnCienMilActivo.visible=false;
+                btnDoscientosCincuentaMilActivo.visible=false;
+                btnUnMillonActivo.visible=false;
+
                 //Este es el botón incial, es decir el botón sin animación
                 btnStart = this.add.image(745, 516, 'btnStart').setScale(0.7);
 
@@ -449,7 +470,7 @@
                  //-------Creando animaciones---------->
 
                 //Animación para el timer con atlas y anims - Mobile
-                timer = this.add.sprite(180, 90, 'timer').setScale(0.3);
+                timer = this.add.sprite(180, 90, 'timer').setScale(0.4);
 
                 //Animación para el boton de jugabilidad - Solo con atlas - Mobile
                 buttonStart = this.add.sprite(175, 495, 'buttonstart').setScale(0.65);
@@ -515,12 +536,27 @@
                 //maquina para mobile
                 const maquina = this.add.image(180, 400, 'maquina-bonomania').setScale(0.56);
 
-                //Botones para Mobile
+                //Botones para Mobile - premios inactivos
                 btnObsequio = this.add.image(200, 455, 'btnObsequio').setScale(0.6);
                 btnCincuentaMil = this.add.image(200, 433, 'btnCincuentaMil').setScale(0.6);
                 btnCienMil = this.add.image(200, 412, 'btnCienMil').setScale(0.6);
                 btnDoscientosCincuentaMil = this.add.image(200, 390, 'btnDoscientosCincuentaMil').setScale(0.6);
                 btnUnMillon = this.add.image(200, 368, 'btnUnMillon').setScale(0.6);
+
+                //Botones para Mobile - premios activos
+                btnObsequioActivo = this.add.image(200, 455, 'btnObsequioActivo').setScale(0.6);
+                btnCincuentaMilActivo = this.add.image(200, 433, 'btnCincuentaMilActivo').setScale(0.6);
+                btnCienMilActivo = this.add.image(200, 412, 'btnCienMilActivo').setScale(0.6);
+                btnDoscientosCincuentaMilActivo = this.add.image(200, 390, 'btnDoscientosCincuentaMilActivo').setScale(0.6);
+                btnUnMillonActivo = this.add.image(200, 368, 'btnUnMillonActivo').setScale(0.6);
+
+                btnObsequioActivo.visible=false;
+                btnCincuentaMilActivo.visible=false;
+                btnCienMilActivo.visible=false;
+                btnDoscientosCincuentaMilActivo.visible=false;
+                btnUnMillonActivo.visible=false;
+
+                //Este es el botón incial, es decir el botón sin animación
                 btnStart = this.add.image(175, 505, 'btnStart').setScale(0.65);
 
                 //clicked = this.add.image(175, 500, 'clicked').setInteractive().setScale(0.5);
@@ -771,35 +807,69 @@
                 longitudTotal = 105;
             }
 
+            //Poner en visible false todos los activos
+            btnObsequioActivo.visible=false;
+            btnCincuentaMilActivo.visible=false;
+            btnCienMilActivo.visible=false;
+            btnDoscientosCincuentaMilActivo.visible=false;
+            btnUnMillonActivo.visible=false;
+
+            //Poner en visible true todos los inactivos
+            btnObsequio.visible=true;
+            btnCincuentaMil.visible=true;
+            btnCienMil.visible=true;
+            btnDoscientosCincuentaMil.visible=true;
+            btnUnMillon.visible=true;
+
             //Limpiamos botones
-            btnObsequio.clearTint();
+            /*btnObsequio.clearTint();
             btnCincuentaMil.clearTint();
             btnCienMil.clearTint();
             btnDoscientosCincuentaMil.clearTint();
-            btnUnMillon.clearTint();
+            btnUnMillon.clearTint();*/
 
             //Validamos cantidad de click
             if(clickDinamico > 0 && clickDinamico <= clicksTotales1){
-                btnObsequio.setTint(0x28D128);
+                //poner en visible false el btn inactivo correspondinete
+                btnObsequio.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnObsequioActivo.visible=true;
+
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick1)/100;
                 premioFinal = premiosArray[0];
             }else if(clickDinamico > clicksTotales1 && clickDinamico <= (clicksTotales1 + clicksTotales2)){
-                btnCincuentaMil.setTint(0x28D128);
+                //poner en visible false el btn inactivo correspondinete
+                btnCincuentaMil.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnCincuentaMilActivo.visible=true;
+                
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick2)/100;
                 premioFinal = premiosArray[1];
             }else if(clickDinamico > (clicksTotales1 + clicksTotales2) && 
                      clickDinamico <= (clicksTotales1 + clicksTotales2 + clicksTotales3)){
-                btnCienMil.setTint(0x28D128);
+                //poner en visible false el btn inactivo correspondinete
+                btnCienMil.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnCienMilActivo.visible=true;
+                
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick3)/100;
                 premioFinal = premiosArray[2];
             }else if(clickDinamico > (clicksTotales1 + clicksTotales2 + clicksTotales3) && 
                      clickDinamico <= (clicksTotales1 + clicksTotales2 + clicksTotales3 + clicksTotales4)){
-                btnDoscientosCincuentaMil.setTint(0x28D128);
+                //poner en visible false el btn inactivo correspondinete
+                btnDoscientosCincuentaMil.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnDoscientosCincuentaMilActivo.visible=true;
+
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick3)/100;
                 premioFinal = premiosArray[3];
             }else{
+
+                //poner en visible false el btn inactivo correspondinete
+                btnUnMillon.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnUnMillonActivo.visible=true;
                 //Esta en el premio de 1 millon
-                btnUnMillon.setTint(0x28D128);
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick1)/100;
                 premioFinal = premiosArray[4];
             }
@@ -811,7 +881,10 @@
                 longitudDinamica = longitudTotal * -1;
             }
 
-            progressBar.fillGradientStyle(0xff0000, 0xff0000, 0xffff00, 0xffff00, 1);
+            
+            progressBar.fillStyle(0xFF0000, 0.8);
+
+            //progressBar.fillGradientStyle(0xff0000, 0xff0000, 0xffff00, 0xffff00, 1);
 
             //Validamos pantalla para poder ubicar y llenar la barra 
             if(pantallaDesktop){
