@@ -105,7 +105,7 @@
 
             //--------Cargando animaciones -------
             this.load.atlas('timer', '../sprites/timer/timer.png', '../sprites/timer/timer_atlas.json');
-            this.load.animation('timerAnim', '../sprites/timer/timer_anim.json');
+            //this.load.animation('timerAnim', '../sprites/timer/timer_anim.json');
 
             this.load.atlas('buttonstart', '../sprites/buttonStart/buttonstart.png', '../sprites/buttonStart/buttonstart_atlas.json');
             //this.load.animation('buttonstartAnim', '../sprites/buttonStart/buttonstart_anim.json');
@@ -280,6 +280,18 @@
 
                 //Animación para el timer con atlas y anims
                 timer = this.add.sprite(1325,85, 'timer').setScale(0.5);
+                this.anims.create({
+                    key: 'timer_anim', 
+                    frames: this.anims.generateFrameNames('timer', {
+                        prefix: 'time_',
+                        start: 0,
+                        end: 31
+                    }),
+                    repeat: -1,
+                    frameRate: 32,
+                    hideOnComplete: false
+                })
+
                 
                 //Animación para el boton de jugabilidad - Solo con atlas
                 buttonStart = this.add.sprite(745,505, 'buttonstart').setScale(0.7);
@@ -449,6 +461,17 @@
 
                 //Animación para el timer con atlas y anims - Mobile
                 timer = this.add.sprite(180, 90, 'timer').setScale(0.3);
+                this.anims.create({
+                    key: 'timer_anim', 
+                    frames: this.anims.generateFrameNames('timer', {
+                        prefix: 'time_',
+                        start: 0,
+                        end: 31
+                    }),
+                    repeat: -1,
+                    frameRate: 24,
+                    hideOnComplete: false
+                })
 
                 //Animación para el boton de jugabilidad - Solo con atlas - Mobile
                 buttonStart = this.add.sprite(175, 495, 'buttonstart').setScale(0.65);
@@ -565,7 +588,8 @@
                 contadorTiempo();
 
                 //Ejecutando animacion de timer
-                timer.anims.play('timer');
+                //timer.anims.play('timer');
+                timer.anims.play('timer_anim');
 
             });
 
