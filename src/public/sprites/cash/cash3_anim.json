@@ -1,0 +1,140 @@
+{
+    "anims": [
+        {
+            "key": "cash3_anim",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "cash3",
+                    "frame": "cash3_0"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_1"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_2"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_3"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_4"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_5"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_6"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_7"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_8"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_9"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_10"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_11"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_12"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_13"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_14"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_15"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_16"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_17"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_18"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_19"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_20"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_21"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_22"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_23"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_24"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_25"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_26"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_27"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_28"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_29"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_30"
+                },
+                {
+                    "key": "cash3",
+                    "frame": "cash3_31"
+                }
+            ]
+        }
+    ]
+}

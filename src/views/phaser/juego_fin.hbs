@@ -1,0 +1,169 @@
+<!--<div class="contenedorFinJuego" onload="deshabilitaRetroceso()">
+   <div class="container p-5">
+      <h1 class="text-center mt-5 text-black textoFelicitaciones">¡Felicitaciones!</h1>
+      
+      <h4 class="text-center text-black mt-3 mb-3"><b>En prendas de nuetras marcas</b></h4>
+
+
+      <h4 class="text-center text-blue mb-4"><b>Haz una captura de pantalla de este premio y redimelo en tu próxima compra <br> 
+      en la tienda  en la ciudad de 
+      </b></h4>
+      <h4 class="text-center text-black mt-3 mb-3"><b>N.° Factura:</b><b id="num_factura"></b></h4>
+      <h6 class="text-center text-black"><b>También puedes redimirlo dando clic en el siguiente botón</b><b id="currentDate"></b></h6>
+     <form action="redimir_premio" method="POST">
+         <input hidden id="txtCiudad" name="ciudad">
+         <input hidden id="txtTienda" name="tienda">
+         <input hidden id="txtNumFactura" name="num_factura">
+         <input hidden id="txtCedula" name="cedula">
+         <input hidden id="txtPremio" name="premio">
+         <button type="submit">Redimir ahora</button>
+     </form>
+
+      <div class="row">
+        <div class="col-12 bg-white form-control" id="termsConditionsDiv"
+                style="width: 100%; height: 300px; overflow-y: scroll;">
+            <p>
+                Vigencia del <b>01 de mayo de 2021</b> al <b>14 de junio de 2021</b>. Aplica en tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía (ver <a target="_blank" href="/authorized-dealers">distribuidores autorizados</a>).
+            <br>
+            <br>
+            <b>Requisitos para participar: </b>
+            <br>
+            <ol>
+                <li>Ser mayor de edad.</li>
+                <li>Realizar compras iguales o superiores a <b>$250.000</b> en productos de las marcas Americanino, Chevignon y/o Esprit.</li>
+                <li>La compra se debe realizar en una única factura.</li>
+                <li>Vivir en Colombia.</li>
+            </ol>
+            <br>
+            <b>Las personas que deseen participar deberán:</b>
+            <ol>
+                <li>Realizar una compra igual o superior a <b>$250.000</b> en productos de las marcas Americanino, Chevignon y/o Esprit, en una única factura, en alguna de las tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía.</li>
+                <li>Inmediatamente el participante deberá ingresar al siguiente link <a target="_blank" href="https://comprajuegaygana.com">www.comprajuegaygana.com</a> o escanear a través del celular el código QR ubicado en la tienda.</li>
+                <li>Girar la ruleta virtual una única vez.</li>
+            </ol>
+            <br>
+            Si el participante no cumple con alguno de los requisitos determinados en el presente documento, no se tendrá en cuenta su participación dentro de la Actividad. La ruleta se debe girar después de realizar el pago durante el mismo día de la compra. Por cada factura igual o superior a <b>$250.000</b> tienes la oportunidad de participar en la Actividad y ganar uno de los siguientes premios: 1 de los 5 bonos diarios de <b>$250.000</b> para redimir en productos de las marcas participantes, 1 de los 5 bonos diarios de <b>$1’000.000</b> para redimir en productos de las marcas participantes, 1 bono de <b>descuento del 5%</b> para redimir en productos de las marcas participantes, 1 bono de <b>descuento del 10%</b> para redimir en productos de las marcas participantes, 1 <b>obsequio</b> sorpresa de alguna de las marcas participantes <b>(sujeto a disponibilidad)</b>.
+            <br>
+            El premio en dinero o el descuento se pueden redimir inmediatamente en otra compra o <b>hasta el 30 de junio de 2021</b>. Para redimir el premio es indispensable presentar la <b>factura de compra original y captura de pantalla de confirmación del Premio.</b>
+            <br>
+            El premio es redimible en la misma tienda donde se concursó.
+            <br>
+            El obsequio podrá ser:
+            <br>
+            <ul>
+            <li>Marca Chevignon: un lapicero, cuaderno, libreta, llavero, cartas o tula.</li>
+            <li>Marca Esprit: un lapicero, pin corazón o pin oso.</li>
+            <li>Marca Americanino: unos cubiertos, pitillo, cartuchera, libreta, alcohol.</li>
+            </ul>
+            <br>
+            El premio no es canjeable por dinero en efectivo. En caso de cambio o garantía se reconocerá el valor pagado por la prenda. No acumulable con otras promociones y/o descuentos. No aplica para la compra de bono regalo. Obsequio sujeto a disponibilidad en tienda. Premio personal e intransferible para el participante ganador. Las Compañías no se hacen responsables por la pérdida, hurto y/o adulteración de la factura. <b>Premio redimible exclusivamente en la tienda participante.</b>
+            </p>
+        </div>
+      </div>
+      <a href="https://www.comprajuegaygana.com" class="link2">
+         <h2 class="text-center mt-3">www.comprajuegaygana.com</h2>
+      </a>
+   </div>
+</div>-->
+
+
+
+  <div class="bg-mania">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-12 col-md-8 px-md-5 my-3 mx-auto">
+          <div class="mx-auto bg-premio">
+            <div>
+              <h3 id="premio"></h3>
+              <p>en prendas de nuestras marcas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 px-5 mx-auto text-center">
+          <h6 class="text-center"><b>Haz captura de pantalla de este premio y redímelo en tu próxima compra</b></h6>
+          <p class="mb-0"><b>Ciudad: </b><span id="ciudad"></span></p>
+          <p class="mb-0"><b>Tienda: </b><span id="tienda"></span></p>
+          <p class="mb-0"><b>Cantidad de clics: </b><span id="cant_clic"></span></p>
+          
+          <h5 class="text-red"><b>N° Factura:</b> <b id="num_factura"></b></h5>
+          <p>Puedes redimirlo dando clic en el siguiente botón:</p>
+          <div class="d-grid col-lg-6 col-md-8 col-10 mx-auto mt-4 mb-2">
+            <form action="redimir_premio" method="POST">
+                <input hidden id="txtCiudad" name="ciudad">
+                <input hidden id="txtTienda" name="tienda">
+                <input hidden id="txtNumFactura" name="num_factura">
+                <input hidden id="txtCedula" name="cedula">
+                <input hidden id="txtPremio" name="premio">
+                <button class="btn btn-red text-light" type="submit"><h6 class="mb-0 p-2">Redimir ahora</h6></button>
+            </form>
+          </div>
+        </div>
+        <div class="legal bg-white rounded col-12 py-3 mt-3 px-5 mx-auto">
+          <p>Vigencia del 25 de abril de 2022 al jueves 30 de junio de 2022. Aplica en tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía (ver <a target="_blank" href="https://www.comprajuegaygana.com/distribuidoresautorizados">Distribuidores autorizados</a>)
+            </p>
+          <p><b>REQUISITOS PARA PARTICIPAR.</b></p>
+            <ol>
+              <li><p>Ser mayor de edad.</p></li>
+              <li><p>Realizar compras iguales o superiores a $250.000 en productos de las marcas Americanino, Chevignon y/o Esprit en cualquier tienda física de los distribuidores autorizados con exclusividad en la estrategia.</p></li>
+              <li><p>La compra se debe realizar en una única factura.</p></li>
+              <li><p>Vivir en Colombia.</p></li>
+              <li><p>Autorizar el tratamiento de datos personales.</p></li>
+            </ol>
+          <p><b>MECÁNICA DEL CONCURSO.</b></p>
+            <ol>
+              <li><p>El participante deberá realizar una (1) compra igual o superior a $250.000 en productos de las marcas Americanino, Chevignon y/o Esprit, en una única factura, en alguna de las tiendas físicas seleccionadas de los distribuidores autorizados de cada Compañía.</p></li>
+              <li><p>Inmediatamente el participante deberá ingresar al siguiente link: <a target="_blank" href="http://www.comprajuegaygana.com">www.comprajuegaygana.com</a> o escanear a través del celular el código QR ubicado en la tienda que lo llevará a la actividad, la cual consiste en presionar con un dedo el mayor número de veces el botón que aparece en pantalla durante 15 segundos generando los CLIC´S; después de los 15 segundos de presionar el botón, aparecerá en pantalla el número de la factura del cliente, el puntaje obtenido en el juego y el premio adquirido, al cual deberás tomarle un pantallazo para poder reclamarlo.</p></li>
+            </ol>
+              <p>El participante podrá obtener como premio una de las siguientes opciones:</p>
+              <ul>
+                <li><p>Si el jugador adquiere un puntaje entre 0 y 80 clics podrá reclamar un obsequio de cualquiera de las Marcas (sujeto a disponibilidad) el obsequio podrá ser: Marca Chevignon: una cartuchera, una libreta o una lonchera; Marca Esprit: un lapicero, un brillo, un pin de corazón, un abanico o una pinza mensaje; Marca Americanino: una riñonera o un bolso eco.</p></li>
+                <li><p>Si el jugador adquiere un puntaje entre 81 y 100 clics podrá reclamar un bono de $50.000 para redimir en prendas de las Marcas</p></li>
+                <li><p>Si el jugador adquiere un puntaje entre 101 y 150 clics podrá reclamar un bono de $100.000 para redimir en prendas de las Marcas.</p></li>
+                <li><p>Si el jugador adquiere un puntaje entre 151 y 180 clics podrá reclamar un bono de $250.000 para redimir en prendas de las Marcas.</p></li>
+                <li><p>Si el jugador adquiere un puntaje superior a 181 clic podrá reclamar un bono de $1.000.000 para redimir en prendas de las Marcas.</p></li>
+                </ul>
+                <p><b>Reclamo de los premios:</b> Los premios deben ser reclamados y/o redimidos únicamente en la tienda física donde se realizó la compra. Si el premio es un obsequio de las Marcas, los ganadores podrán reclamar inmediatamente el premio. Los bonos se pueden hacer efectivos en otra compra hasta el 30 de julio de 2022. Para redimir el premio es indispensable presentar la factura de compra original y el pantallazo de confirmación del premio obtenido.</p>
+                <p><b>Condiciones del premio:</b> No son redimibles en dinero. Personal e intransferible para el ganador del obsequio. Los obsequios no tienen cambio.</p>
+        </div>
+        <img loading="lazy" src="../assets/marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2" style="width: 320px;">
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </div>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        //DESHABILITAMSO BOTON DE RETROCESO EN EL NAVEGADOR
+        window.location.hash="no-back-button";
+        window.location.hash="Again-No-back-button"
+        window.onhashchange=function(){window.location.hash="no-back-button";}   
+
+        const info = JSON.parse(sessionStorage.getItem("info"));
+
+        //Seteando texto en html
+        document.querySelector("#premio").innerHTML = "Ganaste " + info.premio;
+        document.querySelector("#tienda").innerHTML = info.tienda;
+        document.querySelector("#ciudad").innerHTML = info.ciudad;
+        document.querySelector("#num_factura").innerHTML = info.num_factura;
+        document.querySelector("#cant_clic").innerHTML = info.cant_clic;
+
+        
+
+        //Seteando valores para lo inputs
+        document.querySelector("#txtCiudad").value = info.ciudad;
+        document.querySelector("#txtTienda").value = info.tienda;
+        document.querySelector("#txtNumFactura").value = info.num_factura;
+        document.querySelector("#txtCedula").value = info.cedula;
+        document.querySelector("#txtPremio").value = info.premio;
+
+
+    });
+    
+
+
+</script>

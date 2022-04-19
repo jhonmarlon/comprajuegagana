@@ -1,0 +1,77 @@
+<div class="container-fluid px-0">
+     <div class="bg-mania pb-5">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+            <a class="navbar-brand" href="https://www.comprajuegaygana.com"><img loading="lazy" src="../assets/Logo-menu.png" alt="CH, Esprit, Americanino" class="img-fluid mx-auto d-block"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mt-md-4 mt-lg-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#Requisitos">Requisitos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/distribuidores_autorizados">Tiendas participantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank"><button class="btn btn-red text-light" type="button" onclick="window.location='usuarios/redimir_premio'">Redimir</button></a>
+                </li>
+                <li class="nav-item d-block d-lg-none p-5">
+                    <img loading="lazy" src="../assets/marcas.png" alt="CH, Esprit, Americanino" class="img-fluid mx-auto d-block">
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-1 pt-2">
+                    <img loading="lazy" src="../assets/logo-bonomania.png" alt="Bono manía" class="img-fluid mx-auto d-block mt-2">
+                    <h2 class="text-center pt-3"><b>DISTRIBUIDORES AUTORIZADOS</b></h2>
+                         <!-- tabla de distribuidores -->
+                        <table class="table table-striped bg-light mt-2" id="storestable">
+                            <thead class="thead-light">
+                                <tr class="table-bonos text-white">
+                                <th scope="col">Tienda</th>
+                                <th scope="col">Ciudad</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    <div class="d-grid col-lg-4 col-md-6 col-8 mx-auto mt-4 mb-2">
+                    <button class="btn btn-red text-light" type="button"><h6 class="mb-0 p-2" onclick="window.location='usuarios/terminos_condiciones'">Participa aquí</h6></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/jquery.dataTables.min.js" defer></script>
+<script src="./js/dataTables.bootstrap4.min.js" defer></script>
+
+<script>
+        
+    $(document).ready(function() {
+        //Ponemos tabla como data table
+        var t = $('#storestable').DataTable();
+        cargaProveedores(t)
+    });
+
+    function cargaProveedores(tabla){
+        //CARGANDO ARCHIVO JSON DE CADA TIENDA
+        $.getJSON('./stores/stores.json', function (data) {
+            $.each(data, function(key, value){
+                //CREANDO FILAS EN EL DATATABLE
+                tabla.row.add( [
+                value.nombre_cliente,
+                value.ciudad,
+                ] ).draw( false );
+            });
+
+        });
+    }
+ 
+</script>

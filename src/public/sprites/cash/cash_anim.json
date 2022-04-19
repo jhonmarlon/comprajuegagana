@@ -1,0 +1,156 @@
+{
+    "anims": [
+        {
+            "key": "cash_anim",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "cash",
+                    "frame": "cash_0"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_1"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_2"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_3"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_4"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_5"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_6"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_7"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_8"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_9"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_10"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_11"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_12"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_13"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_14"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_15"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_16"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_17"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_18"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_19"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_20"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_21"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_22"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_23"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_24"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_25"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_26"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_27"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_28"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_29"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_30"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_31"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_32"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_33"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_34"
+                },
+                {
+                    "key": "cash",
+                    "frame": "cash_35"
+                }
+            ]
+        }
+    ]
+}

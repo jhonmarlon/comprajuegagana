@@ -1,0 +1,16 @@
+
+<script>
+     //Se ejecuta una vez carga la página
+     window.addEventListener('DOMContentLoaded', function () {
+          $("#modalTermCondi_1").modal("show");
+
+          //ACTIVANDO BOTON CUANDO EL SCROLL DE TERMINOS Y CONDICIONES ESTE EN EL FINAL
+          let el = document.getElementById('termsConditionsDiv');
+          el.addEventListener('scroll', function (e) {
+               if (el.offsetHeight + el.scrollTop >= el.scrollHeight) {
+                    document.querySelector("#btnAceptarDesactivado").classList.add("d-none");
+                    document.querySelector("#btnAceptarActivado").classList.remove("d-none");
+               }
+          });
+     })
+</script>

@@ -1,0 +1,108 @@
+{
+    "anims": [
+        {
+            "key": "timer",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 24,
+            "frames": [
+                {
+                    "key": "timer",
+                    "frame": "time_0"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_1"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_2"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_3"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_4"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_5"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_6"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_7"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_8"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_9"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_10"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_11"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_12"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_13"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_14"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_15"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_16"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_17"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_18"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_19"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_20"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_21"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_22"
+                },
+                {
+                    "key": "timer",
+                    "frame": "time_23"
+                }
+            ]
+        }
+    ]
+}

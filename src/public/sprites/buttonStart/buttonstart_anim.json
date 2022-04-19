@@ -1,0 +1,40 @@
+{
+    "anims": [
+        {
+            "key": "buttonstart_anim",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "buttonstart",
+                    "frame": "boton_0"
+                },
+                {
+                    "key": "buttonstart",
+                    "frame": "boton_1"
+                },
+                {
+                    "key": "buttonstart",
+                    "frame": "boton_2"
+                },
+                {
+                    "key": "buttonstart",
+                    "frame": "boton_3"
+                },
+                {
+                    "key": "buttonstart",
+                    "frame": "boton_4"
+                },
+                {
+                    "key": "buttonstart",
+                    "frame": "boton_5"
+                },
+                {
+                    "key": "buttonstart",
+                    "frame": "boton_6"
+                }
+            ]
+        }
+    ]
+}

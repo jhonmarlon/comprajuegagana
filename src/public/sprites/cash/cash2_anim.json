@@ -1,0 +1,140 @@
+{
+    "anims": [
+        {
+            "key": "cash2_anim",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "cash2",
+                    "frame": "cash2_0"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_1"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_2"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_3"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_4"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_5"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_6"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_7"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_8"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_9"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_10"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_11"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_12"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_13"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_14"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_15"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_16"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_17"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_18"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_19"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_20"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_21"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_22"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_23"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_24"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_25"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_26"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_27"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_28"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_29"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_30"
+                },
+                {
+                    "key": "cash2",
+                    "frame": "cash2_31"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+
+
+  <div class="bg-mania py-5 container-fluid">
+    <div class="container bg-white rounded py-5">
+      <div class="row">
+        <div class="col-12 col-md-8 mt-5 mx-auto">
+         <img loading="lazy" src="../assets/logo-bonomania.png" alt="Bono manía" class="img-fluid mx-auto d-block mt-2">
+          <p class="text-center my-3">Ingrese la siguiente información del bono que desea redimir</p>
+            <form action="redimir_premio" method="POST">
+                <div class="form-floating mb-3">
+                    <select name="ciudad" id="selectCiudad"  class="form-control mb-3" onchange="cargaTiendas()">
+                        <option value="0" selected disabled>Ciudad</option>
+                    </select>        
+                </div>
+                <div class="form-floating mb-3">
+                <select name="tienda" id="selectTienda"  class="form-control mb-3" disabled="true">
+                        <option value="0" selected disabled>Tienda</option>
+                    </select>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" id="num_factura" name="num_factura" placeholder="Número de factura" class="form-control mb-3">
+                    <label for="num_factura">Número de factura</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" id="cedula" name="cedula" placeholder="Documento de identidad" class="form-control mb-3">
+                    <label for="cedula">Número de factura</label>
+                </div>
+                    {{#each errors}}
+                        <div class="mt-3">
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{text}}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    {{/each}}
+                    
+                <div class="d-grid col-lg-3 col-md-4 col-8 mx-auto my-2">
+                    <button type="submit" class="btn btn-red text-light p-2 mx-auto" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Continuar</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        cargaCiudades();
+    });
+
+    function cargaCiudades() {
+
+        let ciudades = new Array();
+
+        let selectCiudades = document.querySelector('#selectCiudad');
+        selectCiudades.innerHTML = "";
+
+        fetch("../../stores/stores.json")
+        .then(response => response.json())
+        .then(json => {
+            for(let registro in json){
+                if(!ciudades.includes(json[registro].ciudad)){
+                    ciudades.push(json[registro].ciudad)
+                }
+            }
+            ciudades = ciudades.sort();
+
+            //Cargamos las ciudades en el Select
+            selectCiudades.innerHTML = "<option value='0' select disable>Ciudad</option>";
+            let htmlSelect = selectCiudades.innerHTML;
+
+            for(let ciudad in ciudades){
+                htmlSelect += `<option value='${ciudades[ciudad]}'>${ciudades[ciudad]}</option>`
+            }
+            
+            selectCiudades.innerHTML = htmlSelect;
+        });
+
+    }
+
+    function cargaTiendas(){
+      
+
+        //Tomamos el valor de la ciudad
+        let valorCiudad = document.querySelector('#selectCiudad').value;
+
+        if(valorCiudad != "0") {
+            document.querySelector('#selectTienda').disabled = false;
+        }else{
+            //Limpiamos campos y deshabilitamos
+            /*document.querySelector('#selectTienda').value = 0;
+            document.querySelector('#selectTienda').disabled = false;
+            
+            document.querySelector('#num_factura').value = "";
+            document.querySelector('#num_factura').disabled = false;
+
+            document.querySelector('#nombre_usuario').value = "";
+            document.querySelector('#nombre_usuario').disabled = false;
+
+            document.querySelector('#cedula').value = "";
+            document.querySelector('#cedula').disabled = false; */
+            return;
+        }
+    
+        let tiendasPorCiudad = new Array();
+        let selectTiendas = document.querySelector('#selectTienda');
+
+         fetch("../../stores/stores.json")
+        .then(response => response.json())
+        .then(json => {
+            for(let registro in json){
+                if(json[registro].ciudad === valorCiudad){
+                    tiendasPorCiudad.push(json[registro].nombre_cliente);
+                }
+            }
+            tiendasPorCiudad = tiendasPorCiudad.sort();
+
+            //Cargamos las tiendas en el Select
+            selectTiendas.innerHTML = "<option value='0' select disable>Tienda</option>";
+            let htmlSelect = selectTiendas.innerHTML;
+
+            for(let tienda in tiendasPorCiudad){
+                htmlSelect += `<option value='${tiendasPorCiudad[tienda]}'>${tiendasPorCiudad[tienda]}</option>`
+            }
+            
+            selectTiendas.innerHTML = htmlSelect;
+        });
+
+    }
+</script>

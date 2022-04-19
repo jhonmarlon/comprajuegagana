@@ -1,0 +1,64 @@
+<div class="container">
+
+    <h1>Inicio Admin</h1>
+
+    <form id="frm_buscar_usuario" method="POST">
+        <input type="text" id="cedula" name="cedula" placeholder="Documento de identidad" class="form-control mb-3" onkeyup="habilitaCiudad()">
+        <select name="ciudad" id="selectCiudad"  class="form-control mb-3" disabled="true" onchange="cargaTiendas()">
+            <option value="0" selected disabled>Ciudad</option>
+        </select>        
+        <select name="tienda" id="selectTienda"  class="form-control mb-3" disabled="true">
+            <option value="0" selected disabled>Tienda</option>
+        </select>                
+
+        <button type="submit">buscar</button>
+
+        <div class="alert alert-danger d-none mt-3" id="alertBusquedaUsuario" role="alert"></div>
+        <div class="alert alert-success d-none mt-3" id="alertUsuarioRedimido" role="alert"></div>
+
+        <div class="table-responsive mt-3">
+            <table class="table table-striped bg-light d-none" id="tablaBusquedaUsuario">
+                <thead class="thead-light">
+                    <tr class="">
+                    <th scope="col">Cédula</th>
+                    <th scope="col">Número de factura</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">Tienda</th>
+                    <th scope="col">Premio</th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="bodyTablaBusquedaUsuario"></tbody>
+            </table>
+        </div>
+    </form>
+</div>
+
+
+<script>
+
+    function habilitaCiudad() {   
+        let cedula = document.querySelector('#cedula').value;
+
+        if(cedula != "") {
+            document.querySelector('#selectCiudad').disabled = false;
+        }else{
+            document.querySelector('#selectCiudad').disabled = true;
+            return;
+        }
+
+        cargaCiudades();
+    }
+
+    function cargaCiudades() {
+        //la funcion se encuentra en el archivo public/js/main.js
+        cargaCiudadesFetch()
+    }
+
+    function cargaTiendas(){
+       //la funcion se encuentra en el archivo public/js/main.js
+       cargarTiendasFetch();
+    }
+
+
+</script>

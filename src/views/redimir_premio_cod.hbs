@@ -1,0 +1,102 @@
+
+  <div class="bg-mania py-5">
+    <div class="container bg-white rounded py-3">
+      <div class="row">
+        <div class="col-12 col-md-8 mt-5 mx-auto text-center">
+            <form action="redimir_premio_cod" method="POST">
+                {{#if usuarioEncontrado}}
+                
+                    <input type="text" hidden value="{{usuarioEncontrado.ciudad}}" id="ciudad" name="ciudad" class="form-control mb-3">
+                    <input type="text" hidden value="{{usuarioEncontrado.tienda}}" id="tienda" name="tienda" class="form-control mb-3">
+                    <input type="text" hidden value="{{usuarioEncontrado.num_factura}}" id="num_factura" name="num_factura" class="form-control mb-3">
+                    <input type="text" hidden value="{{usuarioEncontrado.cedula}}" id="cedula" name="cedula" class="form-control mb-3">
+                    <input type="text" hidden value="{{usuarioEncontrado.premio}}" id="premio" name="premio" class="form-control mb-3">
+
+                    <img loading="lazy" src="../assets/logo-bonomania.png" alt="Bono manía" class="img-fluid mx-auto d-block mt-2">
+                    <p class="my-3">Estás a punto de redimir <b class="text-red">bono de {{usuarioEncontrado.premio}}</b></p>
+                    <p class="mb-0"><b>Ciudad:</b>{{usuarioEncontrado.ciudad}}</p>
+                    <p class="mb-0"><b>Tienda:</b>{{usuarioEncontrado.tienda}}</p>
+                    <h5 class="text-red"><b>N° Factura:</b> {{usuarioEncontrado.num_factura}}</h5>
+
+                    <p class="my-3">Por favor solicita al personal de la tienda que ingresen el código de redención</p>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="password" id="codigo_redencion" name="codigo_redencion" placeholder="Ingrese código de redención" class="form-control mb-3">
+                        <label for="codigo_redencion">Ingrese código de redención</label>
+                    </div>
+                    <div class="d-grid col-lg-3 col-md-4 col-8 mx-auto my-2">
+                        <button class="btn btn-red text-light p-2" type="submit"><h6 class="mb-0">Redimir</h6></button>
+                    </div>
+                    {{#each errors}}
+                        <div class="mt-3">
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{text}}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    {{/each}}
+
+                    {{#each successMessages}}
+                        <div class="mt-3">
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{text}}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    {{/each}}
+                    
+                {{/if}}
+            </form>
+            <button class="btn btn-red text-light p-2" onclick="window.location='/'">Volver</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<div class="container">
+    <h1>Redimir premio 1_1</h1>
+    <form action="redimir_premio_cod" method="POST">
+        {{#if usuarioEncontrado}}
+           
+            <input type="text" hidden value="{{usuarioEncontrado.ciudad}}" id="ciudad" name="ciudad" class="form-control mb-3">
+            <input type="text" hidden value="{{usuarioEncontrado.tienda}}" id="tienda" name="tienda" class="form-control mb-3">
+            <input type="text" hidden value="{{usuarioEncontrado.num_factura}}" id="num_factura" name="num_factura" class="form-control mb-3">
+            <input type="text" hidden value="{{usuarioEncontrado.cedula}}" id="cedula" name="cedula" class="form-control mb-3">
+            <input type="text" hidden value="{{usuarioEncontrado.premio}}" id="premio" name="premio" class="form-control mb-3">
+
+            <h4 class="text-center">Ciudad: {{usuarioEncontrado.ciudad}}</h4>
+            <h4 class="text-center">Tienda: {{usuarioEncontrado.tienda}}</h4>
+            <h4 class="text-center">N.° Factura: {{usuarioEncontrado.num_factura}}</h4>
+            <h5 class="text-center">Por favor solicita al personal de la tienda que ingresen el código de redención</h5>
+            <input type="password" id="codigo_redencion" name="codigo_redencion" placeholder="Ingrese código de redención" class="form-control mb-3">
+            <button type="submit">Redimir</button>
+            {{#each errors}}
+                <div class="mt-3">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        {{text}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+            {{/each}}
+
+            {{#each successMessages}}
+                <div class="mt-3">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{text}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+            {{/each}}
+        {{/if}}
+    </form>
+
+     
+</div>-->
+
+
+

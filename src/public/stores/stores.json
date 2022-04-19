@@ -1,0 +1,1087 @@
+[
+    {
+        "codigo_cliente": "31052/31053/31054 70009/70090/70083 51141/51142/51143",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "CUARENTE GRADOS"
+    },
+    {
+        "codigo_cliente": "30009",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "MARCAS Y MARCAS"
+    },
+    {
+        "codigo_cliente": "70038/30189",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "ALMACEN ANDINO"
+    },
+    {
+        "codigo_cliente": "55553/51076",
+        "ciudad": "TAME",
+        "nombre_cliente": "ACUA MODA"
+    },
+    {
+        "codigo_cliente": "58135",
+        "ciudad": "DUITAMA",
+        "nombre_cliente": "BOUTIQUE CRISST ROSS"
+    },
+    {
+        "codigo_cliente": "51087/55560/61162",
+        "ciudad": "TAME",
+        "nombre_cliente": "NARCISO BARON BOUTIQUE"
+    },
+    {
+        "codigo_cliente": "40151",
+        "ciudad": "TÚQUERRES",
+        "nombre_cliente": "TIENDA DE ROPA MEGA JEAN´S"
+    },
+    {
+        "codigo_cliente": "10795",
+        "ciudad": "BELLO",
+        "nombre_cliente": "METALIUSS PARQUE BELLO"
+    },
+    {
+        "codigo_cliente": "10795",
+        "ciudad": "BELLO",
+        "nombre_cliente": "LILIAM BOUTIQUE PARQUE BELLO"
+    },
+    {
+        "codigo_cliente": "10795",
+        "ciudad": "BELLO",
+        "nombre_cliente": "METALIUSS PUERTA DEL NORTE ETAPA 1"
+    },
+    {
+        "codigo_cliente": "10795",
+        "ciudad": "BELLO",
+        "nombre_cliente": "LILIAM BOUTIQUE PUERTA DEL NORTE ETAPA 2"
+    },
+    {
+        "codigo_cliente": "33380/71258",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "JEANS & POLOS"
+    },
+    {
+        "codigo_cliente": "20209",
+        "ciudad": "PASTO",
+        "nombre_cliente": "ZONA WEAR"
+    },
+    {
+        "codigo_cliente": "20295/60211/70288",
+        "ciudad": "APARTADÓ",
+        "nombre_cliente": "TIENDA CELESTE"
+    },
+    {
+        "codigo_cliente": "60289",
+        "ciudad": "SAN VICENTE",
+        "nombre_cliente": "HILL AND HILLS"
+    },
+    {
+        "codigo_cliente": "71357/30175",
+        "ciudad": "CARTAGO",
+        "nombre_cliente": "BOUTIQUE EVOLUTION"
+    },
+    {
+        "codigo_cliente": "20296/60042/70797",
+        "ciudad": "YARUMAL",
+        "nombre_cliente": "HOLA GENTE"
+    },
+    {
+        "codigo_cliente": "50285",
+        "ciudad": "GRANADA",
+        "nombre_cliente": "TENDENCIAS Y DISEÑO MC"
+    },
+    {
+        "codigo_cliente": "61328",
+        "ciudad": "VALLEDUPAR",
+        "nombre_cliente": "COSMOS CENTRO"
+    },
+    {
+        "codigo_cliente": "61329",
+        "ciudad": "VALLEDUPAR",
+        "nombre_cliente": "COSMOS GUATAPURRI"
+    },
+    {
+        "codigo_cliente": "61330",
+        "ciudad": "VALLEDUPAR",
+        "nombre_cliente": "COSMOS MAYALES"
+    },
+    {
+        "codigo_cliente": "50311/50182",
+        "ciudad": "AGUACHICA",
+        "nombre_cliente": "SEÑAL X"
+    },
+    {
+        "codigo_cliente": "41269",
+        "ciudad": "SAN MARTÍN",
+        "nombre_cliente": "C&C"
+    },
+    {
+        "codigo_cliente": "33370/71239",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "OBED STORE"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE CAMINO REAL"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE SAN DIEGO"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE UNICENTRO"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE BOULEVARD DE JUNIN PISO 2"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE MOLINOS"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "BELLO",
+        "nombre_cliente": "ESCAPE PUERTA DEL NORTE ETAPA 2"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE PARQUE BERRIO"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE BOULEVARD DE JUNIN PISO 1"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "BELLO",
+        "nombre_cliente": "ESCAPE BELLO CENTRO"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "BELLO",
+        "nombre_cliente": "ESCAPE PUERTA DEL NORTE ETAPA 1"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE FLORIDA"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE PREMIUM PLAZA"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "SABANETA",
+        "nombre_cliente": "ESCAPE MAYORCA MEGA PLAZA"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE MEGA CENTRO PLAZA COMERCIAL"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "ESCAPE PALACE"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "ITAGÜÍ",
+        "nombre_cliente": "ESCAPE ARRAYANES"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "ENVIGADO",
+        "nombre_cliente": "ESCAPE VIVA ENVIGADO"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "VIBRACIONES CAMINO REAL"
+    },
+    {
+        "codigo_cliente": "10294/10017/10299",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "VIBRACIONES JUNIN MARACAIBO"
+    },
+    {
+        "codigo_cliente": "11353",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "EUROMODA"
+    },
+    {
+        "codigo_cliente": "00203/11341",
+        "ciudad": "BELLO",
+        "nombre_cliente": "EUROMODA"
+    },
+    {
+        "codigo_cliente": "50543",
+        "ciudad": "DUITAMA",
+        "nombre_cliente": "BOUTIQUE CRISST ROSS"
+    },
+    {
+        "codigo_cliente": "41237/61146",
+        "ciudad": "SANTA MARTA",
+        "nombre_cliente": "METAMORFOSIS Y ESCALE 7"
+    },
+    {
+        "codigo_cliente": "70172",
+        "ciudad": "ARMENIA",
+        "nombre_cliente": "AZABACHE"
+    },
+    {
+        "codigo_cliente": "71351/30048",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "E  STORE"
+    },
+    {
+        "codigo_cliente": "33372/71249",
+        "ciudad": "GUAVIARE",
+        "nombre_cliente": "HABANA"
+    },
+    {
+        "codigo_cliente": "NUEVO",
+        "ciudad": "GUAVIARE",
+        "nombre_cliente": "LIMON Y MENTA"
+    },
+    {
+        "codigo_cliente": "45000/21300",
+        "ciudad": "RICAUTE",
+        "nombre_cliente": "TIENDA DE ROPA D GLOR"
+    },
+    {
+        "codigo_cliente": "30795/70056/50768",
+        "ciudad": "TUNJA",
+        "nombre_cliente": "JEANS Y CHAQUETAS"
+    },
+    {
+        "codigo_cliente": "31270/70274",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "ANOTHER"
+    },
+    {
+        "codigo_cliente": "70188/21015",
+        "ciudad": "QUIMBAYA",
+        "nombre_cliente": "LUCIA POR SIEMPRE"
+    },
+    {
+        "codigo_cliente": "10160/51327",
+        "ciudad": "LETICIA",
+        "nombre_cliente": "ALVEIRUS"
+    },
+    {
+        "codigo_cliente": "51097",
+        "ciudad": "ARAUCA",
+        "nombre_cliente": "CONTRAVIA TIENDA DE ROPA"
+    },
+    {
+        "codigo_cliente": "21787/61568/70570 21785/61562/70545 21786/61558/70540",
+        "ciudad": "QUIBDÓ",
+        "nombre_cliente": "BERLIN"
+    },
+    {
+        "codigo_cliente": "21787/61568/70570 21785/61562/70545 21786/61558/70540",
+        "ciudad": "URRAO",
+        "nombre_cliente": "MILAN"
+    },
+    {
+        "codigo_cliente": "21787/61568/70570 21785/61562/70545 21786/61558/70540",
+        "ciudad": "ANDES",
+        "nombre_cliente": "AFRICA"
+    },
+    {
+        "codigo_cliente": "30115",
+        "ciudad": "ARMENIA",
+        "nombre_cliente": "APOLOGIA"
+    },
+    {
+        "codigo_cliente": "70076",
+        "ciudad": "VILLETA",
+        "nombre_cliente": "METAMORPHOSIS"
+    },
+    {
+        "codigo_cliente": "21785/20376/45011",
+        "ciudad": "SEVILLA",
+        "nombre_cliente": "TIENDA MONARKS"
+    },
+    {
+        "codigo_cliente": "31527/70094",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "SHOCK WEAR"
+    },
+    {
+        "codigo_cliente": "31526/70135/40800",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STROKE"
+    },
+    {
+        "codigo_cliente": "31526/70135/40800",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "FREEDOM"
+    },
+    {
+        "codigo_cliente": "31526/70135/40800",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "A&S SHAPLING"
+    },
+    {
+        "codigo_cliente": "71301/30051/21141",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "DETALLES INES"
+    },
+    {
+        "codigo_cliente": "51712/61696",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "ZONA URBANA"
+    },
+    {
+        "codigo_cliente": "20369/45004",
+        "ciudad": "IPIALES",
+        "nombre_cliente": "LA ELEGANCIA"
+    },
+    {
+        "codigo_cliente": "51345/50023/61346",
+        "ciudad": "OCAÑA",
+        "nombre_cliente": "TIENDA JHONNY PICON"
+    },
+    {
+        "codigo_cliente": "70692",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "MARCAS Y MARCAS"
+    },
+    {
+        "codigo_cliente": "70163/30145",
+        "ciudad": "CHINCHINÁ",
+        "nombre_cliente": "TANANA WEAR"
+    },
+    {
+        "codigo_cliente": "51123/61339",
+        "ciudad": "ARAUCA",
+        "nombre_cliente": "ROPIN"
+    },
+    {
+        "codigo_cliente": "50077",
+        "ciudad": "CÚCUTA",
+        "nombre_cliente": "J.K."
+    },
+    {
+        "codigo_cliente": "61896",
+        "ciudad": "AGUACHICA",
+        "nombre_cliente": "J.K."
+    },
+    {
+        "codigo_cliente": "41011/20118",
+        "ciudad": "TÚQUERRES",
+        "nombre_cliente": "OXALATO"
+    },
+    {
+        "codigo_cliente": "20771",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "LAURITA"
+    },
+    {
+        "codigo_cliente": "61360",
+        "ciudad": "SARAVENA",
+        "nombre_cliente": "LEDY SPORT"
+    },
+    {
+        "codigo_cliente": "71990/30232",
+        "ciudad": "GARZÓN",
+        "nombre_cliente": "MILLENIUM"
+    },
+    {
+        "codigo_cliente": "70694/30058",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "LAURITA"
+    },
+    {
+        "codigo_cliente": "31381/70212",
+        "ciudad": "SOGAMOSO",
+        "nombre_cliente": "MALETINES Y JACKETS"
+    },
+    {
+        "codigo_cliente": "61909",
+        "ciudad": "CÚCUTA",
+        "nombre_cliente": "PAPAYA"
+    },
+    {
+        "codigo_cliente": "71506",
+        "ciudad": "ARMENIA",
+        "nombre_cliente": "APOLOGIA"
+    },
+    {
+        "codigo_cliente": "70306/30001/21020",
+        "ciudad": "SANTA ROSA DE CABAL",
+        "nombre_cliente": "VALHER MODA"
+    },
+    {
+        "codigo_cliente": "10167/10149/10279",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "EXPRESS"
+    },
+    {
+        "codigo_cliente": "70370/51188",
+        "ciudad": "OCAÑA",
+        "nombre_cliente": "TIENDA BOCA"
+    },
+    {
+        "codigo_cliente": "21126/60027/71119",
+        "ciudad": "SANTA ROSA",
+        "nombre_cliente": "FORTALEZA"
+    },
+    {
+        "codigo_cliente": "21126/60027/71119",
+        "ciudad": "YARUMAL",
+        "nombre_cliente": "FORTALEZA"
+    },
+    {
+        "codigo_cliente": "41136/20132",
+        "ciudad": "PASTO",
+        "nombre_cliente": "BOUTIQUE EVOLUTION"
+    },
+    {
+        "codigo_cliente": "61119/40092/31126",
+        "ciudad": "CARTAGENA",
+        "nombre_cliente": "MELOCOTON"
+    },
+    {
+        "codigo_cliente": "11129",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "STORE - EXPRESSO"
+    },
+    {
+        "codigo_cliente": "61696",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "MODA LIVE"
+    },
+    {
+        "codigo_cliente": "51120/50022",
+        "ciudad": "SAN VICENTE",
+        "nombre_cliente": "HILL AND HILLS"
+    },
+    {
+        "codigo_cliente": "42010/20182",
+        "ciudad": "PASTO",
+        "nombre_cliente": "CHIROS"
+    },
+    {
+        "codigo_cliente": "60158/40010",
+        "ciudad": "VALLEDUPAR",
+        "nombre_cliente": "BARCELONA"
+    },
+    {
+        "codigo_cliente": "61779",
+        "ciudad": "ARAUCA",
+        "nombre_cliente": "CONTRAVIA TIENDA DE ROPA"
+    },
+    {
+        "codigo_cliente": "31333/70156",
+        "ciudad": "DUITAMA",
+        "nombre_cliente": "TIENDA BLUE / OLIVER / OLIVER SPORT"
+    },
+    {
+        "codigo_cliente": "33377/33378/33379 71255/71256/71257",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "ORIGINAL TAP"
+    },
+    {
+        "codigo_cliente": "50100",
+        "ciudad": "ARAUCA",
+        "nombre_cliente": "ROPIN"
+    },
+    {
+        "codigo_cliente": "31376/70191",
+        "ciudad": "TUNJA",
+        "nombre_cliente": "ALMACEN MULTIMARCAS"
+    },
+    {
+        "codigo_cliente": "31378/70172/51337",
+        "ciudad": "PAZ DE ARIPORO",
+        "nombre_cliente": "TIENDA AQUARIUS"
+    },
+    {
+        "codigo_cliente": "41126-128 Y 45023 20080/20360/21080 21301/21303/21304",
+        "ciudad": "ORITO",
+        "nombre_cliente": "GENERACION 21 TIENDA DE MODA"
+    },
+    {
+        "codigo_cliente": "41126-128 Y 45023 20080/20360/21080 21301/21303/21304",
+        "ciudad": "MOCOA",
+        "nombre_cliente": "GENERACION 21 TIENDA DE MODA"
+    },
+    {
+        "codigo_cliente": "41126-128 Y 45023 20080/20360/21080 21301/21303/21304",
+        "ciudad": "PUERTO ASIS",
+        "nombre_cliente": "GENERACION 21 TIENDA DE MODA"
+    },
+    {
+        "codigo_cliente": "71253/51334",
+        "ciudad": "CHIQUINQUIRA",
+        "nombre_cliente": "ALMACEN MELOCOTTON"
+    },
+    {
+        "codigo_cliente": "50088/51347",
+        "ciudad": "ARAUCA",
+        "nombre_cliente": "LEDY SPORT"
+    },
+    {
+        "codigo_cliente": "60857",
+        "ciudad": "SAN MARTÍN",
+        "nombre_cliente": "C&C"
+    },
+    {
+        "codigo_cliente": "21501/60098",
+        "ciudad": "SINCELEJO",
+        "nombre_cliente": "ALMACEN CARMENCITA"
+    },
+    {
+        "codigo_cliente": "31001",
+        "ciudad": "SANTA MARTA",
+        "nombre_cliente": "METAMORFOSIS Y ESCALE 7"
+    },
+    {
+        "codigo_cliente": "21176/45002",
+        "ciudad": "PASTO",
+        "nombre_cliente": "INSTINTOS"
+    },
+    {
+        "codigo_cliente": "30090/21124",
+        "ciudad": "CARTAGO",
+        "nombre_cliente": "PASSION"
+    },
+    {
+        "codigo_cliente": "33408/70142/51524",
+        "ciudad": "CHIQUINQUIRA",
+        "nombre_cliente": "FIORENZE"
+    },
+    {
+        "codigo_cliente": "60034/50099/51689",
+        "ciudad": "CÚCUTA",
+        "nombre_cliente": "SAAD"
+    },
+    {
+        "codigo_cliente": "20693/60231/71690",
+        "ciudad": "RIONEGRO",
+        "nombre_cliente": "MARCAS Y MODA"
+    },
+    {
+        "codigo_cliente": "70818",
+        "ciudad": "QUIMBAYA",
+        "nombre_cliente": "SALOMON TIENDA DE ROPA"
+    },
+    {
+        "codigo_cliente": "77995/30250/21032",
+        "ciudad": "CARTAGO",
+        "nombre_cliente": "BATISTA"
+    },
+    {
+        "codigo_cliente": "60302/50129/50298",
+        "ciudad": "TAME",
+        "nombre_cliente": "LIMON Y MENTA"
+    },
+    {
+        "codigo_cliente": "20321",
+        "ciudad": "PUERTO ASIS",
+        "nombre_cliente": "BY LOKO"
+    },
+    {
+        "codigo_cliente": "50076/51713",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "MODA LIVE"
+    },
+    {
+        "codigo_cliente": "20183",
+        "ciudad": "CHINCHINÁ",
+        "nombre_cliente": "TATANA WEAR"
+    },
+    {
+        "codigo_cliente": "20334",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "MARCAS Y MARCAS"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "BELLO",
+        "nombre_cliente": "FRUTA FRESCA Pruerta del norte 1"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "BELLO",
+        "nombre_cliente": "FRUTA FRESCA Pruerta del norte 2"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "SABANETA",
+        "nombre_cliente": "FRUTA FRESCA MAYORCA"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "SABANETA",
+        "nombre_cliente": "FRUTA FRESCA AVES MARIA"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "ENVIGADO",
+        "nombre_cliente": "FRUTA FRESCA ENVIGADO"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "ENVIGADO",
+        "nombre_cliente": "FRUTA FRESCA CITY PLAZA"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA ARKADIA"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA AVENTURA"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA LA CENTRAL"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA FLORIDA"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA JUNIN"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA LAURELES"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA PARQUE LUCES"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA METRO CENCOSUD"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA MOLINOS"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA MONTERREY"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA PREMIUM PLAZA"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA SANTA FE"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA UNICENTRO"
+    },
+    {
+        "codigo_cliente": "11807/10139/11800",
+        "ciudad": "MEDELLÍN",
+        "nombre_cliente": "FRUTA FRESCA DIAMANTE"
+    },
+    {
+        "codigo_cliente": "33369/71247/51620",
+        "ciudad": "VILLANUEVA",
+        "nombre_cliente": "BAXTER SPORT LA TRECE"
+    },
+    {
+        "codigo_cliente": "45010",
+        "ciudad": "PASTO",
+        "nombre_cliente": "EL SITIO"
+    },
+    {
+        "codigo_cliente": "40348",
+        "ciudad": "PASTO",
+        "nombre_cliente": "VIP MALIBU"
+    },
+    {
+        "codigo_cliente": "61812",
+        "ciudad": "CÚCUTA",
+        "nombre_cliente": "LIMON Y MENTA"
+    },
+    {
+        "codigo_cliente": "70305/30166",
+        "ciudad": "PITALITO",
+        "nombre_cliente": "YINJES BOUTIQUE"
+    },
+    {
+        "codigo_cliente": "60000",
+        "ciudad": "CÚCUTA",
+        "nombre_cliente": "MARATHON"
+    },
+    {
+        "codigo_cliente": "50072",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "ZONA URBANA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "STIRPE CRA 23"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "STIRPE CRA 22"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "MANIZALES",
+        "nombre_cliente": "STIRPE CALLE 28"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "VALLEDUPAR",
+        "nombre_cliente": "STIRPE MAYALES"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "VALLEDUPAR",
+        "nombre_cliente": "STIRPE GUATAPURI"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "VALLEDUPAR",
+        "nombre_cliente": "STIRPE CENTRO CRA 7"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BARRANQUILLA",
+        "nombre_cliente": "STIRPE VIVA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BARRANQUILLA",
+        "nombre_cliente": "STIRPE G. PLAZA DEL SOL"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STIRPE EL EDEN"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STIRPE PLAZA CENTRAL"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STIRPE PLAZA DE LAS AMERICA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STIRPE LA COLINA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STIRPE TITAN"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STIRPE GRAN ESTACIÓN"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BOGOTÁ",
+        "nombre_cliente": "STIRPE PASEO DEL RIO"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "STIRPE ZONA ROSA CLL 49"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "TRAVEL ZONA ROSA CRA 18"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "STIRPE SAN SILVESTRE"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BARRANCABERMEJA",
+        "nombre_cliente": "STIRPE CCIO CL 49"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "STIRPE UNICENTRO"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "TRAVEL CENTRO"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "STIRPE PARQUE"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "UNSER VICTORIA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "TRAVEL VICTORIA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "STIRPE BOLIVAR"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "STIRPE VICTORIA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "STIRPE COMERCIO"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "TRAVEL ARBOLEDA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "STIRPE ARBOLEDA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "TRAVEL ALCIDES"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "PEREIRA",
+        "nombre_cliente": "STIRPE ALCIDES"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "ARMENIA",
+        "nombre_cliente": "STIRPE 1 CRA 14"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "ARMENIA",
+        "nombre_cliente": "STIRPE CALLE 19"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "ARMENIA",
+        "nombre_cliente": "TRAVEL CRA 14"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "ARMENIA",
+        "nombre_cliente": "STIRPE CRA 14 X 19"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "VILLAVICENCIO",
+        "nombre_cliente": "STIRPE UNICENTRO"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "VILLAVICENCIO",
+        "nombre_cliente": "TRAVEL VIVA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "VILLAVICENCIO",
+        "nombre_cliente": "STIRPE VIVA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "EQUIS STORE CABECERA CLL 49"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL IV ETAPA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE CABECERA CRA 34"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE IV ETAPA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE CAÑAVERAL"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "CALL QCSA MULTIMARCA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE CENTRO CRA 18"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE LA FLORIDA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL CAÑAVERAL"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "UNSER CAÑAVERAL"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE MEGAMALL"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL CENTRO CLL 36"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "EQUIS STORE CACIQUE"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE CACIQUE"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE CARACOLI"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE CENTRO CRA 17"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE DELACUESTA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE LA ROSITA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL DELACUESTA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL CABECERA CRA 33"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL CACIQUE"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "STIRPE 2 CAÑAVERAL"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL II ETAPA"
+    },
+    {
+        "codigo_cliente": "NOCODE",
+        "ciudad": "BUCARAMANGA",
+        "nombre_cliente": "TRAVEL MEGAMALL"
+    },
+    {
+        "codigo_cliente": "21699",
+        "ciudad": "SAN PEDRO DE LOS MILAGROS",
+        "nombre_cliente": "MARIA ROSS BOUTIQUE"
+    },
+    {
+        "codigo_cliente": "newstore",
+        "ciudad": "CHIQUINQUIRA",
+        "nombre_cliente": "MULTIMARCAS"
+    },
+    {
+        "codigo_cliente": "newstore2",
+        "ciudad": "DUITAMA",
+        "nombre_cliente": "MULTIMARCAS"
+    },
+    {
+        "codigo_cliente": "newstore3",
+        "ciudad": "CÚCUTA",
+        "nombre_cliente": "BOUTIQUE FRESITAS"
+    },
+    {
+        "codigo_cliente": "newstore4",
+        "ciudad": "CÚCUTA",
+        "nombre_cliente": "SHIRET MODA"
+    },
+    {
+        "codigo_cliente": "newstore5",
+        "ciudad": "OCAÑA",
+        "nombre_cliente": "SHIRET MODA"
+    }
+]

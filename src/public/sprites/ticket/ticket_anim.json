@@ -1,0 +1,120 @@
+{
+    "anims": [
+        {
+            "key": "ticket_anim",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_0"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_1"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_2"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_3"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_4"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_5"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_6"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_7"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_8"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_9"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_10"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_11"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_12"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_13"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_14"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_15"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_16"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_17"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_18"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_19"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_20"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_21"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_22"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_23"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_24"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_25"
+                },
+                {
+                    "key": "ticket",
+                    "frame": "ticket-short_26"
+                }
+            ]
+        }
+    ]
+}
