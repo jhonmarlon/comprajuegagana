@@ -43,8 +43,8 @@ const redimirPremioPost = async (req, res) => {
         return;
     }
 
-    console.log('este es el usuario encontrado para poedr redimir')
-    console.log(usuarioEncontrado)
+    //console.log('este es el usuario encontrado para poedr redimir')
+    //console.log(usuarioEncontrado)
 
     //Si el usuario ya redimio el premio
     if(usuarioEncontrado.estado_redimido){
@@ -76,8 +76,8 @@ const redimirPremioPost_1_1 = async (req, res) => {
         premio: premio.trim()
     }
 
-    console.log('este es el nuevo usuario a redimir')
-    console.log(usuarioEncontrado)
+    //console.log('este es el nuevo usuario a redimir')
+    //console.log(usuarioEncontrado)
 
     //Si el codigo de rerdención esta vacío
     if(codigo_redencion == ""){
@@ -269,7 +269,7 @@ const gameEnd = (req, res) => {
 
 
 const actualizaDatosFinJuego = async (req, res) => {
-     console.log(req.body);
+     //console.log(req.body);
 
      const{id, ...resto} = req.body;
 
