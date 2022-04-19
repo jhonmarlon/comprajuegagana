@@ -110,16 +110,26 @@
             this.load.atlas('buttonstart', '../sprites/buttonStart/buttonstart.png', '../sprites/buttonStart/buttonstart_atlas.json');
             //this.load.animation('buttonstartAnim', '../sprites/buttonStart/buttonstart_anim.json');
 
-            for(let i=0; i <= 4; i++ ){
+            /*for(let i=0; i <= 4; i++ ){
                 if(i == 0){
                     this.load.atlas('cash', '../sprites/cash/cash.png', '../sprites/cash/cash_atlas.json');
                     this.load.animation('cashAnim', '../sprites/cash/cash_anim.json');
                 }
                  this.load.atlas('cash'+i, '../sprites/cash/cash'+i+'.png', '../sprites/cash/cash'+i+'_atlas.json');
                  this.load.animation('cash'+i+'Anim', '../sprites/cash/cash'+i+'_anim.json');
-            }
+            }*/
            
+            this.load.atlas('cash', '../sprites/cash/cash.png', '../sprites/cash/cash_atlas.json');
+            this.load.animation('cashAnim', '../sprites/cash/cash_anim.json');
 
+            this.load.atlas('cash1', '../sprites/cash/cash1.png', '../sprites/cash/cash1_atlas.json');
+            this.load.animation('cash1Anim', '../sprites/cash/cash1_anim.json');
+
+            this.load.atlas('cash2', '../sprites/cash/cash2.png', '../sprites/cash/cash2_atlas.json');
+            this.load.animation('cash2Anim', '../sprites/cash/cash2_anim.json');
+
+            this.load.atlas('cash3', '../sprites/cash/cash3.png', '../sprites/cash/cash3_atlas.json');
+            this.load.animation('cash3Anim', '../sprites/cash/cash3_anim.json');
 
             this.load.atlas('ticket', '../sprites/ticket/ticket.png', '../sprites/ticket/ticket_atlas.json');
             //this.load.animation('ticketAnim', '../sprites/ticket/ticket_anim.json');
@@ -271,7 +281,6 @@
                 //Animación para el timer con atlas y anims
                 timer = this.add.sprite(1325,85, 'timer').setScale(0.5);
                 
-        
                 //Animación para el boton de jugabilidad - Solo con atlas
                 buttonStart = this.add.sprite(745,505, 'buttonstart').setScale(0.7);
                 buttonStart.visible = false;
