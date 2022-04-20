@@ -29,6 +29,8 @@
         let progressBar;
         let stopDecrementa = false;
 
+        let colorBarra = "";
+
         let clickDinamico = 0;
         let premios = 5;
         let premiosArray = ['Obsequio','$50.000','$100.000','$250.000','$1.000.000'];
@@ -36,10 +38,15 @@
         let fragmentoLlenarClick = 0;
 
         //Clicks totales por fagmento
-        let clicksTotales1 = 81;
+        /*let clicksTotales1 = 81;
         let clicksTotales2 = 20;
         let clicksTotales3 = 50;
-        let clicksTotales4 = 30;
+        let clicksTotales4 = 30;*/
+
+        let clicksTotales1 = 5;
+        let clicksTotales2 = 5;
+        let clicksTotales3 = 5;
+        let clicksTotales4 = 5;
 
         //Longitud totak por fragmento
         let longitudTotaPorFragmento = longitudTotal/premios;
@@ -603,6 +610,7 @@
 
                 //Ejecutando animacion de timer
                 timer.anims.play('timer');
+                incrementaPorcentaje(progressBar);
 
             });
 
@@ -835,6 +843,9 @@
                 //poner en visible true el btn activo correspondiente
                 btnObsequioActivo.visible=true;
 
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xffea03"; 
+
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick1)/100;
                 premioFinal = premiosArray[0];
             }else if(clickDinamico > clicksTotales1 && clickDinamico <= (clicksTotales1 + clicksTotales2)){
@@ -842,6 +853,9 @@
                 btnCincuentaMil.visible = false;
                 //poner en visible true el btn activo correspondiente
                 btnCincuentaMilActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xffcd03"; 
                 
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick2)/100;
                 premioFinal = premiosArray[1];
@@ -851,6 +865,9 @@
                 btnCienMil.visible = false;
                 //poner en visible true el btn activo correspondiente
                 btnCienMilActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xffab03"; 
                 
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick3)/100;
                 premioFinal = premiosArray[2];
@@ -861,6 +878,9 @@
                 //poner en visible true el btn activo correspondiente
                 btnDoscientosCincuentaMilActivo.visible=true;
 
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xff8103";
+
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick3)/100;
                 premioFinal = premiosArray[3];
             }else{
@@ -869,6 +889,10 @@
                 btnUnMillon.visible = false;
                 //poner en visible true el btn activo correspondiente
                 btnUnMillonActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xff3503";
+
                 //Esta en el premio de 1 millon
                 fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick1)/100;
                 premioFinal = premiosArray[4];
@@ -882,7 +906,7 @@
             }
 
             
-            progressBar.fillStyle(0xFF0000, 0.8);
+            progressBar.fillStyle(colorBarra, 0.8);
 
             //progressBar.fillGradientStyle(0xff0000, 0xff0000, 0xffff00, 0xffff00, 1);
 
