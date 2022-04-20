@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-12 col-md-8 mt-5 mx-auto">
          <img loading="lazy" src="../assets/logo-bonomania.png" alt="Bono manía" class="img-fluid mx-auto d-block mt-2">
-          <p class="text-center my-3">Ingrese la siguiente información del bono que desea redimir</p>
+          <p class="text-center my-3">Ingrese la siguiente información del premio que desea redimir</p>
             <form action="redimir_premio" method="POST">
                 <div class="form-floating mb-3">
                     <select name="ciudad" id="selectCiudad"  class="form-control mb-3" onchange="cargaTiendas()">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="form-floating mb-3">
                     <input type="text" id="cedula" name="cedula" placeholder="Documento de identidad" class="form-control mb-3">
-                    <label for="cedula">Número de factura</label>
+                    <label for="cedula">Número de identificación</label>
                 </div>
                     {{#each errors}}
                         <div class="mt-3">
