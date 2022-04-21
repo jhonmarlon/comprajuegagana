@@ -168,6 +168,7 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    height: auto;
   }
 
   .bg-blanco{
@@ -188,6 +189,7 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    height: auto;
   }
 }
 
@@ -198,6 +200,7 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    height: auto;
   }
 }
 
