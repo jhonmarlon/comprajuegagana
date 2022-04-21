@@ -5,15 +5,20 @@ const dbConnection = async () => {
 
     try{
 
-        //Haciendo conexion a mongo db
+        //Haciendo conexion a mongo 
+        //Local
        /*await mongoose.connect('mongodb://localhost/bonomania_2022', {
             useNewUrlParser: true,
        })*/
-
-       await mongoose.connect('mongodb+srv://admin:admin@cluster0.xph9i.mongodb.net/bonomania_2022?retryWrites=true&w=majority', {
+       //Atlas pruebas 
+       /*await mongoose.connect('mongodb+srv://admin:admin@cluster0.xph9i.mongodb.net/bonomania_2022?retryWrites=true&w=majority', {
+            useNewUrlParser: true,
+       })*/
+       
+       //Atlas pruebas 
+       await mongoose.connect('mongodb+srv://adminbonomania:BNMN2022@bonomania.hyddy.mongodb.net/bonomania_2022?retryWrites=true&w=majority', {
             useNewUrlParser: true,
        })
-       
     
        console.log('Base de datos conectada');
 

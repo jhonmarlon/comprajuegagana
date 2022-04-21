@@ -38,6 +38,7 @@ li ol > li:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  height: 100vh;
 }
 
 .bg-mania-2{
@@ -202,7 +203,9 @@ a:hover{
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) and (min-width: 992px) {
-
+  .bg-mania{
+    height: auto;
+  }
 }
 
 
@@ -225,3 +228,16 @@ a:hover{
 .pagination {
   overflow-x: auto;
 }
+
+/*Buscador en selects*/
+.select2-container--default .select2-selection--single {
+  border-bottom: 2px solid #333333 !important;
+  height: 58px !important;
+  padding: 16px 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+
+  display: none !important;
+}
+
