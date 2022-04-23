@@ -38,7 +38,7 @@ li ol > li:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .bg-mania-2{

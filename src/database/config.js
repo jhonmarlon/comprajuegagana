@@ -15,7 +15,7 @@ const dbConnection = async () => {
             useNewUrlParser: true,
        })*/
        
-       //Atlas pruebas 
+       //Atlas Producción 
        await mongoose.connect('mongodb+srv://adminbonomania:BNMN2022@bonomania.hyddy.mongodb.net/bonomania_2022?retryWrites=true&w=majority', {
             useNewUrlParser: true,
        })
