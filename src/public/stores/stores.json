@@ -28,11 +28,11 @@
     "ciudad":"ANSERMA"
     },
     {
-    "nombre_cliente":"2 TIENDA",
+    "nombre_cliente":"2 TIENDA CALLE 27 A #3-46",
     "ciudad":"ANSERMA"
     },
     {
-    "nombre_cliente":"2 TIENDA",
+    "nombre_cliente":"2 TIENDA CRA 4 #15-02",
     "ciudad":"ANSERMA"
     },
     {
@@ -983,7 +983,7 @@
     "nombre_cliente":"OSMA REY CESAR HERNANDO",
     "ciudad":"SAN PABLO"
     },
-    {
+    { 
     "nombre_cliente":"ALMACEN Y VARIEDADES OLGA REY",
     "ciudad":"SAN PABLO"
     },
@@ -1104,15 +1104,15 @@
     "ciudad":"VALLEDUPAR"
     },
     {
-    "nombre_cliente":"BOUTIQUE COSMOS",
+    "nombre_cliente":"BOUTIQUE COSMOS GUATAPURY PLAZA LOCAL 120",
     "ciudad":"VALLEDUPAR"
     },
     {
-    "nombre_cliente":"BOUTIQUE COSMOS",
+    "nombre_cliente":"BOUTIQUE COSMOS MAYALES PLAZA LOCAL 60",
     "ciudad":"VALLEDUPAR"
     },
     {
-    "nombre_cliente":"BOUTIQUE COSMOS",
+    "nombre_cliente":"BOUTIQUE COSMOS SEDE CENTRO SEPTIMA #16a-51",
     "ciudad":"VALLEDUPAR"
     },
     {
