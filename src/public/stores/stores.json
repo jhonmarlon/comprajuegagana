@@ -1,1135 +1,1134 @@
 [
     {
-    "nombre_cliente":"TIENDAS HOBBY",
-    "ciudad":"ACACIAS"
+     "nombre_cliente": "TIENDAS HOBBY",
+     "ciudad": "ACACIAS"
     },
     {
-    "nombre_cliente":"JUAN C.- J.K. PLAY",
-    "ciudad":"AGUACHICA"
+     "nombre_cliente": "JUAN C.- J.K. PLAY",
+     "ciudad": "AGUACHICA"
     },
     {
-    "nombre_cliente":"DETROIT CITY STORE",
-    "ciudad":"AGUACHICA"
+     "nombre_cliente": "DETROIT CITY STORE",
+     "ciudad": "AGUACHICA"
     },
     {
-    "nombre_cliente":"SEÑAL X",
-    "ciudad":"AGUACHICA"
+     "nombre_cliente": "SEÑAL X",
+     "ciudad": "AGUACHICA"
     },
     {
-    "nombre_cliente":"CURIOSIDADES MERCY",
-    "ciudad":"AGUACHICA"
+     "nombre_cliente": "CURIOSIDADES MERCY",
+     "ciudad": "AGUACHICA"
     },
     {
-    "nombre_cliente":"AFRICA",
-    "ciudad":"ANDES"
+     "nombre_cliente": "AFRICA",
+     "ciudad": "ANDES"
     },
     {
-    "nombre_cliente":"TAUROS BOUTIQUE",
-    "ciudad":"ANSERMA"
+     "nombre_cliente": "TAUROS BOUTIQUE",
+     "ciudad": "ANSERMA"
     },
     {
-    "nombre_cliente":"2 TIENDA CALLE 27 A #3-46",
-    "ciudad":"ANSERMA"
+     "nombre_cliente": "2 TIENDA CALLE 27 A #3-46",
+     "ciudad": "ANSERMA"
     },
     {
-    "nombre_cliente":"2 TIENDA CRA 4 #15-02",
-    "ciudad":"ANSERMA"
+     "nombre_cliente": "2 TIENDA CRA 4 #15-02",
+     "ciudad": "ANSERMA"
     },
     {
-    "nombre_cliente":"TIENDA CELESTE",
-    "ciudad":"APARTADO"
+     "nombre_cliente": "TIENDA CELESTE",
+     "ciudad": "APARTADO"
     },
     {
-    "nombre_cliente":"MARIA E MARTINEZ",
-    "ciudad":"APARTADO"
+     "nombre_cliente": "MARIA E MARTINEZ",
+     "ciudad": "APARTADO"
     },
     {
-    "nombre_cliente":"LILIANA JEANS",
-    "ciudad":"ARANZAZU"
+     "nombre_cliente": "LILIANA JEANS ",
+     "ciudad": "ARANZAZU"
     },
     {
-    "nombre_cliente":"CONTRAVIA",
-    "ciudad":"ARAUCA"
+     "nombre_cliente": "CONTRAVIA",
+     "ciudad": "ARAUCA"
     },
     {
-    "nombre_cliente":"40 GRADOS",
-    "ciudad":"ARAUCA"
+     "nombre_cliente": "40 GRADOS",
+     "ciudad": "ARAUCA"
     },
     {
-    "nombre_cliente":"EL ROBLE",
-    "ciudad":"ARMENIA"
+     "nombre_cliente": "EL ROBLE",
+     "ciudad": "ARMENIA"
     },
     {
-    "nombre_cliente":"AZABACHE",
-    "ciudad":"ARMENIA"
+     "nombre_cliente": "AZABACHE",
+     "ciudad": "ARMENIA"
     },
     {
-    "nombre_cliente":"APOLOGIA",
-    "ciudad":"ARMENIA"
+     "nombre_cliente": "APOLOGIA",
+     "ciudad": "ARMENIA"
     },
     {
-    "nombre_cliente":"ROSITA TIENDA DE MODA",
-    "ciudad":"ARMENIA"
+     "nombre_cliente": "ROSITA TIENDA DE MODA",
+     "ciudad": "ARMENIA"
     },
     {
-    "nombre_cliente":"MAURUS JEANS",
-    "ciudad":"BARBOSA"
+     "nombre_cliente": "MAURUS JEANS",
+     "ciudad": "BARBOSA"
     },
     {
-    "nombre_cliente":"MEGUER",
-    "ciudad":"BARBOSA"
+     "nombre_cliente": "MEGUER",
+     "ciudad": "BARBOSA"
     },
     {
-    "nombre_cliente":"ZONA URBANA",
-    "ciudad":"BARRANCABERMEJA"
+     "nombre_cliente": "ZONA URBANA",
+     "ciudad": "BARRANCABERMEJA"
     },
     {
-    "nombre_cliente":"MODA LIVE",
-    "ciudad":"BARRANCABERMEJA"
+     "nombre_cliente": "MODA LIVE",
+     "ciudad": "BARRANCABERMEJA"
     },
     {
-    "nombre_cliente":"MOPERTEX S.A.S.",
-    "ciudad":"BARRANQUILLA"
+     "nombre_cliente": "MOPERTEX S.A.S.",
+     "ciudad": "BARRANQUILLA"
     },
     {
-    "nombre_cliente":"CHALIS PUERTA DEL NORTE",
-    "ciudad":"BELLO"
+     "nombre_cliente": "CHALIS PUERTA DEL NORTE",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"CHALIS PLAZA FABRICATO",
-    "ciudad":"BELLO"
+     "nombre_cliente": "CHALIS PLAZA FABRICATO",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA PUERTA DEL NORTE I",
-    "ciudad":"BELLO"
+     "nombre_cliente": "FRUTA FRESCA PUERTA DEL NORTE I",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA PARQUE FABRICATO",
-    "ciudad":"BELLO"
+     "nombre_cliente": "FRUTA FRESCA PARQUE FABRICATO",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA PUERTA DEL NORTE II",
-    "ciudad":"BELLO"
+     "nombre_cliente": "FRUTA FRESCA PUERTA DEL NORTE II",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"METALIUSS PUERTA DEL NORTE",
-    "ciudad":"BELLO"
+     "nombre_cliente": "METALIUSS PUERTA DEL NORTE",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"LILIAM BOUTIQUE PUERTA DEL NORTE",
-    "ciudad":"BELLO"
+     "nombre_cliente": "LILIAM BOUTIQUE PUERTA DEL NORTE",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"METALIUSS BELLO",
-    "ciudad":"BELLO"
+     "nombre_cliente": "METALIUSS BELLO",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"LILIAM BOUTIQUE BELLO",
-    "ciudad":"BELLO"
+     "nombre_cliente": "LILIAM BOUTIQUE BELLO",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"LILIAM BOUTIQUE FABRICATO",
-    "ciudad":"BELLO"
+     "nombre_cliente": "LILIAM BOUTIQUE FABRICATO",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"EXPRESO BELLO",
-    "ciudad":"BELLO"
+     "nombre_cliente": "EXPRESO BELLO",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"ESCAPE PUERTA DEL NORTE 2",
-    "ciudad":"BELLO"
+     "nombre_cliente": "ESCAPE PUERTA DEL NORTE 2",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"ESCAPE PUERTA DEL NORTE 1",
-    "ciudad":"BELLO"
+     "nombre_cliente": "ESCAPE PUERTA DEL NORTE 1",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"ESCAPE PLAZA FABRICATO",
-    "ciudad":"BELLO"
+     "nombre_cliente": "ESCAPE PLAZA FABRICATO",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"EUROMODA",
-    "ciudad":"Bello"
+     "nombre_cliente": "EUROMODA",
+     "ciudad": "BELLO"
     },
     {
-    "nombre_cliente":"GRAN ESTACION",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "GRAN ESTACION",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"ANOTHER",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "ANOTHER",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SHOCK CENTRO MAYOR",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SHOCK CENTRO MAYOR",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"40 GRADOS SANANDRESITO LOCAL 1",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "40 GRADOS SANANDRESITO LOCAL 1",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"41 GRADOS SANANDRESITO LOCAL 2",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "41 GRADOS SANANDRESITO LOCAL 2",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"40 GRADOS PLAZA DE LAS AMERICAS",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "40 GRADOS PLAZA DE LAS AMERICAS",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"41 GRADOS GRAN ESTACION",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "41 GRADOS GRAN ESTACION",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SHOCK AMERICAS 1",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SHOCK AMERICAS 1",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SHOCK AMERICAS 2",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SHOCK AMERICAS 2",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SHOCK 20 DE JULIO",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SHOCK 20 DE JULIO",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SHOCK BOSA",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SHOCK BOSA",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SHOCK TERREROS",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SHOCK TERREROS",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"MERCURIO 1",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "MERCURIO 1",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"MERCURIO 2",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "MERCURIO 2",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SHAPLING",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SHAPLING",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"FREEDOM",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "FREEDOM",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"STRONG",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "STRONG",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"METAMORFOSIS",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "METAMORFOSIS",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"RESTREPO",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "RESTREPO",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"TUNAL",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "TUNAL",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"BULEVAR",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "BULEVAR",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"PALATINO",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "PALATINO",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"SAN RAFAEL",
-    "ciudad":"BOGOTA"
+     "nombre_cliente": "SAN RAFAEL",
+     "ciudad": "BOGOTA"
     },
     {
-    "nombre_cliente":"MULTIMARCAS CHIQUINQUIRA",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "MULTIMARCAS CHIQUINQUIRA",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"JEANS Y CHAQUETAS",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "JEANS Y CHAQUETAS",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"BARROCO",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "BARROCO",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"TIENDAS BLUE",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "TIENDAS BLUE",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"SOGAMOSO 3",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "SOGAMOSO 3",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"MULTIMARCAS TUNJA",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "MULTIMARCAS TUNJA",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"MULTIMARCAS DUITAMA",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "MULTIMARCAS DUITAMA",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"MULTIMARCAS SOGAMOSO",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "MULTIMARCAS SOGAMOSO",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"INDUSTRIA STORE",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "INDUSTRIA STORE",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"LIMON Y SAL",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "LIMON Y SAL",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"SOGAMOSO 2",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "SOGAMOSO 2",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"CHIQUINQUIRA",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "CHIQUINQUIRA",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"CHIQUINQUIRA",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "CHIQUINQUIRA",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"TUNJA",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "TUNJA",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"DUITAMA",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "DUITAMA",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"KOOL STORE",
-    "ciudad":"BOYACA"
+     "nombre_cliente": "KOOL STORE",
+     "ciudad": "BOYACA"
     },
     {
-    "nombre_cliente":"SPORT MUNDO",
-    "ciudad":"BUCARAMANGA"
+     "nombre_cliente": "SPORT MUNDO",
+     "ciudad": "BUCARAMANGA"
     },
     {
-    "nombre_cliente":"CALZADO LA ELEGANCIA",
-    "ciudad":"CALI"
+     "nombre_cliente": "CALZADO LA ELEGANCIA",
+     "ciudad": "CALI"
     },
     {
-    "nombre_cliente":"SANTY CALZADO",
-    "ciudad":"CARMEN DE VIBORAL"
+     "nombre_cliente": "SANTY CALZADO",
+     "ciudad": "CARMEN DE VIBORAL"
     },
     {
-    "nombre_cliente":"MELOCOTTON SAS",
-    "ciudad":"CARTAGENA"
+     "nombre_cliente": "MELOCOTTON SAS",
+     "ciudad": "CARTAGENA"
     },
     {
-    "nombre_cliente":"BOUTIQUE EVOLUTION",
-    "ciudad":"CARTAGO"
+     "nombre_cliente": "BOUTIQUE EVOLUTION",
+     "ciudad": "CARTAGO"
     },
     {
-    "nombre_cliente":"SHOPCENTER",
-    "ciudad":"CARTAGO"
+     "nombre_cliente": "SHOPCENTER",
+     "ciudad": "CARTAGO"
     },
     {
-    "nombre_cliente":"BATISTA",
-    "ciudad":"CARTAGO"
+     "nombre_cliente": "BATISTA",
+     "ciudad": "CARTAGO"
     },
     {
-    "nombre_cliente":"PASSION",
-    "ciudad":"CARTAGO"
+     "nombre_cliente": "PASSION",
+     "ciudad": "CARTAGO"
     },
     {
-    "nombre_cliente":"X.O JEANS",
-    "ciudad":"CARTAGO"
+     "nombre_cliente": "X.O JEANS",
+     "ciudad": "CARTAGO"
     },
     {
-    "nombre_cliente":"PAZ DE ARIPORO",
-    "ciudad":"CASANARE"
+     "nombre_cliente": "PAZ DE ARIPORO",
+     "ciudad": "CASANARE"
     },
     {
-    "nombre_cliente":"CLASS FASHION",
-    "ciudad":"CAUCASIA"
+     "nombre_cliente": "CLASS FASHION",
+     "ciudad": "CAUCASIA"
     },
     {
-    "nombre_cliente":"VIZKAYA TIENDA",
-    "ciudad":"CAUCASIA"
+     "nombre_cliente": "VIZKAYA TIENDA",
+     "ciudad": "CAUCASIA"
     },
     {
-    "nombre_cliente":"TANANA WEAR",
-    "ciudad":"CHINCHINA"
+     "nombre_cliente": "TANANA WEAR",
+     "ciudad": "CHINCHINA"
     },
     {
-    "nombre_cliente":"RAMAD",
-    "ciudad":"CIMITARRA"
+     "nombre_cliente": "RAMAD",
+     "ciudad": "CIMITARRA"
     },
     {
-    "nombre_cliente":"FRESITAS",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "FRESITAS",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"SAAD - ATICO - NAPOLÍ",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "SAAD - ATICO - NAPOLÍ",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"RAYOTEX",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "RAYOTEX",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"TIENDAS WAC",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "TIENDAS WAC",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"MARATHON",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "MARATHON",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"PAPAYA",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "PAPAYA",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"ALMACEN CALA",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "ALMACEN CALA",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"MARILUNA",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "MARILUNA",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"11 STREET",
-    "ciudad":"CÚCUTA"
+     "nombre_cliente": "11 STREET",
+     "ciudad": "CÚCUTA"
     },
     {
-    "nombre_cliente":"SHIRET MODA",
-    "ciudad":"CÚCUTA - OCAÑA"
+     "nombre_cliente": "SHIRET MODA",
+     "ciudad": "CÚCUTA - OCAÑA"
     },
     {
-    "nombre_cliente":"CHIA",
-    "ciudad":"CUNDINAMARCA"
+     "nombre_cliente": "CHIA",
+     "ciudad": "CUNDINAMARCA"
     },
     {
-    "nombre_cliente":"ORIGINAL SHOES",
-    "ciudad":"DORADA"
+     "nombre_cliente": "ORIGINAL SHOES",
+     "ciudad": "DORADA"
     },
     {
-    "nombre_cliente":"FIGURAS BOUTIQUE",
-    "ciudad":"DORADA"
+     "nombre_cliente": "FIGURAS BOUTIQUE",
+     "ciudad": "DORADA"
     },
     {
-    "nombre_cliente":"SACRAMENTO",
-    "ciudad":"DORADA"
+     "nombre_cliente": "SACRAMENTO",
+     "ciudad": "DORADA"
     },
     {
-    "nombre_cliente":"MEDITERRANEO SPORT",
-    "ciudad":"DORADA"
+     "nombre_cliente": "MEDITERRANEO SPORT",
+     "ciudad": "DORADA"
     },
     {
-    "nombre_cliente":"SARA TIENDA",
-    "ciudad":"EL BAGRE"
+     "nombre_cliente": "SARA TIENDA",
+     "ciudad": "EL BAGRE"
     },
     {
-    "nombre_cliente":"BOUTIQUE M Y G",
-    "ciudad":"EL BANCO"
+     "nombre_cliente": "BOUTIQUE M Y G",
+     "ciudad": "EL BANCO"
     },
     {
-    "nombre_cliente":"CHALIS ENVIGADO",
-    "ciudad":"ENVIGADO"
+     "nombre_cliente": "CHALIS ENVIGADO",
+     "ciudad": "ENVIGADO"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA VIVA ENVIGADO",
-    "ciudad":"ENVIGADO"
+     "nombre_cliente": "FRUTA FRESCA VIVA ENVIGADO",
+     "ciudad": "ENVIGADO"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA CITY PLAZA",
-    "ciudad":"ENVIGADO"
+     "nombre_cliente": "FRUTA FRESCA CITY PLAZA",
+     "ciudad": "ENVIGADO"
     },
     {
-    "nombre_cliente":"ESCAPE VIVA ENVIGADO",
-    "ciudad":"ENVIGADO"
+     "nombre_cliente": "ESCAPE VIVA ENVIGADO",
+     "ciudad": "ENVIGADO"
     },
     {
-    "nombre_cliente":"LONDON STORE",
-    "ciudad":"FORTUL"
+     "nombre_cliente": "LONDON STORE",
+     "ciudad": "FORTUL "
     },
     {
-    "nombre_cliente":"MILLENIUM",
-    "ciudad":"GARZON"
+     "nombre_cliente": "MILLENIUM",
+     "ciudad": "GARZON"
     },
     {
-    "nombre_cliente":"STUDIO FASHION",
-    "ciudad":"GARZON"
+     "nombre_cliente": "STUDIO FASHION",
+     "ciudad": "GARZON"
     },
     {
-    "nombre_cliente":"GIZBO",
-    "ciudad":"IBAGUE"
+     "nombre_cliente": "GIZBO",
+     "ciudad": "IBAGUE"
     },
     {
-    "nombre_cliente":"CALZADO LA ELEGANCIA",
-    "ciudad":"IPIALES"
+     "nombre_cliente": "CALZADO LA ELEGANCIA",
+     "ciudad": "IPIALES"
     },
     {
-    "nombre_cliente":"PODIUM",
-    "ciudad":"IPIALES"
+     "nombre_cliente": "PODIUM",
+     "ciudad": "IPIALES"
     },
     {
-    "nombre_cliente":"CHALIS MAYORCA",
-    "ciudad":"ITAGUI"
+     "nombre_cliente": "CHALIS MAYORCA",
+     "ciudad": "ITAGUI"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA MAYORCA",
-    "ciudad":"ITAGUI"
+     "nombre_cliente": "FRUTA FRESCA MAYORCA",
+     "ciudad": "ITAGUI"
     },
     {
-    "nombre_cliente":"STORE ITAGUI",
-    "ciudad":"ITAGUI"
+     "nombre_cliente": "STORE ITAGUI",
+     "ciudad": "ITAGUI"
     },
     {
-    "nombre_cliente":"EXPRESO ITAGUI",
-    "ciudad":"ITAGUI"
+     "nombre_cliente": "EXPRESO ITAGUI",
+     "ciudad": "ITAGUI"
     },
     {
-    "nombre_cliente":"ESCAPE MAYORCA",
-    "ciudad":"ITAGUI"
+     "nombre_cliente": "ESCAPE MAYORCA",
+     "ciudad": "ITAGUI"
     },
     {
-    "nombre_cliente":"ESCAPE ARRAYANES ITAGÜÍ",
-    "ciudad":"ITAGUI"
+     "nombre_cliente": "ESCAPE ARRAYANES ITAGÜÍ ",
+     "ciudad": "ITAGUI"
     },
     {
-    "nombre_cliente":"CASA SPORT",
-    "ciudad":"JAMUNDI"
+     "nombre_cliente": "CASA SPORT",
+     "ciudad": "JAMUNDI"
     },
     {
-    "nombre_cliente":"YIRE 10",
-    "ciudad":"JAMUNDI"
+     "nombre_cliente": "YIRE 10",
+     "ciudad": "JAMUNDI"
     },
     {
-    "nombre_cliente":"YIRE ALFAGUARA",
-    "ciudad":"JAMUNDI"
+     "nombre_cliente": "YIRE ALFAGUARA",
+     "ciudad": "JAMUNDI"
     },
     {
-    "nombre_cliente":"ALMACEN STELLA",
-    "ciudad":"JARDÍN"
+     "nombre_cliente": "ALMACEN STELLA ",
+     "ciudad": "JARDÍN"
     },
     {
-    "nombre_cliente":"TIENDA DE ROPA PAPARAZZI",
-    "ciudad":"LA ARGENTINA"
+     "nombre_cliente": "TIENDA DE ROPA PAPARAZZI",
+     "ciudad": "LA ARGENTINA"
     },
     {
-    "nombre_cliente":"SOLO MARCAS",
-    "ciudad":"LA CEJA"
+     "nombre_cliente": "SOLO MARCAS",
+     "ciudad": "LA CEJA"
     },
     {
-    "nombre_cliente":"ESMODA",
-    "ciudad":"LA CEJA"
+     "nombre_cliente": "ESMODA",
+     "ciudad": "LA CEJA"
     },
     {
-    "nombre_cliente":"FOSSIL",
-    "ciudad":"LA HORMIGA"
+     "nombre_cliente": "FOSSIL",
+     "ciudad": "LA HORMIGA"
     },
     {
-    "nombre_cliente":"40 GRADOS",
-    "ciudad":"LA HORMIGA"
+     "nombre_cliente": "40 GRADOS",
+     "ciudad": "LA HORMIGA"
     },
     {
-    "nombre_cliente":"MISCELANEA TOLY",
-    "ciudad":"LA PLATA"
+     "nombre_cliente": "MISCELANEA TOLY",
+     "ciudad": "LA PLATA"
     },
     {
-    "nombre_cliente":"STOCK",
-    "ciudad":"LEBRIJA"
+     "nombre_cliente": "STOCK",
+     "ciudad": "LEBRIJA"
     },
     {
-    "nombre_cliente":"CUEROS TRAPOS BOUTIQUE",
-    "ciudad":"LLORENTE"
+     "nombre_cliente": "CUEROS TRAPOS BOUTIQUE",
+     "ciudad": "LLORENTE"
     },
     {
-    "nombre_cliente":"AMERICAN CLASSIC L.S",
-    "ciudad":"MAICAO"
+     "nombre_cliente": "AMERICAN CLASSIC L.S",
+     "ciudad": "MAICAO"
     },
     {
-    "nombre_cliente":"ANDINO",
-    "ciudad":"MANIZALES"
+     "nombre_cliente": "ANDINO",
+     "ciudad": "MANIZALES"
     },
     {
-    "nombre_cliente":"E-STORE",
-    "ciudad":"MANIZALES"
+     "nombre_cliente": "E-STORE",
+     "ciudad": "MANIZALES"
     },
     {
-    "nombre_cliente":"MARCAS & MARCAS",
-    "ciudad":"MANIZALES"
+     "nombre_cliente": "MARCAS & MARCAS",
+     "ciudad": "MANIZALES"
     },
     {
-    "nombre_cliente":"MALIZIA",
-    "ciudad":"MANIZALES"
+     "nombre_cliente": "MALIZIA",
+     "ciudad": "MANIZALES"
     },
     {
-    "nombre_cliente":"DETALLES INES",
-    "ciudad":"MANIZALES"
+     "nombre_cliente": "DETALLES INES",
+     "ciudad": "MANIZALES"
     },
     {
-    "nombre_cliente":"CAPRICHOS",
-    "ciudad":"MARINILLA"
+     "nombre_cliente": "CAPRICHOS",
+     "ciudad": "MARINILLA"
     },
     {
-    "nombre_cliente":"BOUTIQUE ZAFFARI",
-    "ciudad":"MARIQUITA"
+     "nombre_cliente": "BOUTIQUE ZAFFARI",
+     "ciudad": "MARIQUITA"
     },
     {
-    "nombre_cliente":"CHALIS BALENCIAGA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "CHALIS BALENCIAGA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"CHALIS MOLINOS",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "CHALIS MOLINOS",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"CHALIS UNICENTRO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "CHALIS UNICENTRO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"CHALIS FLORIDA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "CHALIS FLORIDA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"CHALIS SAN DIEGO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "CHALIS SAN DIEGO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA SANTAFE",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA SANTAFE",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA PARQUE LUCES",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA PARQUE LUCES",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA MOLINOS",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA MOLINOS",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA LA CENTRAL",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA LA CENTRAL",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA JUNIN",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA JUNIN",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA UNICENTRO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA UNICENTRO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA DIAMANTE",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA DIAMANTE",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA MONTERREY",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA MONTERREY",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA FLORIDA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA FLORIDA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA LAURELES",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA LAURELES",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA PREMIUN PLAZA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA PREMIUN PLAZA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA AVENTURA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA AVENTURA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA ARKADIA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "FRUTA FRESCA ARKADIA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"EXPRESO ASTORIA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "EXPRESO  ASTORIA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"STORE ASTORIA",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "STORE ASTORIA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE MEGACENTRO PLAZA COMERCIAL",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE MEGACENTRO PLAZA COMERCIAL",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE PARQUE BERRIO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE PARQUE BERRIO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE PALACE",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE PALACE",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE CAMINO REAL 2DO PISO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE CAMINO REAL 2DO PISO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE JUNIN 1 PISO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE JUNIN 1 PISO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE FLORIDA 2DO PISO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE FLORIDA 2DO PISO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE UNICENTRO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE UNICENTRO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE BOULEVAR JUNIN 2DO PISO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE BOULEVAR JUNIN 2DO PISO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE FLORIDA 1ER PISO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE FLORIDA 1ER PISO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE MOLINOS",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE MOLINOS",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE PREMIUM",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE PREMIUM",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE SAN DIEGO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE SAN DIEGO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE BOULEVAR JUNIN 1ER PISO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE BOULEVAR JUNIN 1ER PISO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE PARQUE BELLO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE PARQUE BELLO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ESCAPE REAL 1 PISO",
-    "ciudad":"MEDELLIN"
+     "nombre_cliente": "ESCAPE REAL 1 PISO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"VIA TIBURTINA",
-    "ciudad":"Medellín"
+     "nombre_cliente": "VIA TIBURTINA",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"MARTA CANO",
-    "ciudad":"Medellín"
+     "nombre_cliente": "MARTA CANO",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"ISLANDER VIP S.A.S.",
-    "ciudad":"Medellín"
+     "nombre_cliente": "ISLANDER VIP S.A.S.",
+     "ciudad": "MEDELLIN"
     },
     {
-    "nombre_cliente":"CALIFORNIA",
-    "ciudad":"META"
+     "nombre_cliente": "CALIFORNIA",
+     "ciudad": "META"
     },
     {
-    "nombre_cliente":"AVELLANA",
-    "ciudad":"META"
+     "nombre_cliente": "AVELLANA",
+     "ciudad": "META"
     },
     {
-    "nombre_cliente":"G21 MOCOA",
-    "ciudad":"MOCOA"
+     "nombre_cliente": "G21 MOCOA",
+     "ciudad": "MOCOA"
     },
     {
-    "nombre_cliente":"MICHELS SPORT",
-    "ciudad":"MOCOA"
+     "nombre_cliente": "MICHELS SPORT",
+     "ciudad": "MOCOA"
     },
     {
-    "nombre_cliente":"VIRTUAL TIENDA",
-    "ciudad":"MONTERIA"
+     "nombre_cliente": "VIRTUAL TIENDA",
+     "ciudad": "MONTERIA"
     },
     {
-    "nombre_cliente":"LA TIENDA DE FLOR",
-    "ciudad":"MONTERIA"
+     "nombre_cliente": "LA TIENDA DE FLOR",
+     "ciudad": "MONTERIA"
     },
     {
-    "nombre_cliente":"SOLO MARCAS",
-    "ciudad":"MONTERIA"
+     "nombre_cliente": "SOLO MARCAS",
+     "ciudad": "MONTERIA"
     },
     {
-    "nombre_cliente":"BOUTIQUE CANELA",
-    "ciudad":"NECOCLI"
+     "nombre_cliente": "BOUTIQUE CANELA",
+     "ciudad": "NECOCLI"
     },
     {
-    "nombre_cliente":"SHOES ROPA SPORT",
-    "ciudad":"NEIVA"
+     "nombre_cliente": "SHOES ROPA SPORT",
+     "ciudad": "NEIVA"
     },
     {
-    "nombre_cliente":"LUCHO SPORT",
-    "ciudad":"NEIVA"
+     "nombre_cliente": "LUCHO SPORT",
+     "ciudad": "NEIVA"
     },
     {
-    "nombre_cliente":"PLAZARELLA",
-    "ciudad":"OCAÑA"
+     "nombre_cliente": "PLAZARELLA",
+     "ciudad": "OCAÑA"
     },
     {
-    "nombre_cliente":"BOCA",
-    "ciudad":"OCAÑA"
+     "nombre_cliente": "BOCA",
+     "ciudad": "OCAÑA"
     },
     {
-    "nombre_cliente":"G21 ORITO",
-    "ciudad":"ORITO"
+     "nombre_cliente": "G21 ORITO",
+     "ciudad": "ORITO"
     },
     {
-    "nombre_cliente":"ZOEE",
-    "ciudad":"PAMPLONA"
+     "nombre_cliente": "ZOEE",
+     "ciudad": "PAMPLONA"
     },
     {
-    "nombre_cliente":"SEBASTIAN 128",
-    "ciudad":"PASTO"
+     "nombre_cliente": "SEBASTIAN 128",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"GALERIAS 101",
-    "ciudad":"PASTO"
+     "nombre_cliente": "GALERIAS 101",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"UNICENTRO 160",
-    "ciudad":"PASTO"
+     "nombre_cliente": "UNICENTRO 160",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"CHIROS PASTO",
-    "ciudad":"PASTO"
+     "nombre_cliente": "CHIROS PASTO",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"INSTINTOS PASTO",
-    "ciudad":"PASTO"
+     "nombre_cliente": "INSTINTOS PASTO",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"ATREVETE",
-    "ciudad":"PASTO"
+     "nombre_cliente": "ATREVETE",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"VERANEO",
-    "ciudad":"PASTO"
+     "nombre_cliente": "VERANEO",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"CLASS",
-    "ciudad":"PASTO"
+     "nombre_cliente": "CLASS",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"GARAGE",
-    "ciudad":"PASTO"
+     "nombre_cliente": "GARAGE",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"PRADO",
-    "ciudad":"PASTO"
+     "nombre_cliente": "PRADO",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"GAUDI PRINCIPAL",
-    "ciudad":"PASTO"
+     "nombre_cliente": "GAUDI PRINCIPAL",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"GALILIEO SEBASTIAN",
-    "ciudad":"PASTO"
+     "nombre_cliente": "GALILIEO SEBASTIAN",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"GAUDI 2",
-    "ciudad":"PASTO"
+     "nombre_cliente": "GAUDI 2",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"TRANSIT",
-    "ciudad":"PASTO"
+     "nombre_cliente": "TRANSIT",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"EL SITIO",
-    "ciudad":"PASTO"
+     "nombre_cliente": "EL SITIO",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"BRANDS SHOP",
-    "ciudad":"PASTO"
+     "nombre_cliente": "BRANDS SHOP",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"VIP MALIBU",
-    "ciudad":"PASTO"
+     "nombre_cliente": "VIP MALIBU",
+     "ciudad": "PASTO"
     },
     {
-    "nombre_cliente":"DON CARLOS TIENDA",
-    "ciudad":"PEREIRA"
+     "nombre_cliente": "DON CARLOS TIENDA",
+     "ciudad": "PEREIRA"
     },
     {
-    "nombre_cliente":"LUXO",
-    "ciudad":"PITALITO"
+     "nombre_cliente": "LUXO",
+     "ciudad": "PITALITO"
     },
     {
-    "nombre_cliente":"YINJES",
-    "ciudad":"PITALITO"
+     "nombre_cliente": "YINJES",
+     "ciudad": "PITALITO"
     },
     {
-    "nombre_cliente":"SKALA TIENDA",
-    "ciudad":"PITALITO"
+     "nombre_cliente": "SKALA TIENDA",
+     "ciudad": "PITALITO"
     },
     {
-    "nombre_cliente":"SHOES ROPA SPORT",
-    "ciudad":"PITALITO"
+     "nombre_cliente": "SHOES ROPA SPORT",
+     "ciudad": "PITALITO"
     },
     {
-    "nombre_cliente":"ALMACEN ADICTOS",
-    "ciudad":"PITALITO"
+     "nombre_cliente": "ALMACEN ADICTOS",
+     "ciudad": "PITALITO"
     },
     {
-    "nombre_cliente":"SAM STORE",
-    "ciudad":"PLANETA RICA"
+     "nombre_cliente": "SAM STORE",
+     "ciudad": "PLANETA RICA"
     },
     {
-    "nombre_cliente":"G21 PUERTO ASIS",
-    "ciudad":"PUERTO ASIS"
+     "nombre_cliente": "G21 PUERTO ASIS",
+     "ciudad": "PUERTO ASIS"
     },
     {
-    "nombre_cliente":"BOUTIQUE VALENTIO",
-    "ciudad":"PUERTO ASIS"
+     "nombre_cliente": "BOUTIQUE VALENTIO",
+     "ciudad": "PUERTO ASIS"
     },
     {
-    "nombre_cliente":"BY LOKO",
-    "ciudad":"PUERTO ASIS"
+     "nombre_cliente": "BY LOKO",
+     "ciudad": "PUERTO ASIS"
     },
     {
-    "nombre_cliente":"CLOSET",
-    "ciudad":"PUERTO ASIS"
+     "nombre_cliente": "CLOSET",
+     "ciudad": "PUERTO ASIS"
     },
     {
-    "nombre_cliente":"LAUKAR",
-    "ciudad":"PUERTO ASIS"
+     "nombre_cliente": "LAUKAR",
+     "ciudad": "PUERTO ASIS"
     },
     {
-    "nombre_cliente":"CAPITAL TENNIS",
-    "ciudad":"PUERTO BERRIO"
+     "nombre_cliente": "CAPITAL TENNIS",
+     "ciudad": "PUERTO BERRIO"
     },
     {
-    "nombre_cliente":"MULTIBRAND",
-    "ciudad":"PUERTO WILCHES"
+     "nombre_cliente": "MULTIBRAND",
+     "ciudad": "PUERTO WILCHES"
     },
     {
-    "nombre_cliente":"TIENDA ACME",
-    "ciudad":"QUIBDÓ"
+     "nombre_cliente": "TIENDA ACME",
+     "ciudad": "QUIBDÓ"
     },
     {
-    "nombre_cliente":"BERLIN",
-    "ciudad":"QUIBDÓ"
+     "nombre_cliente": "BERLIN",
+     "ciudad": "QUIBDÓ"
     },
     {
-    "nombre_cliente":"SALOMON TIENDA DE ROPA",
-    "ciudad":"QUIMBAYA"
+     "nombre_cliente": "SALOMON TIENDA DE ROPA",
+     "ciudad": "QUIMBAYA"
     },
     {
-    "nombre_cliente":"LUCIA POR SIEMPRE",
-    "ciudad":"QUIMBAYA"
+     "nombre_cliente": "LUCIA POR SIEMPRE",
+     "ciudad": "QUIMBAYA"
     },
     {
-    "nombre_cliente":"BOUTIQUE YADY",
-    "ciudad":"REMEDIOS"
+     "nombre_cliente": "BOUTIQUE YADY",
+     "ciudad": "REMEDIOS "
     },
     {
-    "nombre_cliente":"DGLOR",
-    "ciudad":"RICAUTE"
+     "nombre_cliente": "D´GLOR",
+     "ciudad": "RICAUTE"
     },
     {
-    "nombre_cliente":"PASARELA",
-    "ciudad":"RIO SUCIO"
+     "nombre_cliente": "PASARELA",
+     "ciudad": "RIO SUCIO"
     },
     {
-    "nombre_cliente":"MOISS SPORT",
-    "ciudad":"RIOHACHA"
+     "nombre_cliente": "MOISS SPORT",
+     "ciudad": "RIOHACHA"
     },
     {
-    "nombre_cliente":"MOHAMED KASSEM KAHARFAN KHORFAN",
-    "ciudad":"RIOHACHA"
+     "nombre_cliente": "MOHAMED KASSEM KAHARFAN KHORFAN",
+     "ciudad": "RIOHACHA"
     },
     {
-    "nombre_cliente":"MARCAS Y MODAS",
-    "ciudad":"RIONEGRO"
+     "nombre_cliente": "MARCAS Y MODAS",
+     "ciudad": "RIONEGRO"
     },
     {
-    "nombre_cliente":"FRUTA FRESCA AVES MARIA",
-    "ciudad":"SABANETA"
+     "nombre_cliente": "FRUTA FRESCA AVES MARIA",
+     "ciudad": "SABANETA"
     },
     {
-    "nombre_cliente":"BOUTIQUE EVOLUTIONS",
-    "ciudad":"SAMANIEGO"
+     "nombre_cliente": "BOUTIQUE EVOLUTIONS",
+     "ciudad": "SAMANIEGO"
     },
     {
-    "nombre_cliente":"EXTREME SHOP",
-    "ciudad":"SAMANIEGO"
+     "nombre_cliente": "EXTREME SHOP",
+     "ciudad": "SAMANIEGO"
     },
     {
-    "nombre_cliente":"ESTAMBUL",
-    "ciudad":"San Andres"
+     "nombre_cliente": "ESTAMBUL",
+     "ciudad": "SAN ANDRES"
     },
     {
-    "nombre_cliente":"BOUTIQUE FEMENINA",
-    "ciudad":"SAN GIL"
+     "nombre_cliente": "BOUTIQUE FEMENINA",
+     "ciudad": "SAN GIL"
     },
     {
-    "nombre_cliente":"LIMON",
-    "ciudad":"SAN JOSE DEL GUAVIARE"
+     "nombre_cliente": "LIMON",
+     "ciudad": "SAN JOSE DEL GUAVIARE"
     },
     {
-    "nombre_cliente":"HABANA",
-    "ciudad":"SAN JOSE DEL GUAVIARE"
+     "nombre_cliente": "HABANA",
+     "ciudad": "SAN JOSE DEL GUAVIARE"
     },
     {
-    "nombre_cliente":"C&C STORE",
-    "ciudad":"SAN MARTIN"
+     "nombre_cliente": "C&C STORE",
+     "ciudad": "SAN MARTIN"
     },
     {
-    "nombre_cliente":"OSMA REY CESAR HERNANDO",
-    "ciudad":"SAN PABLO"
+     "nombre_cliente": "OSMA REY CESAR HERNANDO",
+     "ciudad": "SAN PABLO"
     },
-    { 
-    "nombre_cliente":"ALMACEN Y VARIEDADES OLGA REY",
-    "ciudad":"SAN PABLO"
+    {
+     "nombre_cliente": "ALMACEN Y VARIEDADES OLGA REY",
+     "ciudad": "SAN PABLO"
     },
     {
-    "nombre_cliente":"VARIEDADES OSMA REY",
-    "ciudad":"SAN PABLO"
+     "nombre_cliente": "VARIEDADES OSMA REY",
+     "ciudad": "SAN PABLO"
     },
     {
-    "nombre_cliente":"BOUTIQUE MARIA ROSS",
-    "ciudad":"SAN PEDRO"
+     "nombre_cliente": "BOUTIQUE MARIA ROSS",
+     "ciudad": "SAN PEDRO"
     },
     {
-    "nombre_cliente":"GENERACIÓN X",
-    "ciudad":"SAN VICENTE"
+     "nombre_cliente": "GENERACIÓN X",
+     "ciudad": "SAN VICENTE"
     },
     {
-    "nombre_cliente":"CLOROFILA BUENAVISTA",
-    "ciudad":"SANTA MARTA"
+     "nombre_cliente": "CLOROFILA BUENAVISTA",
+     "ciudad": "SANTA MARTA"
     },
     {
-    "nombre_cliente":"ESCAPE 7",
-    "ciudad":"SANTA MARTA"
+     "nombre_cliente": "ESCAPE 7",
+     "ciudad": "SANTA MARTA"
     },
     {
-    "nombre_cliente":"VALHER MODA",
-    "ciudad":"SANTA ROSA"
+     "nombre_cliente": "VALHER MODA",
+     "ciudad": "SANTA ROSA"
     },
     {
-    "nombre_cliente":"FASHION MODA AMERICANINO",
-    "ciudad":"SANTA ROSA DEL SUR"
+     "nombre_cliente": "FASHION MODA AMERICANINO",
+     "ciudad": "SANTA ROSA DEL SUR"
     },
     {
-    "nombre_cliente":"TORRE SUR",
-    "ciudad":"SANTANDER DE QUILICHAO"
+     "nombre_cliente": "TORRE SUR",
+     "ciudad": "SANTANDER DE QUILICHAO"
     },
     {
-    "nombre_cliente":"YIRE SPORT SANTANDER",
-    "ciudad":"SANTANDER DE QUILICHAO"
+     "nombre_cliente": "YIRE SPORT SANTANDER",
+     "ciudad": "SANTANDER DE QUILICHAO"
     },
     {
-    "nombre_cliente":"ISANELLA BOUTIQUE",
-    "ciudad":"SANTUARIO"
+     "nombre_cliente": "ISANELLA BOUTIQUE",
+     "ciudad": "SANTUARIO"
     },
     {
-    "nombre_cliente":"ROPIN",
-    "ciudad":"SARAVENA"
+     "nombre_cliente": "ROPIN",
+     "ciudad": "SARAVENA"
     },
     {
-    "nombre_cliente":"LEDY SPORT",
-    "ciudad":"SARAVENA"
+     "nombre_cliente": "LEDY SPORT",
+     "ciudad": "SARAVENA"
     },
     {
-    "nombre_cliente":"RUTA 66 KIDS",
-    "ciudad":"SEGOVIA"
+     "nombre_cliente": "RUTA 66 KIDS",
+     "ciudad": "SEGOVIA"
     },
     {
-    "nombre_cliente":"H&F IMPORTACIONES S.A.S",
-    "ciudad":"SEVILLA"
+     "nombre_cliente": "H&F IMPORTACIONES S.A.S",
+     "ciudad": "SEVILLA"
     },
     {
-    "nombre_cliente":"ALMACEN CARMENCITA",
-    "ciudad":"SINCELEJO"
+     "nombre_cliente": "ALMACEN CARMENCITA",
+     "ciudad": "SINCELEJO"
     },
     {
-    "nombre_cliente":"BESCATO TIENDA",
-    "ciudad":"SINCELEJO"
+     "nombre_cliente": "BESCATO TIENDA",
+     "ciudad": "SINCELEJO"
     },
     {
-    "nombre_cliente":"PRESIDENT",
-    "ciudad":"SOGAMOSO"
+     "nombre_cliente": "PRESIDENT",
+     "ciudad": "SOGAMOSO"
     },
     {
-    "nombre_cliente":"CANELA TIENDA SPORT",
-    "ciudad":"SONSÓN"
+     "nombre_cliente": "CANELA TIENDA SPORT ",
+     "ciudad": "SONSÓN"
     },
     {
-    "nombre_cliente":"LIMON Y MENTA",
-    "ciudad":"TAME"
+     "nombre_cliente": "LIMON Y MENTA",
+     "ciudad": "TAME"
     },
     {
-    "nombre_cliente":"URBAN VISION",
-    "ciudad":"TULUA"
+     "nombre_cliente": "URBAN VISION",
+     "ciudad": "TULUA"
     },
     {
-    "nombre_cliente":"OXALATOS",
-    "ciudad":"TUQUERRES"
+     "nombre_cliente": "OXALATOS",
+     "ciudad": "TUQUERRES"
     },
     {
-    "nombre_cliente":"NEW MODA TIENDA DE ROPA",
-    "ciudad":"TUQUERRES"
+     "nombre_cliente": "NEW MODA TIENDA DE ROPA",
+     "ciudad": "TUQUERRES"
     },
     {
-    "nombre_cliente":"BESUANS",
-    "ciudad":"TURBO"
+     "nombre_cliente": "BESUANS",
+     "ciudad": "TURBO"
     },
     {
-    "nombre_cliente":"ALMACEN BONELLA",
-    "ciudad":"TURBO"
+     "nombre_cliente": "ALMACEN BONELLA",
+     "ciudad": "TURBO"
     },
     {
-    "nombre_cliente":"BUBALY",
-    "ciudad":"TURBO"
+     "nombre_cliente": "BUBALY",
+     "ciudad": "TURBO"
     },
     {
-    "nombre_cliente":"TRAPOS Y TRAPOS",
-    "ciudad":"TURBO"
+     "nombre_cliente": "TRAPOS Y TRAPOS",
+     "ciudad": "TURBO"
     },
     {
-    "nombre_cliente":"MILAN",
-    "ciudad":"URRAO"
+     "nombre_cliente": "MILAN",
+     "ciudad": "URRAO"
     },
     {
-    "nombre_cliente":"TIENDA DE ROPA CANAN",
-    "ciudad":"VALLEDUPAR"
+     "nombre_cliente": "TIENDA DE ROPA CANAN",
+     "ciudad": "VALLEDUPAR"
     },
     {
-    "nombre_cliente":"NANCY ASCANIO",
-    "ciudad":"VALLEDUPAR"
+     "nombre_cliente": "NANCY ASCANIO",
+     "ciudad": "VALLEDUPAR"
     },
     {
-    "nombre_cliente":"BOUTIQUE COSMOS GUATAPURY PLAZA LOCAL 120",
-    "ciudad":"VALLEDUPAR"
+     "nombre_cliente": "BOUTIQUE COSMOS GUATAPURY PLAZA LOCAL 120",
+     "ciudad": "VALLEDUPAR"
     },
     {
-    "nombre_cliente":"BOUTIQUE COSMOS MAYALES PLAZA LOCAL 60",
-    "ciudad":"VALLEDUPAR"
+     "nombre_cliente": "BOUTIQUE COSMOS MAYALES PLAZA LOCAL 60",
+     "ciudad": "VALLEDUPAR"
     },
     {
-    "nombre_cliente":"BOUTIQUE COSMOS SEDE CENTRO SEPTIMA #16a-51",
-    "ciudad":"VALLEDUPAR"
+     "nombre_cliente": "BOUTIQUE COSMOS SEDE CENTRO SEPTIMA #16a-51",
+     "ciudad": "VALLEDUPAR"
     },
     {
-    "nombre_cliente":"SARA BOUTIQUE",
-    "ciudad":"VEGACHÍ"
+     "nombre_cliente": "SARA BOUTIQUE",
+     "ciudad": "VEGACHÍ"
     },
     {
-    "nombre_cliente":"BAYRONS",
-    "ciudad":"VILLAVICENCIO"
+     "nombre_cliente": "BAYRONS",
+     "ciudad": "VILLAVICENCIO"
     },
     {
-    "nombre_cliente":"HOLA GENTE",
-    "ciudad":"YARUMAL"
+     "nombre_cliente": "HOLA GENTE",
+     "ciudad": "YARUMAL"
     },
     {
-    "nombre_cliente":"FORTALEZA",
-    "ciudad":"YARUMAL"
+     "nombre_cliente": "FORTALEZA",
+     "ciudad": "YARUMAL"
     }
    ]
-   
