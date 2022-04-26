@@ -183,7 +183,7 @@ const loginUsuarioPost = async (req , res) =>{
     }
 
     //validamos que el numero de factura exista en la bd
-    const usuarioExiste = await Usuario.findOne({cedula: data.cedula, num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
+    const usuarioExiste = await Usuario.findOne({num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
 
     //Si no existe , se crea
     if(!usuarioExiste){
