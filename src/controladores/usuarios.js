@@ -155,7 +155,13 @@ const loginUsuarioPost = async (req , res) =>{
     const errors = [];
 
     //recibimos los datos del body
-    const {cedula,nombre,num_factura,ciudad,tienda} = req.body;
+    let {cedula,nombre,num_factura,ciudad,tienda} = req.body;
+
+    cedula = cedula.trim();
+    nombre = nombre.trim();
+    num_factura = num_factura.trim();
+    ciudad = ciudad.trim();
+    tienda = tienda.trim();
 
     //validamos que esten todos los datos
     if(cedula == "" || nombre == "" || num_factura == "" || ciudad == 0 || tienda == 0){
@@ -167,10 +173,17 @@ const loginUsuarioPost = async (req , res) =>{
 
         return;
     }
-    
+
+    const data = {
+        cedula,
+        nombre,
+        num_factura,
+        ciudad,
+        tienda
+    }
 
     //validamos que el numero de factura exista en la bd
-    const usuarioExiste = await Usuario.findOne({cedula: cedula, num_factura: num_factura, ciudad: ciudad, tienda: tienda});
+    const usuarioExiste = await Usuario.findOne({cedula: data.cedula, num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
 
     //Si no existe , se crea
     if(!usuarioExiste){
@@ -178,14 +191,15 @@ const loginUsuarioPost = async (req , res) =>{
         const codigoUnicoUser = "USR-" + helpers.randomCode();
 
         const usuario = new Usuario({
-            cedula: cedula,
-            nombre: nombre,
-            num_factura: num_factura,
-            ciudad: ciudad, 
-            tienda: tienda,
+            cedula: data.cedula,
+            nombre: data.nombre,
+            num_factura: data.num_factura,
+            ciudad: data.ciudad, 
+            tienda: data.tienda,
             codigo_cliente: codigoUnicoUser
         })
 
+    
         const usuarioAutenticado = await usuario.save();
 
         //Generar el JWT
