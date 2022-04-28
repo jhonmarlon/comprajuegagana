@@ -168,7 +168,7 @@
      "ciudad": "BOGOTA"
     },
     {
-     "nombre_cliente": "41 GRADOS SANANDRESITO LOCAL 2",
+     "nombre_cliente": "40 GRADOS SANANDRESITO LOCAL 2",
      "ciudad": "BOGOTA"
     },
     {
@@ -176,7 +176,7 @@
      "ciudad": "BOGOTA"
     },
     {
-     "nombre_cliente": "41 GRADOS GRAN ESTACION",
+     "nombre_cliente": "40 GRADOS GRAN ESTACION",
      "ciudad": "BOGOTA"
     },
     {
@@ -208,7 +208,7 @@
      "ciudad": "BOGOTA"
     },
     {
-     "nombre_cliente": "SHAPLING",
+     "nombre_cliente": "SHAPING",
      "ciudad": "BOGOTA"
     },
     {
@@ -216,7 +216,7 @@
      "ciudad": "BOGOTA"
     },
     {
-     "nombre_cliente": "STRONG",
+     "nombre_cliente": "STROKE",
      "ciudad": "BOGOTA"
     },
     {
@@ -368,7 +368,15 @@
      "ciudad": "CÚCUTA"
     },
     {
-     "nombre_cliente": "SAAD - ATICO - NAPOLÍ",
+     "nombre_cliente": "SAAD",
+     "ciudad": "CÚCUTA"
+    },
+    {
+     "nombre_cliente": "ATICO",
+     "ciudad": "CÚCUTA"
+    },
+    {
+     "nombre_cliente": "NAPOLÍ",
      "ciudad": "CÚCUTA"
     },
     {
@@ -720,7 +728,7 @@
      "ciudad": "MEDELLIN"
     },
     {
-     "nombre_cliente": "MARTA CANO",
+     "nombre_cliente": "ALMACEN EXPRESS",
      "ciudad": "MEDELLIN"
     },
     {
@@ -1132,3 +1140,4 @@
      "ciudad": "YARUMAL"
     }
    ]
+   
