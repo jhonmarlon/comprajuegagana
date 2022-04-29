@@ -24,7 +24,7 @@ class Server {
         //Config express
         this.app = express();
         //Puerto
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 8080;
 
         //Path para las rutas
         this.pathUsuarios = '/usuarios'
