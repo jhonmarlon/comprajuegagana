@@ -19,7 +19,7 @@ const redimirPremioPost = async (req, res) => {
 
     const errors = [];
 
-    const {ciudad , tienda, num_factura, cedula, premio } = req.body;
+    let {ciudad , tienda, num_factura, cedula, premio } = req.body;
 
     if(ciudad == 0 || tienda == 0 || num_factura == "" || cedula == "" || premio == ""){
         errors.push({text: "Todos los campos son de carácter obligatorio"});
@@ -31,6 +31,11 @@ const redimirPremioPost = async (req, res) => {
         return;
     }
 
+    ciudad= ciudad.trim();
+    tienda= tienda.trim();
+    num_factura= num_factura.trim();
+    cedula= cedula.trim();
+    
     //Buscamos al usuario 
     let usuarioEncontrado = await Usuario.findOne({cedula: cedula, num_factura: num_factura, ciudad: ciudad, tienda: tienda});
 
