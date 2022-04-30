@@ -160,7 +160,7 @@ const loginUsuarioPost = async (req , res) =>{
     const errors = [];
 
     //recibimos los datos del body
-    let {cedula,nombre,num_factura,ciudad,tienda} = req.body;
+    let {cedula,nombre,num_factura,ciudad,tienda = ''} = req.body;
 
     cedula = cedula.trim();
     nombre = nombre.trim();
@@ -172,11 +172,9 @@ const loginUsuarioPost = async (req , res) =>{
     if(cedula == "" || nombre == "" || num_factura == "" || ciudad == 0 || tienda == 0){
         errors.push({text: "Todos los campos son de carácter obligatorio"});
     
-        res.render('usuarios_login', {
+        return res.render('usuarios_login', {
             errors,
         })
-
-        return;
     }
 
     const data = {
