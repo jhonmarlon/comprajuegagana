@@ -31,8 +31,17 @@ const redimirPremioPost = async (req, res) => {
         return;
     }
 
+    const data = {
+        ciudad: ciudad.trim(),
+        tienda: tienda.trim(),
+        num_factura: num_factura.trim(),
+        cedula: cedula.trim(),
+        premio: premio.trim()
+    }
+       
+
     //Buscamos al usuario 
-    let usuarioEncontrado = await Usuario.findOne({cedula: cedula, num_factura: num_factura, ciudad: ciudad, tienda: tienda});
+    let usuarioEncontrado = await Usuario.findOne({cedula: data.cedula, num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
 
     //Si el usuario no existe en la base de datos
     if(!usuarioEncontrado){
