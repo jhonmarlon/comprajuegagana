@@ -5,7 +5,7 @@
         <div class="col-12 col-md-8 mt-5 mx-auto text-center">
             <form action="redimir_premio_cod" method="POST">
                 {{#if usuarioEncontrado}}
-                
+                    <input type="text" hidden value="{{pais}}" name="pais">
                     <input type="text" hidden value="{{usuarioEncontrado.ciudad}}" id="ciudad" name="ciudad" class="form-control mb-3">
                     <input type="text" hidden value="{{usuarioEncontrado.tienda}}" id="tienda" name="tienda" class="form-control mb-3">
                     <input type="text" hidden value="{{usuarioEncontrado.num_factura}}" id="num_factura" name="num_factura" class="form-control mb-3">

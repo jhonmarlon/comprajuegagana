@@ -1,5 +1,5 @@
 
-<!-- modal terminos y condiciones -->
+<!-- modal terminos y condiciones Colombia -->
 <div class="modal fade bg-mania" id="modalTermCondi_1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content contenido-modal">
@@ -30,7 +30,12 @@
               <li>
                 <p><b>ÁMBITO DE APLICACIÓN.</b>
                   <br>
-                  La actividad se realizará en las tiendas físicas de los distribuidores autorizados seleccionados de las marcas Chevignon, Americanino y Esprit (en adelante las “Marcas”), los cuales pueden ser consultados en: <a target="_blank" href="https://www.comprajuegaygana.com/distribuidoresautorizados">Distribuidores autorizados</a>
+                  La actividad se realizará en las tiendas físicas de los distribuidores autorizados seleccionados de las marcas Chevignon, Americanino y Esprit (en adelante las “Marcas”), los cuales pueden ser consultados en: 
+
+                    <form action="/distribuidores_autorizados" method="POST" id="frmDistribuidoresAutorizadosColombia">
+                      <input type="text" value="COL" name="pais" hidden>
+                      <a href="#" onclick="document.getElementById('frmDistribuidoresAutorizadosColombia').submit()">Distribuidores autorizados</a>
+                    </form>
                   <br>
                   Los premios son redimidos al momento de la actividad en el sitio.
                 </p>
@@ -104,15 +109,153 @@
             </ol>
           </div>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer d-flex justify-content-center">
         <button id="btnAceptarDesactivado" class="btn btn-secondary text-light p-2 mx-auto">Aceptar</button>
-        <button id="btnAceptarActivado" class="btn btn-red text-light p-2 mx-auto d-none" onclick="location.href='/usuarios/login'">Aceptar</button>
+
+        <form action="/usuarios/loginUsuarios" method="post">
+           <input type="text" value="COL" name="pais" hidden>
+           <!--<button id="btnAceptarActivado" class="btn btn-red text-light p-2 mx-auto d-none" onclick="location.href='/usuarios/login/Colombia'">Aceptar</button>-->
+           <button id="btnAceptarActivado" class="btn btn-red text-light d-none" type="submit">Aceptar</button>
+        </form>
+               
+        <!--<button class="btn btn-red text-light p-2 mx-auto" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Aceptar</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- modal terminos y condiciones Ecuador-->
+<div class="modal fade bg-mania" id="modalTermCondiEcuador_1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content contenido-modal">
+      <div class="modal-header container-fluid">
+        <div class="row mx-auto">
+          <div class="col-12 mx-auto">
+            <img loading="lazy" src="../assets/Marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2 mb-2" style="width: 320px;">
+            <h2 class="text-center"><B>TÉRMINOS Y CONDICIONES</B></h2>
+            <p class="text-center"><B>CONCURSO</B></p>
+            <P class="text-center"><B>“BONOMANÍA”</B></P>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body p-0">
+         <div class="col-12 bg-white form-control" id="termsConditionsEcuadorDiv" style="width: 100%; height: 300px; overflow-y: scroll;">
+            <ol>
+              <li>
+                <p><b>RESPONSABLE DE LA ACTIVIDAD.</b>
+                  <br>
+                  La actividad comercial en adelante el “Concurso”, es realizada por MERCADEO Y MODA S.A.S, COMODÍN S.A.S. E INDUSTRIA MERCADEO Y COLOR S.A.S, identificadas con los NIT. 800.169.352-6, 800.069.933-6 y 890.940.122-2 respectivamente, y domiciliadas en la ciudad de MEDELLÍN (Antioquia), en adelante las “Compañías”.</p>
+              </li>
+              <li>
+                <p><b>VIGENCIA.</b>
+                  <br>
+                  La actividad iniciará el día viernes 20 de mayo de 2022 y finalizará el domingo 31 de julio de 2022.
+                </p>
+              </li>
+              <li>
+                <p><b>ÁMBITO DE APLICACIÓN.</b>
+                  <br>
+                  La actividad se realizará en las tiendas físicas de los distribuidores autorizados seleccionados de las marcas Chevignon, Americanino y Esprit (en adelante las “Marcas”), los cuales pueden ser consultados en: 
+                    <form action="/distribuidores_autorizados" method="POST" id="frmDistribuidoresAutorizadosEcuador">
+                      <input type="text" value="ECU" name="pais" hidden>
+                      <a href="#" onclick="document.getElementById('frmDistribuidoresAutorizadosEcuador').submit()">Distribuidores autorizados</a>
+                  </form>
+                  <br>
+                  Los premios son redimidos al momento de la actividad en el sitio.
+                </p>
+              </li>
+              <li><p><b>REQUISITOS PARA PARTICIPAR.</b></p>
+                <ol>
+                  <li><p>Ser mayor de edad.</p></li>
+                  <li><p>Realizar compras iguales o superiores a $120 USD en productos de las marcas Americanino, Chevignon y/o Esprit en cualquier tienda física de los distribuidores autorizados con exclusividad en la estrategia.</p></li>
+                  <li><p>La compra se debe realizar en una única factura.</p></li>
+                  <li><p>Vivir en Colombia.</p></li>
+                  <li><p>Autorizar el tratamiento de datos personales.</p></li>
+                </ol>
+              </li>
+              <li><p><b>MECÁNICA DEL CONCURSO.</b></p>
+                <ol>
+                  <li><p><b>Descripción general:</b>A partir del día viernes 20 de mayo de 2022, y hasta el domingo 31 de julio de 2022, las Compañías lanzarán un juego de habilidad y destreza, llamado “BONOMANÍA”, el cual consiste en:
+                    <br>
+                  El participante deberá realizar una (1) compra igual o superior a $120 USD en productos de las marcas Americanino, Chevignon y/o Esprit, en una única factura, en alguna de las tiendas físicas seleccionadas de los distribuidores autorizados de cada Compañía.
+                    <br>
+                  Inmediatamente el participante deberá ingresar al siguiente link: <a target="_blank" href="http://www.comprajuegaygana.com">www.comprajuegaygana.com</a> o escanear a través del celular el código QR ubicado en la tienda que lo llevará a la actividad, la cual consiste en presionar con un dedo el mayor número de veces el botón que aparece en pantalla durante 15 segundos generando los CLIC´S; después de los 15 segundos de presionar el botón, aparecerá en pantalla el número de la factura del cliente, el puntaje obtenido en el juego y el premio adquirido, al cual deberás tomarle un pantallazo para poder reclamarlo. El participante podrá obtener como premio una de las siguientes opciones:
+                    </p>
+                    <ul>
+                      <li><p>Si el jugador adquiere un puntaje entre 0 y 80 clics podrá reclamar Merchandising de cualquiera de las Marcas (sujeto a disponibilidad) el obsequio podrá ser: Marca Chevignon: una cartuchera, una libreta o una lonchera; Marca Esprit: un lapicero, un brillo, un pin de corazón, un abanico o una pinza mensaje; Marca Americanino: una riñonera o un bolso eco.</p></li>
+                      <li><p>Si el jugador adquiere un puntaje entre 81 y 100 clics podrá reclamar un bono de $25 USD para redimir en prendas de las Marcas</p></li>
+                      <li><p>Si el jugador adquiere un puntaje entre 101 y 150 clics podrá reclamar un bono de $40 USD para redimir en prendas de las Marcas.</p></li>
+                      <li><p>Si el jugador adquiere un puntaje entre 151 y 180 clics podrá reclamar un bono de $80 USD para redimir en prendas de las Marcas.</p></li>
+                      <li><p>Si el jugador adquiere un puntaje superior a 181 clic podrá reclamar un bono de $320 USD para redimir en prendas de las Marcas.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><b>Procedimiento:</b>Para participar se deben tener en cuenta las siguientes consideraciones:</p>
+                    <ol>
+                      <li><p>El día viernes 20 de mayo de 2022 se dará inicio a la Actividad.</p></li>
+                      <li><p>El participante deberá desplazarse a cualquiera de los puntos de venta físicos de los distribuidores autorizados seleccionados.</p></li>
+                      <li><p>El participante deberá realizar una compra igual o superior a $120 USD en productos de las marcas Americanino, Chevignon y/o Esprit, en una única factura.</p></li>
+                      <li><p>l participante deberá ingresar a <a target="_blank" href="http://www.comprajuegaygana.com">www.comprajuegaygana.com</a> y dar clic en “Participa ahora”</p></li>
+                      <li><p>El participante deberá llenar el formulario de control con: Ciudad, Tienda, Nombre, Cédula y Número de factura, y deberá aceptar los términos y condiciones del juego.</p></li>
+                      <li><p>Una vez inicie el juego el participante deberá dar clic o presionar el botón de la máquina que aparece en pantalla por 15 segundos de forma rápida y consecutiva con el objetivo de lograr el mayor número de clics.</p></li>
+                      <li><p>Pasados los 15 segundos, saldrá en pantalla el número de clics que logró obtener el participante y el premio asociado a esa puntuación.</p></li>
+                      <li><p>El participante solamente tendrá una (1) oportunidad para jugar y podrá ganar un premio en una partida.</p></li>
+                      <li><p>Los bonos no serán canjeables por dinero en efectivo.</p></li>
+                      <li><p>Los bonos se pueden hacer efectivos en otra compra hasta el 31 de julio de 2022.</p></li>
+                      <li><p>Para redimir el premio es indispensable presentar la factura de compra original y el pantallazo de confirmación del premio obtenido. </p></li>
+                      <li><p>El premio es redimible únicamente en la misma tienda donde se obtuvo.</p></li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <p><b>PLAN DE PREMIOS.</b></p>
+                  <ol>
+                    <li><p><b>Premios: </b>Dependiendo del puntaje obtenido por el jugador, éste ganará uno de los siguientes premios:</p>
+                      <ul>
+                        <li><p>Merchandising de cualquiera de las marcas (sujeto a disponibilidad):</p>
+                          <ul>
+                            <li><p>Marca Chevignon: una cartuchera, una libreta o una lonchera.</p></li>
+                            <li><p>Marca Esprit: un lapicero, un brillo, un pin de corazón, un abanico o una pinza mensaje.</p></li>
+                            <li><p>Marca Americanino: una riñonera o un bolso eco.</p></li>
+                          </ul>
+                        </li>
+                        <li><p>Un bono de $25 USD para redimir en prendas de las Marcas.</p></li>
+                        <li><p>Un bono de $40 USD para redimir en prendas de las Marcas.</p></li>
+                        <li><p>Un bono de $80 USD para redimir en prendas de las Marcas.</p></li>
+                        <li><p>Un bono de $320 USD para redimir en prendas de las Marcas.</p></li>
+                      </ul>
+                    </li>
+                    <li><p><b>Reclamo de los premios:</b> Los premios deben ser reclamados y/o redimidos únicamente en la tienda física donde se realizó la compra. Si el premio es un obsequio de las Marcas, los ganadores podrán reclamar inmediatamente el premio. Los bonos se pueden hacer efectivos en otra compra hasta el 30 de julio de 2022. Para redimir el premio es indispensable presentar la factura de compra original y el pantallazo de confirmación del premio obtenido.</p></li>
+                    <li><p><b>Condiciones del premio:</b> No son redimibles en dinero. Personal e intransferible para el ganador del obsequio. Los obsequios no tienen cambio.</p></li>
+                  </ol>
+              </li>
+              <li><p><b>ACEPTACIÓN DEL REGLAMENTO/EXIMENTES DE RESPONSABILIDAD.</b> El simple hecho de participar en la Actividad implica la total aceptación de los presentes términos y condiciones. En caso de identificarse fraude, las Compañías puede descalificar al (los) participante(s) y/o cancelar la Actividad. Las Compañías presume la buena fe de sus participantes. Las Compañías podrá tomar la decisión de descalificar a alguno de los participantes de esta Actividad en caso de detectar alguna acción fraudulenta, previa motivación de su acto de descalificación. </p></li>
+            </ol>
+          </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button id="btnAceptarEcuadorDesactivado" class="btn btn-secondary text-light p-2 mx-auto">Aceptar</button>
+
+        <form action="/usuarios/loginUsuarios" method="post" >
+           <input type="text" value="ECU" name="pais" hidden>
+           <!--<button id="btnAceptarActivado" class="btn btn-red text-light p-2 mx-auto d-none" onclick="location.href='/usuarios/login/Colombia'">Aceptar</button>-->
+           <button id="btnAceptarEcuadorActivado" class="btn btn-red text-light d-none" type="submit">Aceptar</button>
+        </form>
+
+        <!--<button id="btnAceptarEcuadorActivado" class="btn btn-red text-light p-2 mx-auto d-none" onclick="location.href='/usuarios/login/Ecuador'">Aceptar</button>-->
         
         <!--<button class="btn btn-red text-light p-2 mx-auto" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Aceptar</button>-->
       </div>
     </div>
   </div>
 </div>
+
+
+
 
 
 
@@ -143,7 +286,7 @@
 </div>
 <!--Fin modal ingresar código único-->
 
-<!--Modales Tutorial-->
+<!--Modales Tutorial Colombia-->
 
 <div class="modal fade bg-mania" id="modalTutorial_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalIngresarCodigoUnicoLabel" aria-hidden="true" >
   <div class="modal-dialog modal-lg">
@@ -154,7 +297,7 @@
             <div class="bg-white rounded col-12 col-md-8 px-5 my-md-3 mx-auto">
               <img loading="lazy" src="../assets/Marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2" style="width: 320px;">
               <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_y1oyqgjg.json"  background="transparent"  speed="1"  style="max-width: 300px; min-width: 200px; height: auto; margin-left: auto; margin-right: auto" loop autoplay></lottie-player>
-              <p class="text-center mt-2">Para jugar debes dar de clic en el botón de la máquina.</p>
+              <p class="text-center mt-2">Para jugar debes dar clic en el botón de la máquina.</p>
               <div class="d-grid col-lg-4 col-md-6 col-8 mx-auto mt-4 mb-2">
                 <button class="btn btn-red text-light" onclick="controlaModalesTutorial(1)" type="button"><h6 class="mb-0 p-2">Siguiente</h6></button>
               </div>
@@ -199,7 +342,11 @@
               <p class="text-center mt-2">Cuentas con 15 segundos y solo una oportunidad para ganar hasta $1.000.000 de pesos<br>
               <b>¿Listo para ganar?</b></p>
               <div class="d-grid col-lg-4 col-md-6 col-8 mx-auto mt-4 mb-2">
-                <a class="mx-auto" href="/usuarios/juego"><button class="btn btn-red text-light" type="button"><h6 class="mb-0 p-2">Jugar</h6></button></a>
+                <form action="/usuarios/juego" method="POST">
+                  <input type="text" hidden value="COL" name="pais">
+                  <button class="btn btn-red text-light d-flex mx-auto" type="submit"><h6 class="mb-0 p-2">Jugar</h6></button>
+                  <!--<a class="mx-auto" href="/usuarios/juego"><button class="btn btn-red text-light" type="button"><h6 class="mb-0 p-2">Jugar</h6></button></a>-->
+                </form>
               </div>
             </div>
           </div>
@@ -208,7 +355,77 @@
     </div>
   </div>
 </div>
-<!--Fin Modales Tutorial-->
+<!--Fin Modales Tutorial Colombia-->
+
+<!--Modales Tutorial Ecuador-->
+<div class="modal fade bg-mania" id="modalTutorialEcuador_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalIngresarCodigoUnicoLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container py-0 py-md-3">
+          <div class="row">
+            <div class="bg-white rounded col-12 col-md-8 px-5 my-md-3 mx-auto">
+              <img loading="lazy" src="../assets/Marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2" style="width: 320px;">
+              <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_wnkh7omv.json"  background="transparent"  speed="1"  style="max-width: 300px; min-width: 200px; height: auto; margin-left: auto; margin-right: auto" loop autoplay></lottie-player>
+              <p class="text-center mt-2">Para jugar debes dar clic en el botón de la máquina.</p>
+              <div class="d-grid col-lg-4 col-md-6 col-8 mx-auto mt-4 mb-2">
+                <button class="btn btn-red text-light" onclick="controlaModalesTutorialEcuador(1)" type="button"><h6 class="mb-0 p-2">Siguiente</h6></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bg-mania" id="modalTutorialEcuador_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalIngresarCodigoUnicoLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+         <div class="container py-0 py-md-3">
+          <div class="row">
+            <div class="bg-white rounded col-12 col-md-8 px-5 my-5 my-md-3 mx-auto">
+              <img loading="lazy" src="../assets/Marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2" style="width: 320px;">
+              <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_c6mrprwu.json"  background="transparent"  speed="1"  style="max-width: 300px; min-width: 200px; height: auto; margin-left: auto; margin-right: auto" loop autoplay></lottie-player>
+              <p class="text-center mt-2">Mientras más clics hagas mayor será el premio que obtendrás</p>
+              <div class="d-grid col-lg-4 col-md-6 col-8 mx-auto mt-4 mb-2">
+                <button class="btn btn-red text-light" onclick="controlaModalesTutorialEcuador(2)" type="button"><h6 class="mb-0 p-2">Siguiente</h6></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bg-mania" id="modalTutorialEcuador_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalIngresarCodigoUnicoLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+         <div class="container py-3">
+          <div class="row">
+            <div class="bg-white rounded col-12 col-md-8 px-5 my-md-3 mx-auto">
+              <img loading="lazy" src="../assets/Marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2" style="width: 320px;">
+              <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_cwl05o11.json"  background="transparent"  speed="1"  style="max-width: 300px; min-width: 200px; height: auto; margin-left: auto; margin-right: auto" loop autoplay></lottie-player>
+              <p class="text-center mt-2">Cuentas con 15 segundos y solo una oportunidad para ganar hasta $320 USD<br>
+              <b>¿Listo para ganar?</b></p>
+              <div class="d-grid col-lg-4 col-md-6 col-8 mx-auto mt-4 mb-2">
+                <form action="/usuarios/juego" method="POST">
+                  <input type="text" hidden value="ECU" name="pais">
+                  <button class="btn btn-red text-light d-flex mx-auto" type="submit"><h6 class="mb-0 p-2">Jugar</h6></button>
+                  <!--<a class="mx-auto" href="/usuarios/juego"><button class="btn btn-red text-light" type="button"><h6 class="mb-0 p-2">Jugar</h6></button></a>-->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fin Modales Tutorial Ecuador-->
 
 
 <!--Modal premio redimido-->

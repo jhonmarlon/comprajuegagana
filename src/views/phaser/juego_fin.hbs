@@ -89,6 +89,7 @@
           <p>Puedes redimirlo dando clic en el siguiente botón:</p>
           <div class="d-grid col-lg-6 col-md-8 col-10 mx-auto mt-4 mb-2">
             <form action="redimir_premio" method="POST">
+                <input hidden id="txtPais" name="pais">
                 <input hidden id="txtCiudad" name="ciudad">
                 <input hidden id="txtTienda" name="tienda">
                 <input hidden id="txtNumFactura" name="num_factura">
@@ -98,8 +99,12 @@
             </form>
           </div>
         </div>
-        <div class="legal bg-white rounded col-12 py-3 mt-3 px-5 mx-auto">
-          <p>Vigencia del 25 de abril de 2022 al jueves 30 de junio de 2022. Aplica en tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía (ver <a target="_blank" href="https://www.comprajuegaygana.com/distribuidoresautorizados">Distribuidores autorizados</a>)
+        <div class="legal bg-white rounded col-12 py-3 mt-3 px-5 mx-auto d-none" id="finLegalesCOL">
+          <p>Vigencia del 25 de abril de 2022 al jueves 30 de junio de 2022. Aplica en tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía. Ver: 
+              <form action="/distribuidores_autorizados" method="POST" id="frmDistribuidoresAutorizadosColombia">
+                <input type="text" value="COL" name="pais" hidden>
+                <a href="#" onclick="document.getElementById('frmDistribuidoresAutorizadosColombia').submit()">Distribuidores autorizados</a>
+            </form>
             </p>
           <p><b>REQUISITOS PARA PARTICIPAR.</b></p>
             <ol>
@@ -123,6 +128,37 @@
                 <li><p>Si el jugador adquiere un puntaje superior a 181 clic podrá reclamar un bono de $1.000.000 para redimir en prendas de las Marcas.</p></li>
                 </ul>
                 <p><b>Reclamo de los premios:</b> Los premios deben ser reclamados y/o redimidos únicamente en la tienda física donde se realizó la compra. Si el premio es un obsequio de las Marcas, los ganadores podrán reclamar inmediatamente el premio. Los bonos se pueden hacer efectivos en otra compra hasta el 30 de julio de 2022. Para redimir el premio es indispensable presentar la factura de compra original y el pantallazo de confirmación del premio obtenido.</p>
+                <p><b>Condiciones del premio:</b> No son redimibles en dinero. Personal e intransferible para el ganador del obsequio. Los obsequios no tienen cambio.</p>
+        </div>
+        <div class="legal bg-white rounded col-12 py-3 mt-3 px-5 mx-auto d-none" id="finLegalesECU">
+          <p>Vigencia del 20 de mayo de 2022 al domingo 31 de julio de 2022. Aplica en tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía. Ver:  
+              <form action="/distribuidores_autorizados" method="POST" id="frmDistribuidoresAutorizadosEcuador">
+                <input type="text" value="ECU" name="pais" hidden>
+                <a href="#" onclick="document.getElementById('frmDistribuidoresAutorizadosEcuador').submit()">Distribuidores autorizados</a>
+            </form>
+            </p>
+          <p><b>REQUISITOS PARA PARTICIPAR.</b></p>
+            <ol>
+              <li><p>Ser mayor de edad.</p></li>
+              <li><p>Realizar compras iguales o superiores a $120 USD en productos de las marcas Americanino, Chevignon y/o Esprit en cualquier tienda física de los distribuidores autorizados con exclusividad en la estrategia.</p></li>
+              <li><p>La compra se debe realizar en una única factura.</p></li>
+              <li><p>Vivir en Colombia.</p></li>
+              <li><p>Autorizar el tratamiento de datos personales.</p></li>
+            </ol>
+          <p><b>MECÁNICA DEL CONCURSO.</b></p>
+            <ol>
+              <li><p>El participante deberá realizar una (1) compra igual o superior a $120 USD en productos de las marcas Americanino, Chevignon y/o Esprit, en una única factura, en alguna de las tiendas físicas seleccionadas de los distribuidores autorizados de cada Compañía.</p></li>
+              <li><p>Inmediatamente el participante deberá ingresar al siguiente link: <a target="_blank" href="http://www.comprajuegaygana.com">www.comprajuegaygana.com</a> o escanear a través del celular el código QR ubicado en la tienda que lo llevará a la actividad, la cual consiste en presionar con un dedo el mayor número de veces el botón que aparece en pantalla durante 15 segundos generando los CLIC´S; después de los 15 segundos de presionar el botón, aparecerá en pantalla el número de la factura del cliente, el puntaje obtenido en el juego y el premio adquirido, al cual deberás tomarle un pantallazo para poder reclamarlo.</p></li>
+            </ol>
+              <p>El participante podrá obtener como premio una de las siguientes opciones:</p>
+              <ul>
+                <li><p>Si el jugador adquiere un puntaje entre 0 y 80 clics podrá reclamar Merchandising de cualquiera de las Marcas (sujeto a disponibilidad) el obsequio podrá ser: Marca Chevignon: una cartuchera, una libreta o una lonchera; Marca Esprit: un lapicero, un brillo, un pin de corazón, un abanico o una pinza mensaje; Marca Americanino: una riñonera o un bolso eco.</p></li>
+                <li><p>Si el jugador adquiere un puntaje entre 81 y 100 clics podrá reclamar un bono de $25 USD para redimir en prendas de las Marcas</p></li>
+                <li><p>Si el jugador adquiere un puntaje entre 101 y 150 clics podrá reclamar un bono de $40 USD para redimir en prendas de las Marcas.</p></li>
+                <li><p>Si el jugador adquiere un puntaje entre 151 y 180 clics podrá reclamar un bono de $80 USD para redimir en prendas de las Marcas.</p></li>
+                <li><p>Si el jugador adquiere un puntaje superior a 181 clic podrá reclamar un bono de $320 USD para redimir en prendas de las Marcas.</p></li>
+                </ul>
+                <p><b>Reclamo de los premios:</b> Los premios deben ser reclamados y/o redimidos únicamente en la tienda física donde se realizó la compra. Si el premio es un obsequio de las Marcas, los ganadores podrán reclamar inmediatamente el premio. Los bonos se pueden hacer efectivos en otra compra hasta el 31 de julio de 2022. Para redimir el premio es indispensable presentar la factura de compra original y el pantallazo de confirmación del premio obtenido.</p>
                 <p><b>Condiciones del premio:</b> No son redimibles en dinero. Personal e intransferible para el ganador del obsequio. Los obsequios no tienen cambio.</p>
         </div>
         <img loading="lazy" src="../assets/Marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2" style="width: 320px;">
@@ -151,7 +187,6 @@
         document.querySelector("#ciudad").innerHTML = info.ciudad;
         document.querySelector("#num_factura").innerHTML = info.num_factura;
         document.querySelector("#cant_clic").innerHTML = info.cant_clic;
-
         
 
         //Seteando valores para lo inputs
@@ -160,7 +195,18 @@
         document.querySelector("#txtNumFactura").value = info.num_factura;
         document.querySelector("#txtCedula").value = info.cedula;
         document.querySelector("#txtPremio").value = info.premio;
+        document.querySelector("#txtPais").value = info.pais;
 
+        let pais =  document.querySelector("#txtPais").value;
+
+        document.querySelector("#finLegalesCOL").classList.add("d-none");
+        document.querySelector("#finLegalesECU").classList.add("d-none");
+
+        if(pais == "COL"){
+          document.querySelector("#finLegalesCOL").classList.remove("d-none");
+        }else if(pais == "ECU"){
+          document.querySelector("#finLegalesECU").classList.remove("d-none");
+        }
 
     });
     

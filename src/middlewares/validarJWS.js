@@ -1,12 +1,24 @@
 const jwt = require('jsonwebtoken');
+
 const Usuario = require('../models/usuario');
+const usuarioEcuador = require('../models/usuarioEcuador');
 const Admin = require('../models/admin');
 
 
 isValidUserJWS = async (req, res , next) => {
+
+    //Tomamos el pais de la peticion 
+    let {pais} = req.body;
+
+    if(pais == ""){
+        return res.redirect('/');
+    }
+
+    pais = pais.trim();
+
     //Tomamos la cookie creada al momento del login
     const jwtuser = req.cookies.jwtuser;
-
+    
     if(!jwtuser){
         return res.status(401).json({
             msg: 'No se ha generado ningún token'
@@ -18,9 +30,14 @@ isValidUserJWS = async (req, res , next) => {
         //Obtenemos el userID del payload el token
         const {userID} = jwt.verify(jwtuser, process.env.SECRETORPRIVATEKEY);
 
+        let usuarioAutenticado;
         //Obtenemos la información del usuario autenticado
-        const usuarioAutenticado = await Usuario.findById(userID)
-    
+        if(pais == "COL"){
+            usuarioAutenticado = await Usuario.findById(userID)
+        }else if(pais == "ECU"){
+            usuarioAutenticado = await usuarioEcuador.findById(userID)
+        }
+
         //Validamos si el usuario existe o no
         if(!usuarioAutenticado){
             res.status(401).json({

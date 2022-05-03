@@ -99,6 +99,11 @@ li ol > li:before {
   background-color: #79242F;
 }
 
+.btnFlag{
+  cursor: pointer;
+  width: 95px;
+}
+
 h1{
   font-size: 4em;
   font-weight: 700;

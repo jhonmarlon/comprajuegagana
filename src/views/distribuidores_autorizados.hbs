@@ -12,7 +12,7 @@
                     <a class="nav-link" href="/#Requisitos">Requisitos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/distribuidores_autorizados">Tiendas participantes</a>
+                    <a class="nav-link" href="/COL/distribuidores_autorizados">Tiendas participantes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank"><button class="btn btn-red text-light" type="button" onclick="window.location='usuarios/redimir_premio'">Redimir</button></a>
@@ -21,6 +21,8 @@
             </div>
             </div>
         </nav>
+        
+        <input hidden type="text" id="pais" value="{{pais}}">
 
         <div class="container">
             <div class="row">
@@ -37,14 +39,18 @@
                             </thead>
                         </table>
                     <div class="d-grid col-lg-4 col-md-6 col-8 mx-auto mt-4 mb-2">
-                    <button class="btn btn-red text-light" type="button"><h6 class="mb-0 p-2" onclick="window.location='usuarios/terminos_condiciones'">Participa aquí</h6></button>
+                        <div id="divParticipaCOL" class="d-none">
+                            <button class="btn btn-red text-light d-flex mx-auto" type="button"><h6 class="mb-0 p-2" onclick="window.location='usuarios/terminos_condiciones_CO'">Participa aquí</h6></button>
+                        </div>
+                         <div id="divParticipaECU" class="d-none">
+                            <button class="btn btn-red text-light d-flex mx-auto" type="button"><h6 class="mb-0 p-2" onclick="window.location='usuarios/terminos_condiciones_ECU'">Participa aquí</h6></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/jquery.dataTables.min.js" defer></script>
 <script src="./js/dataTables.bootstrap4.min.js" defer></script>
@@ -59,16 +65,40 @@
 
     function cargaProveedores(tabla){
         //CARGANDO ARCHIVO JSON DE CADA TIENDA
-        $.getJSON('./stores/stores.json', function (data) {
-            $.each(data, function(key, value){
-                //CREANDO FILAS EN EL DATATABLE
-                tabla.row.add( [
-                value.nombre_cliente,
-                value.ciudad,
-                ] ).draw( false );
-            });
+        let pais = document.querySelector("#pais").value;
 
-        });
+        let divParticipaCOL = document.querySelector("#divParticipaCOL");
+        let divParticipaECU = document.querySelector("#divParticipaECU");
+
+        divParticipaCOL.classList.add('d-none');
+        divParticipaECU.classList.add('d-none');
+
+        if(pais == "COL"){
+            divParticipaCOL.classList.remove('d-none');
+            $.getJSON('./stores/stores.json', function (data) {
+                $.each(data, function(key, value){
+                    //CREANDO FILAS EN EL DATATABLE
+                    tabla.row.add( [
+                    value.nombre_cliente,
+                    value.ciudad,
+                    ] ).draw( false );
+                });
+
+            });
+        }else if(pais == "ECU"){
+            divParticipaECU.classList.remove("d-none");
+            $.getJSON('./stores/stores_ecuador.json', function (data) {
+                $.each(data, function(key, value){
+                    //CREANDO FILAS EN EL DATATABLE
+                    tabla.row.add( [
+                    value.nombre_cliente,
+                    value.ciudad,
+                    ] ).draw( false );
+                });
+
+            });
+        }
+     
     }
  
 </script>

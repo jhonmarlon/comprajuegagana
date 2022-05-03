@@ -1,4 +1,6 @@
 const Usuario = require('../models/usuario');
+const UsuarioEcuador = require('../models/usuarioEcuador');
+
 
 const {generarJWT} = require('../helpers/generarJWT');
 
@@ -6,30 +8,47 @@ const {generarJWT} = require('../helpers/generarJWT');
 //import randomCode from '../helpers/helpers.js';
 const helpers = require('../helpers/helpersGenerales');
 
-const loginUsuarioGet = (req , res) =>{
-  res.render('usuarios_login')
-}
+/*const loginUsuarioGet = (req , res) =>{
+
+  const {pais} = req.body;
+
+  res.render('usuarios_login', pais)
+}*/
 
 
 const redimirPremioGet = (req, res) => {
-    res.render('redimir_premio_1')
+    let {pais} = req.body;
+
+    if(pais == ""){
+        return res.redirect('/');
+    }
+
+    pais=pais.trim();
+
+    res.render('redimir_premio_1', {pais})
 }
 
 const redimirPremioPost = async (req, res) => {
 
     const errors = [];
 
-    let {ciudad , tienda, num_factura, cedula, premio } = req.body;
+    let {ciudad , tienda, num_factura, cedula, premio, pais } = req.body;
 
     if(ciudad == 0 || tienda == 0 || num_factura == "" || cedula == "" || premio == ""){
         errors.push({text: "Todos los campos son de carácter obligatorio"});
     
         res.render('redimir_premio_1', {
-            errors,
+            errors, pais
         })
 
         return;
     }
+
+    if(pais == ""){
+        return res.redirect('/');
+    }
+
+    pais=pais.trim();
 
     ciudad= ciudad.trim();
     tienda= tienda.trim();
@@ -37,13 +56,19 @@ const redimirPremioPost = async (req, res) => {
     cedula= cedula.trim();
     
     //Buscamos al usuario 
-    let usuarioEncontrado = await Usuario.findOne({cedula: cedula, num_factura: num_factura, ciudad: ciudad, tienda: tienda});
+    let usuarioEncontrado 
+    
+    if(pais == "COL"){
+        usuarioEncontrado  = await Usuario.findOne({cedula: cedula, num_factura: num_factura, ciudad: ciudad, tienda: tienda});
+    }else if(pais == "ECU"){
+        usuarioEncontrado  = await UsuarioEcuador.findOne({cedula: cedula, num_factura: num_factura, ciudad: ciudad, tienda: tienda});
+    }
 
     //Si el usuario no existe en la base de datos
     if(!usuarioEncontrado){
         errors.push({text: "El registro que intenta buscar no existe en la base de datos"});
         res.render('redimir_premio_1', {
-            errors,
+            errors, pais
         })
         return;
     }
@@ -61,7 +86,7 @@ const redimirPremioPost = async (req, res) => {
     }
 
     //Si se encuentra el usuario renderizamos 
-    res.render('redimir_premio_cod', {usuarioEncontrado});
+    res.render('redimir_premio_cod', {usuarioEncontrado, pais});
 }
 
 
@@ -71,7 +96,7 @@ const redimirPremioPost_1_1 = async (req, res) => {
     const errors = [];
     const successMessages = [];
 
-    const {ciudad, tienda, num_factura, cedula, premio,codigo_redencion} = req.body;
+    let {ciudad, tienda, num_factura, cedula, premio,codigo_redencion, pais} = req.body;
 
     const usuarioEncontrado = {
         ciudad: ciudad.trim(),
@@ -84,31 +109,47 @@ const redimirPremioPost_1_1 = async (req, res) => {
     //console.log('este es el nuevo usuario a redimir')
     //console.log(usuarioEncontrado)
 
+    if(pais == ""){
+        return res.redirect('/');
+    }
+
+    pais=pais.trim();
+
     //Si el codigo de rerdención esta vacío
     if(codigo_redencion == ""){
         errors.push({text: "Debe diligenciar el código de redención"});
     
         res.render('redimir_premio_cod', {
-            errors, usuarioEncontrado
+            errors, usuarioEncontrado, pais
         })
         return;
     }else if(codigo_redencion != "bonomania2022"){
         errors.push({text: "El código de redención no es correcto"});
  
         res.render('redimir_premio_cod', {
-            errors, usuarioEncontrado
+            errors, usuarioEncontrado, pais
         })
 
         return;
     }
 
+    let redimido;
     //Validamos que el registro no este previamente redimido
-    const redimido = await Usuario.findOne({
-        ciudad: usuarioEncontrado.ciudad,
-        tienda: usuarioEncontrado.tienda,
-        num_factura: usuarioEncontrado.num_factura,
-        cedula: usuarioEncontrado.cedula
-    });
+    if(pais == "COL"){
+         redimido = await Usuario.findOne({
+            ciudad: usuarioEncontrado.ciudad,
+            tienda: usuarioEncontrado.tienda,
+            num_factura: usuarioEncontrado.num_factura,
+            cedula: usuarioEncontrado.cedula
+        });
+    }else if(pais == "ECU"){
+         redimido = await UsuarioEcuador.findOne({
+            ciudad: usuarioEncontrado.ciudad,
+            tienda: usuarioEncontrado.tienda,
+            num_factura: usuarioEncontrado.num_factura,
+            cedula: usuarioEncontrado.cedula
+        });
+    }
 
     //console.log('este esera el que se redimira')
     //console.log(redimido)
@@ -160,21 +201,26 @@ const loginUsuarioPost = async (req , res) =>{
     const errors = [];
 
     //recibimos los datos del body
-    let {cedula,nombre,num_factura,ciudad,tienda = ''} = req.body;
+    let {cedula,nombre,num_factura,ciudad,tienda = '', pais} = req.body;
 
     cedula = cedula.trim();
     nombre = nombre.trim();
     num_factura = num_factura.trim();
     ciudad = ciudad.trim();
     tienda = tienda.trim();
+    pais = pais.trim();
 
     //validamos que esten todos los datos
     if(cedula == "" || nombre == "" || num_factura == "" || ciudad == 0 || tienda == 0){
         errors.push({text: "Todos los campos son de carácter obligatorio"});
     
         return res.render('usuarios_login', {
-            errors,
+            errors, pais
         })
+    }
+
+    if(pais == ""){
+        return res.redirect('/');
     }
 
     const data = {
@@ -182,26 +228,44 @@ const loginUsuarioPost = async (req , res) =>{
         nombre,
         num_factura,
         ciudad,
-        tienda
+        tienda, 
     }
 
-    //validamos que el numero de factura exista en la bd
-    const usuarioExiste = await Usuario.findOne({num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
+    let usuarioExiste;
+    //validamos que el numero de factura exista en la bd segun el pais
+    if(pais == "COL"){
+         usuarioExiste = await Usuario.findOne({num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
+    }else if(pais == "ECU"){
+        usuarioExiste = await UsuarioEcuador.findOne({num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
+    }
 
     //Si no existe , se crea
     if(!usuarioExiste){
 
         const codigoUnicoUser = "USR-" + helpers.randomCode();
 
-        const usuario = new Usuario({
-            cedula: data.cedula,
-            nombre: data.nombre,
-            num_factura: data.num_factura,
-            ciudad: data.ciudad, 
-            tienda: data.tienda,
-            codigo_cliente: codigoUnicoUser
-        })
 
+        let usuario;
+        //Creamos el usuario con el modelo correspondiente al pais
+        if(pais == "COL"){
+             usuario = new Usuario({
+                cedula: data.cedula,
+                nombre: data.nombre,
+                num_factura: data.num_factura,
+                ciudad: data.ciudad, 
+                tienda: data.tienda,
+                codigo_cliente: codigoUnicoUser
+            })
+        }else if(pais == "ECU"){
+             usuario = new UsuarioEcuador({
+                cedula: data.cedula,
+                nombre: data.nombre,
+                num_factura: data.num_factura,
+                ciudad: data.ciudad, 
+                tienda: data.tienda,
+                codigo_cliente: codigoUnicoUser
+            })
+        }
     
         const usuarioAutenticado = await usuario.save();
 
@@ -218,8 +282,16 @@ const loginUsuarioPost = async (req , res) =>{
         res.cookie('jwtuser', token, cookiesOptions);
 
         //Abrimos las vistas de tutorial
-        res.render('phaser/juego_tutorial', {usuarioAutenticado});
 
+        if(pais == "COL"){
+            //Tutorial colombia
+            res.render('phaser/juego_tutorial', {usuarioAutenticado});
+        }else if(pais == "ECU"){
+            //Tutorial ecuador
+            res.render('phaser/juego_tutorial_ecuador', {usuarioAutenticado});
+        }
+     
+   
         //console.log('Usuario autenticado desde login: '+usuarioAutenticado);
         //res.render('phaser/juego', {usuarioAutenticado});
     }else{
@@ -244,32 +316,58 @@ const loginUsuarioPost = async (req , res) =>{
 
             //console.log('Usuario autenticado desde login: '+usuarioAutenticado);
 
-            //Abrimos las vistas de tutorial
-            res.render('phaser/juego_tutorial', {usuarioAutenticado});
-
+            if(pais == "COL"){
+                //Abrimos las vistas de tutorial colombia
+                res.render('phaser/juego_tutorial', {usuarioAutenticado});
+            }else if(pais == "ECU"){
+                //Abrimos las vistas de tutorial ecuador
+                res.render('phaser/juego_tutorial_ecuador', {usuarioAutenticado});
+            }
+          
             //Entra   
             //res.render('./phaser/juego', {usuarioAutenticado});
 
         }else{
             errors.push({text: `La factura número ${usuarioExiste.num_factura} de la tienda ${usuarioExiste.tienda}, ya participó`});
             res.render('usuarios_login', {
-                errors,
+                errors, pais
             })
         }
     }   
 }
 
-//Renderiza la vista de términos y condiciones
-const terminosCondiciones= (req, res) =>{
+//Renderiza la vista de términos y condiciones Colombia
+const terminosCondicionesColombia= (req, res) =>{
     res.render('terminos_condiciones')
 }
 
+const terminosCondicionesEcuador= (req, res) =>{
+    res.render('terminos_condiciones_ecuador')
+}
+
+
 //Renderiza la vista principal del juego
 const gameGet = (req, res) => {
+    let {pais} = req.body;
+
+    if(pais == ""){
+        return res.redirect('/');
+    }
+
+    pais = pais.trim();
+
+    //Recogemos el usuario autenticado que se envio mediante el req dentro del middleware validarJWT 
     const usuarioAutenticado = req.usuarioAutenticado;
     //console.log('Usuario autenticado desde ruta: '+usuarioAutenticado)
-    //Recogemos el usauarioAutenticado que se envio mediante el req dentro del middleware validarJWT 
-    res.render('./phaser/juego', {usuarioAutenticado});
+    
+    if(pais == "COL"){
+        //--colombia
+        res.render('./phaser/juego', {usuarioAutenticado});
+    }else if(pais == "ECU"){
+        //--ecuador
+        res.render('./phaser/juego-ecuador', {usuarioAutenticado});
+    }
+
 }
 
 
@@ -288,9 +386,17 @@ const gameEnd = (req, res) => {
 const actualizaDatosFinJuego = async (req, res) => {
      //console.log(req.body);
 
-     const{id, ...resto} = req.body;
+     let{id,pais, ...resto} = req.body;
 
-     const usuarioActualizado = await Usuario.findByIdAndUpdate(id, resto); 
+     pais = pais.trim();
+    
+     let usuarioActualizado;
+     if(pais == "ECU"){
+         usuarioActualizado = await UsuarioEcuador.findByIdAndUpdate(id, resto); 
+     }else if(pais == "COL"){
+         usuarioActualizado = await Usuario.findByIdAndUpdate(id, resto); 
+     }
+
      
      if(usuarioActualizado){
         res.json({
@@ -304,14 +410,29 @@ const actualizaDatosFinJuego = async (req, res) => {
 }
 
 
+
+
+
+
+const loginUsuarioPostActual = (req, res) => {
+    const {pais} = req.body;
+    res.render('usuarios_login', {pais})
+}
+
+
 module.exports = {
-    loginUsuarioGet,
-    terminosCondiciones,
+    //loginUsuarioGet,
+    terminosCondicionesColombia,
+    terminosCondicionesEcuador,
     loginUsuarioPost,
     gameGet,
     redimirPremioGet,
     redimirPremioPost,
     redimirPremioPost_1_1,
     actualizaDatosFinJuego,
-    gameEnd
+    gameEnd,
+
+
+
+    loginUsuarioPostActual
 }

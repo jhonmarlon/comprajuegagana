@@ -46,6 +46,7 @@
             <img loading="lazy" src="../assets/logo-bonomania.png" alt="Bono manía" class="img-fluid mx-auto d-block mt-2">
             <p class="text-center mt-2">Ingrese la siguiente información</p>
             <form action="login" method="POST">
+                <input type="text" hidden value="{{pais}}" name="pais" id="pais">
                 <div class="form-floating mb-3">
                     <select name="ciudad" style="width:100%;" id="selectCiudad"  class="form-control mb-3" onchange="cargaTiendas()">
                         <option value="0" selected disabled>Ciudad</option>
@@ -98,10 +99,20 @@
 
         let ciudades = new Array();
 
+        let pais = document.querySelector("#pais").value;
+        let rutaJSON = "";
+
         let selectCiudades = document.querySelector('#selectCiudad');
         selectCiudades.innerHTML = "";
 
-        fetch("../../stores/stores.json")
+
+        if(pais == "COL"){
+            rutaJSON = "stores.json"
+        }else if(pais == "ECU"){
+            rutaJSON = "stores_ecuador.json"
+        }
+
+        fetch("../../stores/"+rutaJSON)
         .then(response => response.json())
         .then(json => {
             for(let registro in json){
@@ -151,7 +162,16 @@
         let tiendasPorCiudad = new Array();
         let selectTiendas = document.querySelector('#selectTienda');
 
-         fetch("../../stores/stores.json")
+        let pais = document.querySelector("#pais").value;
+        let rutaJSON = "";
+
+        if(pais == "COL"){
+            rutaJSON = "stores.json"
+        }else if(pais == "ECU"){
+            rutaJSON = "stores_ecuador.json"
+        }
+
+         fetch("../../stores/"+rutaJSON)
             .then(response => response.json())
             .then(json => {
                 for(let registro in json){

@@ -135,6 +135,24 @@ function actualizaDatosFinalizaJuego(datos) {
 } 
 
 
+const controlaModalesTutorialEcuador = (numModal) => {
+    
+    switch(numModal){
+        case 1: 
+            $('#modalTutorialEcuador_1').modal('hide');
+            $('#modalTutorialEcuador_3').modal('hide');
+            $('#modalTutorialEcuador_2').modal('show');
+            break;
+           
+        case 2:
+            $('#modalTutorialEcuador_1').modal('hide');
+            $('#modalTutorialEcuador_2').modal('hide');
+            $('#modalTutorialEcuador_3').modal('show');
+            break;
+    }
+}
+
+
 const controlaModalesTutorial = (numModal) => {
     
     switch(numModal){

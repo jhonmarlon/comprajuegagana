@@ -1,0 +1,16 @@
+
+<script>
+     //Se ejecuta una vez carga la página
+     window.addEventListener('DOMContentLoaded', function () {
+          $("#modalTermCondiEcuador_1").modal("show");
+
+          //ACTIVANDO BOTON CUANDO EL SCROLL DE TERMINOS Y CONDICIONES ESTE EN EL FINAL
+          let el = document.getElementById('termsConditionsEcuadorDiv');
+          el.addEventListener('scroll', function (e) {
+               if (el.offsetHeight + el.scrollTop >= el.scrollHeight) {
+                    document.querySelector("#btnAceptarEcuadorDesactivado").classList.add("d-none");
+                    document.querySelector("#btnAceptarEcuadorActivado").classList.remove("d-none");
+               }
+          });
+     })
+</script>

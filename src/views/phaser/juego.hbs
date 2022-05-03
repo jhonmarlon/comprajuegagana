@@ -632,7 +632,7 @@
                 }else{
 
                     if((clickDinamico-1) >= 10){
-                        console.log('mayor a 10')
+                        //console.log('mayor a 10')
                          textCantClicks.x=729; 
                     } 
                     if((clickDinamico-1) >= 100){
@@ -694,6 +694,7 @@
 
         //Función que muestra premio
         function mostrarPremio() {
+
             //console.log('Porcentaje alcanzado: ',porcentajeDinamico);
             let id = document.querySelector('#id').value;
             let cedula = document.querySelector('#cedula').value;
@@ -729,7 +730,8 @@
                 fecha: currentDate,
                 cant_clic: clickDinamico-1,
                 premio: premioFinal, 
-                juega: 1
+                juega: 1,
+                pais: 'COL'
             }
 
             //Actualizamos los datos en la BD

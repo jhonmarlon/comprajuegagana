@@ -7,6 +7,7 @@
          <img loading="lazy" src="../assets/logo-bonomania.png" alt="Bono manía" class="img-fluid mx-auto d-block mt-2">
           <p class="text-center my-3">Ingrese la siguiente información del premio que desea redimir</p>
             <form action="redimir_premio" method="POST">
+                <input type="text" hidden value="{{pais}}" name="pais" id="pais">
                 <div class="form-floating mb-3">
                     <select name="ciudad" id="selectCiudad" style="width:100%;" class="form-control mb-3" onchange="cargaTiendas()">
                         <option value="0" selected disabled>Ciudad</option>
@@ -49,7 +50,6 @@
 
 
 
-
 <script>
 
     document.addEventListener("DOMContentLoaded", function(event) {
@@ -60,10 +60,20 @@
 
         let ciudades = new Array();
 
+        let pais = document.querySelector("#pais").value;
+        let rutaJSON = "";
+
         let selectCiudades = document.querySelector('#selectCiudad');
         selectCiudades.innerHTML = "";
 
-        fetch("../../stores/stores.json")
+
+        if(pais == "COL"){
+            rutaJSON = "stores.json"
+        }else if(pais == "ECU"){
+            rutaJSON = "stores_ecuador.json"
+        }
+
+        fetch("../../stores/"+rutaJSON)
         .then(response => response.json())
         .then(json => {
             for(let registro in json){
@@ -113,26 +123,34 @@
         let tiendasPorCiudad = new Array();
         let selectTiendas = document.querySelector('#selectTienda');
 
-         fetch("../../stores/stores.json")
-        .then(response => response.json())
-        .then(json => {
-            for(let registro in json){
-                if(json[registro].ciudad === valorCiudad){
-                    tiendasPorCiudad.push(json[registro].nombre_cliente);
+        let pais = document.querySelector("#pais").value;
+        let rutaJSON = "";
+
+        if(pais == "COL"){
+            rutaJSON = "stores.json"
+        }else if(pais == "ECU"){
+            rutaJSON = "stores_ecuador.json"
+        }
+
+         fetch("../../stores/"+rutaJSON)
+            .then(response => response.json())
+            .then(json => {
+                for(let registro in json){
+                    if(json[registro].ciudad === valorCiudad){
+                        tiendasPorCiudad.push(json[registro].nombre_cliente);
+                    }
                 }
-            }
-            tiendasPorCiudad = tiendasPorCiudad.sort();
+                tiendasPorCiudad = tiendasPorCiudad.sort();
 
-            //Cargamos las tiendas en el Select
-            selectTiendas.innerHTML = "<option value='0' select disable>Tienda</option>";
-            let htmlSelect = selectTiendas.innerHTML;
+                //Cargamos las tiendas en el Select
+                selectTiendas.innerHTML = "<option value='0' select disable>Tienda</option>";
+                let htmlSelect = selectTiendas.innerHTML;
 
-            for(let tienda in tiendasPorCiudad){
-                htmlSelect += `<option value='${tiendasPorCiudad[tienda]}'>${tiendasPorCiudad[tienda]}</option>`
-            }
-            
-            selectTiendas.innerHTML = htmlSelect;
-        });
-
+                for(let tienda in tiendasPorCiudad){
+                    htmlSelect += `<option value='${tiendasPorCiudad[tienda]}'>${tiendasPorCiudad[tienda]}</option>`
+                }
+                
+                selectTiendas.innerHTML = htmlSelect;
+            });
     }
 </script>

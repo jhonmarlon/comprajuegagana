@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body id="body">
+    <input type="text" hidden id="id" name="id" value="{{usuarioAutenticado._id}}"></input>
+    <input type="text" hidden id="cedula" name="cedula" value="{{usuarioAutenticado.cedula}}"></input>
+    <input type="text" hidden id="num_factura" name="num_factura" value="{{usuarioAutenticado.num_factura}}"></input>
+    <input type="text" hidden id="ciudad" name="ciudad" value="{{usuarioAutenticado.ciudad}}"></input>
+    <input type="text" hidden id="tienda" name="tienda" value="{{usuarioAutenticado.tienda}}"></input>
+
+    <!--<script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>-->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.52.0/dist/phaser.js"></script>
+    <script type="text/javascript">
+
+        window.onload = function(){
+            // pure javascript to give focus to the page/frame and scale the game
+            window.focus()
+            resize();
+            window.addEventListener("resize", resize, false);
+        }
+
+        let longitudDinamica = 0;
+        let longitudTotal = 135;
+        let porcentajeDinamico;
+        let progressBar;
+        let stopDecrementa = false;
+
+        let colorBarra = "";
+
+        let clickDinamico = 0;
+        let premios = 5;
+        let premiosArray = ['Merchandising','$25 USD','$40 USD','$80 USD','$320 USD'];
+        let premioFinal = "";
+        let fragmentoLlenarClick = 0;
+
+        //Clicks totales por fagmento
+        let clicksTotales1 = 81;
+        let clicksTotales2 = 20;
+        let clicksTotales3 = 50;
+        let clicksTotales4 = 30;
+
+        //Longitud totak por fragmento
+        let longitudTotaPorFragmento = longitudTotal/premios;
+
+        //Porcentaje a llenar por click en fragmento
+        let porcentajeClick1= 100/clicksTotales1;
+        let porcentajeClick2= 100/clicksTotales2;
+        let porcentajeClick3= 100/clicksTotales3;
+        let porcentajeClick4= 100/clicksTotales4;
+
+        //Posiciones barra
+        //let posicionXBarra = 600;
+        //let posicionYBarra = 600;
+
+        let pantallaDesktop = true;
+
+
+        // The game config that is used by Phaser
+        var config = {
+            type: Phaser.CANVAS,
+            parent: 'phaser-example',
+            width: 1000,
+            height: 600,
+            scale: {
+                // Fit to window
+                mode: Phaser.Scale.FIT,
+                // Center vertically and horizontally
+                autoCenter: Phaser.Scale.CENTER_BOTH
+            },
+            scene: {
+                preload: preload,
+                create: create,
+                update: update
+            }
+        };
+        // Create a new Phaser Game object
+        var game = new Phaser.Game(config);
+
+ 
+
+
+        function preload() {
+
+            let body = document.querySelector("#body");
+            body.style.backgroundColor = 'black';
+
+            //CARGANDO PROGRESS BAR O BARRA DE PROGRESO
+            var progressBarLoading = this.add.graphics();
+            var progressBoxLoading = this.add.graphics();
+            progressBoxLoading.fillStyle(0x222222, 0.8);
+         
+                        
+            this.load.on('fileprogress', function (file) {
+                //console.log(file.src);
+            });
+            //UNA VEZ SE COMPLETE LA CARGA DE TODOS LOS COMPONENTES DEL JUEGO, SE DESTRUYE NUESTRA BARRA DE PROGRESO
+            this.load.on('complete', function () {
+                //console.log('complete');
+                progressBarLoading.destroy();
+                progressBoxLoading.destroy();
+                loadingText.destroy();
+                percentText.destroy();
+            });
+
+            //--------Cargando animaciones -------
+            this.load.atlas('timer', '../sprites/timer/timer.png', '../sprites/timer/timer_atlas.json');
+            this.load.animation('timerAnim', '../sprites/timer/timer_anim.json');
+
+            this.load.atlas('buttonstart', '../sprites/buttonStart/buttonstart.png', '../sprites/buttonStart/buttonstart_atlas.json');
+            //this.load.animation('buttonstartAnim', '../sprites/buttonStart/buttonstart_anim.json');
+
+            /*for(let i=0; i <= 4; i++ ){
+                if(i == 0){
+                    this.load.atlas('cash', '../sprites/cash/cash.png', '../sprites/cash/cash_atlas.json');
+                    this.load.animation('cashAnim', '../sprites/cash/cash_anim.json');
+                }
+                 this.load.atlas('cash'+i, '../sprites/cash/cash'+i+'.png', '../sprites/cash/cash'+i+'_atlas.json');
+                 this.load.animation('cash'+i+'Anim', '../sprites/cash/cash'+i+'_anim.json');
+            }*/
+           
+            this.load.atlas('cash', '../sprites/cash/cash.png', '../sprites/cash/cash_atlas.json');
+            this.load.animation('cashAnim', '../sprites/cash/cash_anim.json');
+
+            this.load.atlas('cash1', '../sprites/cash/cash1.png', '../sprites/cash/cash1_atlas.json');
+            this.load.animation('cash1Anim', '../sprites/cash/cash1_anim.json');
+
+            this.load.atlas('cash2', '../sprites/cash/cash2.png', '../sprites/cash/cash2_atlas.json');
+            this.load.animation('cash2Anim', '../sprites/cash/cash2_anim.json');
+
+            this.load.atlas('cash3', '../sprites/cash/cash3.png', '../sprites/cash/cash3_atlas.json');
+            this.load.animation('cash3Anim', '../sprites/cash/cash3_anim.json');
+
+            this.load.atlas('ticket', '../sprites/ticket/ticket.png', '../sprites/ticket/ticket_atlas.json');
+            //this.load.animation('ticketAnim', '../sprites/ticket/ticket_anim.json');
+
+            //Cargando audios
+            this.load.audio('musica-juego', '../audio/Tema-Juego.mp3');
+            this.load.audio('sonido-clic', '../audio/Boton01.mp3');
+            this.load.audio('sonido-publico', '../audio/PublicoAmbiente.mp3');
+
+            //this.load.audio('sonido-ruleta', '../audio/Roulette_1.mp3');
+            //this.load.audio('sonido-palanca-ruleta', '../audio/Lever.mp3');
+            //this.load.audio('sonido-aplausos', '../audio/Cheers.mp3');
+            
+            //Cargando máquina 
+            this.load.image('maquina-bonomania', '../assets/maquina-bonomania.png');
+
+            //Cargando logos 
+            this.load.image('logos', '../assets/Logos.png');
+
+            //Botones
+            this.load.image('btnStart', '../assets/boton.png');
+            //this.load.image('clicked', '../assets/boton.png');
+            this.load.image('btnFinal', '../assets/boton.png');
+            
+            //Botones de premios inactivos
+            this.load.image('btnMerchandising', '../assets-ecuador/merchandising inactivo.png');
+            this.load.image('btnVeinticinco', '../assets-ecuador/25usd inactivo.png')
+            this.load.image('btnCuarenta', '../assets-ecuador/40usd inactivo.png');
+            this.load.image('btnOchenta', '../assets-ecuador/80usd inactivo.png')
+            this.load.image('btnTrescientosveinte', '../assets-ecuador/320usd inactivo.png')
+            
+            //Botones de premios activos
+            this.load.image('btnMerchandisingActivo', '../assets-ecuador/merchandising activo.png');
+            this.load.image('btnVeinticincoActivo', '../assets-ecuador/25usd activo.png')
+            this.load.image('btnCuarentaActivo', '../assets-ecuador/40usd activo.png');
+            this.load.image('btnOchentaActivo', '../assets-ecuador/80usd activo.png')
+            this.load.image('btnTrescientosveinteActivo', '../assets-ecuador/320usd activo.png')
+
+            if (this.sys.game.device.os.desktop) {
+
+                //progressBoxLoading.fillRect(240, 270, 320, 50);
+                progressBoxLoading.fillRect(320, 270, 320, 50);
+                            
+                //texto "cargando..."
+                var width = this.cameras.main.width;
+                var height = this.cameras.main.height;
+                var loadingText = this.make.text({
+                    x: 10,
+                    y: 330,
+                    text: 'Cargando...',
+                    style: {
+                        font: '20px monospace',
+                        fill: '#ffffff'
+                    }
+                });
+                loadingText.setOrigin(-3.3, 5);
+
+
+                //Texto de porcentaje
+                var percentText = this.make.text({
+                    x: 465,
+                    y: 286,
+                    text: '0%',
+                    style: {
+                        font: '18px monospace',
+                        fill: '#ffffff',
+                    }
+                });
+
+                //CARGANDO PROGRESS EVENT, QUE ACTUALIZA EL PROGRES BAR CADA VEZ QUE SE VA CARGANDO EL CONTENIDO DEL JUEGO
+                this.load.on('progress', function (value) {
+                    //console.log(value);
+                    percentText.setText(parseInt(value * 100) + '%');
+                    progressBarLoading.clear();
+                    progressBarLoading.fillStyle(0xffffff, 1);
+                    //progressBarLoading.fillRect(250, 280, 300 * value, 30);
+                    progressBarLoading.fillRect(330, 280, 300 * value, 30);
+                });
+
+
+                //Cargando background para desktop
+                this.load.image('background', '../assets/fondo-game.png');
+
+            }else{
+
+                //progressBox.fillRect(240, 270, 320, 50);
+                progressBoxLoading.fillRect(320, 270, 320, 50);
+
+                //texto "cargando..."
+                var width = this.cameras.main.width;
+                var height = this.cameras.main.height;
+                var loadingText = this.make.text({
+                    x: 820,
+                    y: 330,
+                    text: 'Cargando...',
+                    style: {
+                        font: '20px monospace',
+                        fill: '#ffffff'
+                    }
+                });
+                loadingText.setOrigin(3.2, 5);
+
+                //Texto de porcentaje
+                var percentText = this.make.text({
+                    x: 470,
+                    y: 286,
+                    text: '0%',
+                    style: {
+                        font: '18px monospace',
+                        fill: '#ffffff',
+                    }
+                });
+
+                //CARGANDO PROGRESS EVENT, QUE ACTUALIZA EL PROGRES BAR CADA VEZ QUE SE VA CARGANDO EL CONTENIDO DEL JUEGO
+                this.load.on('progress', function (value) {
+                    //console.log(value+" en cel");
+                    percentText.setText(parseInt(value * 100) + '%');
+                    progressBarLoading.clear();
+                    progressBarLoading.fillStyle(0xffffff, 1);
+                    progressBarLoading.fillRect(330, 280, 300 * value, 30);
+                });
+
+
+                //Cargando background para Mobile
+                this.load.image('background-mobile', '../assets/fondo-game-mobile.png');
+                pantallaDesktop = false;
+            }
+
+            //Barra dinamica
+            progressBar = this.add.graphics();
+            progressBar.setDepth(1);
+
+        }
+
+        function create() {
+            
+            let body = document.querySelector("#body");
+            body.style.backgroundColor = '#dadada';
+
+            //Cargando en variable y reproduciendo musica del juego
+            musica_juego = this.sound.add("musica-juego");
+            sonido_clic = this.sound.add("sonido-clic");
+            sonido_publico = this.sound.add("sonido-publico", { loop: true });
+            
+            //Validando desktop o mobile
+            if (this.sys.game.device.os.desktop) {
+                //----------------------------Ajustes Create para Desktop------------------------------->
+
+                //Ajustando tamaño para desktop
+                this.sys.game.scale.setGameSize(1515,733);
+
+                //Background para desktop
+                this.add.image(950, 500, 'background');
+
+                //-------Creando animaciones---------->
+
+                //Animación para el timer con atlas y anims
+                timer = this.add.sprite(1325,85, 'timer').setScale(0.6);
+                
+                //Animación para el boton de jugabilidad - Solo con atlas
+                buttonStart = this.add.sprite(745,505, 'buttonstart').setScale(0.7);
+                buttonStart.visible = false;
+                buttonStart.setDepth(1);
+
+                this.anims.create({
+                    key: 'buttonStart_anim', 
+                    frames: this.anims.generateFrameNames('buttonstart', {
+                        prefix: 'boton_',
+                        start: 0,
+                        end: 6
+                    }),
+                    repeat: 0,
+                    hideOnComplete: false
+                })
+
+
+                //--Animación para el cash con atlas y anims-->
+                cash = this.add.sprite(600,300, 'cash').setScale(0.5);
+                cash.anims.play('cash_anim');
+                this.add.tween({
+                    targets: [cash],
+                    y: 200,
+                    x:400,
+                    loop: -1
+                });
+
+                cash1 = this.add.sprite(600,400, 'cash1').setScale(0.5);
+                cash1.anims.play('cash1_anim');
+                this.add.tween({
+                    targets: [cash1],
+                    y: 400,
+                    x: 400,
+                    loop: -1
+                });
+
+                cash2 = this.add.sprite(600,500, 'cash2').setScale(0.5);
+                cash2.anims.play('cash2_anim');
+                this.add.tween({
+                    targets: [cash2],
+                    y: 600,
+                    x: 400,
+                    loop: -1
+                });
+
+                cash3 = this.add.sprite(900,300, 'cash2').setScale(0.5);
+                cash3.anims.play('cash2_anim');
+                this.add.tween({
+                    targets: [cash3],
+                    y: 250,
+                    x: 1100,
+                    loop: -1
+                });
+
+                cash4 = this.add.sprite(900,400, 'cash3').setScale(0.5);
+                cash4.anims.play('cash3_anim');
+                this.add.tween({
+                    targets: [cash4],
+                    y: 400,
+                    x: 1100,
+                    loop: -1
+                });
+
+                cash5 = this.add.sprite(900,500, 'cash1').setScale(0.5);
+                cash5.anims.play('cash1_anim');
+                this.add.tween({
+                    targets: [cash5],
+                    y: 600,
+                    x: 1100,
+                    loop: -1
+                });
+                //--Fin Animación para el cash con atlas y anims-->
+
+    
+                //Animación para el ticket - Solo con atlas
+                ticket = this.add.sprite(745, 620, 'ticket').setScale(0.4);
+                ticket.setDepth(1);
+
+                this.anims.create({
+                    key: 'ticket_anim', 
+                    frames: this.anims.generateFrameNames('ticket', {
+                        prefix: 'ticket-short_',
+                        start: 0,
+                        end: 26
+                    }),
+                    repeat: 0,
+                    hideOnComplete: false,
+                  
+                })
+
+                ticket.anims.play('ticket_anim');
+
+                //Una vez termine la animación del ticket
+                ticket.once('animationcomplete', ()=>{ 
+                   //Mostramos los textos
+                   textCantClicks.visible = true
+                   textClicks.visible = true;
+
+                   //Habilitamos botones de inicio
+                   btnStart.setInteractive();
+                   buttonStart.setInteractive();
+                });
+             
+                //ticket.anims.play('ticket_anim', true);
+
+                //------Fin creando animaciones---------->
+
+                //maquina para desktop
+                const maquina = this.add.image(750, 380, 'maquina-bonomania').setScale(0.7);
+
+                //Botones para desktop - premios inactivos
+                btnMerchandising = this.add.image(774, 450, 'btnMerchandising').setScale(0.8);
+                btnVeinticinco = this.add.image(774, 422, 'btnVeinticinco').setScale(0.8);
+                btnCuarenta = this.add.image(774, 395, 'btnCuarenta').setScale(0.8);
+                btnOchenta = this.add.image(774, 367, 'btnOchenta').setScale(0.8);
+                btnTrescientosveinte = this.add.image(774, 339, 'btnTrescientosveinte').setScale(0.8);
+                
+                //Botones para desktop - premios activos
+                btnMerchandisingActivo = this.add.image(774, 450, 'btnMerchandisingActivo').setScale(0.8);
+                btnVeinticincoActivo = this.add.image(774, 422, 'btnVeinticincoActivo').setScale(0.8);
+                btnCuarentaActivo = this.add.image(774, 395, 'btnCuarentaActivo').setScale(0.8);
+                btnOchentaActivo = this.add.image(774, 367, 'btnOchentaActivo').setScale(0.8);
+                btnTrescientosveinteActivo = this.add.image(774, 339, 'btnTrescientosveinteActivo').setScale(0.8);
+                
+                btnMerchandisingActivo.visible=false;
+                btnVeinticincoActivo.visible=false;
+                btnCuarentaActivo.visible=false;
+                btnOchentaActivo.visible=false;
+                btnTrescientosveinteActivo.visible=false;
+
+                //Este es el botón incial, es decir el botón sin animación
+                btnStart = this.add.image(745, 516, 'btnStart').setScale(0.7);
+
+                //clicked = this.add.image(745, 490, 'clicked').setInteractive().setScale(0.5);
+                //clicked.visible = false
+
+                btnFinal = this.add.image(745, 516, 'btnFinal').setInteractive().setScale(0.7);
+                btnFinal.visible = false;
+
+                //Texto timer desktop
+                /*text = this.add.text(1295, 54, '15', { fontFamily: 'Montserrat',
+                fontSize: '20px',
+                color: '#000000',
+                fontStyle: 'normal' }).setScale(3);*/
+
+                text = this.add.text(1295, 54, '15',{fontSize: '60px',fontFamily: 'Montserrat',color: '#000000'});
+
+                //Texto cantidad clicksTotales desktop
+                textClicks = this.add.text(715,635, 'clics',{fontSize: '30px',fontFamily: 'Montserrat',color: '#000000'});
+                textClicks.setDepth(1);
+                textClicks.visible = false;
+
+                textCantClicks = this.add.text(735,605, '0',{fontSize: '30px',fontFamily: 'Montserrat',color: '#000000'});
+                textCantClicks.setDepth(1);
+                textCantClicks.visible = false;
+
+                /*textCantClicks = this.add.text(720, 570, '  0\nclics', { fontFamily: 'Montserrat',
+                fontSize: '10px',
+                color: '#000000',
+                fontStyle: 'normal' }).setScale(3);
+                textCantClicks.setDepth(1);
+                textCantClicks.visible = false;*/
+
+
+                //Logos para desktop
+                this.add.image(280, 50, 'logos').setScale(0.9);
+   
+            }else{
+                
+                //----------------------------Ajustes Create para Mobile------------------------------->
+
+                //Ajustando tamaño para Mobile
+                this.sys.game.scale.setGameSize(360, 660);
+
+                //Background para Mobile
+                this.add.image(180, 330, 'background-mobile').setScale(0.35);
+
+                 //-------Creando animaciones---------->
+
+                //Animación para el timer con atlas y anims - Mobile
+                timer = this.add.sprite(180, 90, 'timer').setScale(0.4);
+
+                //Animación para el boton de jugabilidad - Solo con atlas - Mobile
+                buttonStart = this.add.sprite(175, 495, 'buttonstart').setScale(0.65);
+                buttonStart.visible = false;
+                buttonStart.setDepth(1);
+
+                this.anims.create({
+                    key: 'buttonStart_anim', 
+                    frames: this.anims.generateFrameNames('buttonstart', {
+                        prefix: 'boton_',
+                        start: 0,
+                        end: 6
+                    }),
+                    repeat: 0,
+                    hideOnComplete: false
+                })
+
+                //Animación para el cash con atlas y anims - Mobile
+                cash = this.add.sprite(50, 350, 'cash').setScale(0.5);
+                cash.anims.play('cash_anim');
+
+                cash1 = this.add.sprite(320, 350, 'cash1').setScale(0.5);
+                cash1.anims.play('cash1_anim');
+
+                cash2 = this.add.sprite(50, 450, 'cash2').setScale(0.5);
+                cash2.anims.play('cash2_anim');
+
+                cash3 = this.add.sprite(320, 450, 'cash3').setScale(0.5);
+                cash3.anims.play('cash3_anim');
+
+                //Animación para el ticket - Solo con atlas
+                ticket = this.add.sprite(173, 595, 'ticket').setScale(0.35);
+                ticket.setDepth(1);
+
+                this.anims.create({
+                    key: 'ticket_anim', 
+                    frames: this.anims.generateFrameNames('ticket', {
+                        prefix: 'ticket-short_',
+                        start: 0,
+                        end: 26
+                    }),
+                    repeat: 0,
+                    hideOnComplete: false,
+                  
+                })
+
+                ticket.anims.play('ticket_anim');
+                
+                //Una vez termine la animación del ticket
+                ticket.once('animationcomplete', ()=>{ 
+                   //Mostramos los textos
+                   textCantClicks.visible = true
+                   textClicks.visible = true;
+
+                   //Habilitamos botones de inicio
+                   btnStart.setInteractive();
+                   buttonStart.setInteractive();
+                });
+
+                 //-------Fin creando animaciones---------->
+
+
+                //maquina para mobile
+                const maquina = this.add.image(180, 400, 'maquina-bonomania').setScale(0.56);
+
+                //Botones para Mobile - premios inactivos
+                btnMerchandising = this.add.image(200, 455, 'btnMerchandising').setScale(0.6);
+                btnVeinticinco = this.add.image(200, 433, 'btnVeinticinco').setScale(0.6);
+                btnCuarenta = this.add.image(200, 412, 'btnCuarenta').setScale(0.6);
+                btnOchenta = this.add.image(200, 390, 'btnOchenta').setScale(0.6);
+                btnTrescientosveinte = this.add.image(200, 368, 'btnTrescientosveinte').setScale(0.6);
+
+                //Botones para Mobile - premios activos
+                btnMerchandisingActivo = this.add.image(200, 455, 'btnMerchandisingActivo').setScale(0.6);
+                btnVeinticincoActivo = this.add.image(200, 433, 'btnVeinticincoActivo').setScale(0.6);
+                btnCuarentaActivo = this.add.image(200, 412, 'btnCuarentaActivo').setScale(0.6);
+                btnOchentaActivo = this.add.image(200, 390, 'btnOchentaActivo').setScale(0.6);
+                btnTrescientosveinteActivo = this.add.image(200, 368, 'btnTrescientosveinteActivo').setScale(0.6);
+
+                btnMerchandisingActivo.visible=false;
+                btnVeinticincoActivo.visible=false;
+                btnCuarentaActivo.visible=false;
+                btnOchentaActivo.visible=false;
+                btnTrescientosveinteActivo.visible=false;
+
+                //Este es el botón incial, es decir el botón sin animación
+                btnStart = this.add.image(175, 505, 'btnStart').setScale(0.65);
+
+                //clicked = this.add.image(175, 500, 'clicked').setInteractive().setScale(0.5);
+                //clicked.visible = false
+
+                btnFinal = this.add.image(175, 505, 'btnFinal').setInteractive().setScale(0.65);
+                btnFinal.visible = false;
+
+                //Texto timer mobile
+                text = this.add.text(160, 70, '15',{fontSize: '40px',fontFamily: 'Montserrat',color: '#000000'});
+
+                //Texto cantidad clicksTotales Mobile
+                textClicks = this.add.text(145, 610, 'clics',{fontSize: '26px',fontFamily: 'Montserrat',color: '#000000'});
+                textClicks.setDepth(1);
+                textClicks.visible = false;
+           
+                textCantClicks = this.add.text(164, 582, '0',{fontSize: '30px',fontFamily: 'Montserrat',color: '#000000'});
+                textCantClicks.setDepth(1);
+                textCantClicks.visible = false;
+
+                //Texto cantidad clicksTotales mobile
+                //textCantClicks = this.add.text(168, 600, '0\nclics', { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setScale(3);
+                //textCantClicks.setTint(0x1f1f1f);
+
+                //Logos para mobile
+                this.add.image(180, 30, 'logos').setScale(0.5);
+
+            }
+
+
+            //Funciones para botones de máquina
+            btnStart.on('pointerdown', () => {
+                musica_juego.play();
+                sonido_clic.play();
+
+                clickDinamico = 1;
+                textCantClicks.visible = true;
+                textCantClicks.setText(''+(clickDinamico++));
+                //decrementaPorcentaje(progressBar);
+                btnStart.visible = false;
+                buttonStart.visible = true;
+                
+                contadorTiempo();
+
+                //Ejecutando animacion de timer
+                timer.anims.play('timer');
+                incrementaPorcentaje(progressBar);
+
+            });
+
+            /*clicked.on('pointerdown', () => {
+                textCantClicks.setText(clickDinamico++);
+                incrementaPorcentaje(progressBar);
+            });*/
+
+            buttonStart.on('pointerdown', () => {
+                sonido_clic.play();
+
+                textCantClicks.setText(''+(clickDinamico++));
+                buttonStart.anims.play('buttonStart_anim');
+
+                //Ajustando texto de cantidad de clics
+                //Validamos pantalla para poder setear el valor de x del texto
+                if(!pantallaDesktop){
+                    if((clickDinamico-1) >= 10){
+                        textCantClicks.x=157; 
+                    } 
+                    if((clickDinamico-1) >= 100){
+                        textCantClicks.x=150; 
+                    }
+                }else{
+
+                    if((clickDinamico-1) >= 10){
+                        //console.log('mayor a 10')
+                         textCantClicks.x=729; 
+                    } 
+                    if((clickDinamico-1) >= 100){
+                        textCantClicks.x=720; 
+                    }
+                }
+                
+                incrementaPorcentaje(progressBar);
+            });
+  
+        }
+
+        //Función que controla el tiempo
+        function contadorTiempo() {
+        
+            let segundo = 15;
+
+            let interval = setInterval(() => {
+                segundo--;
+                this.text.setText(segundo)
+
+                //Ajustando texto del timer
+                //Validamos pantalla para poder setear el valor de x del texto
+                if(!pantallaDesktop){
+                    if(segundo < 10){
+                        text.x=168;
+                    }
+                }else{
+                    if(segundo < 10){
+                        text.x=1307;
+                    }
+                }
+                   
+                //Seteando cambio de colores a texto de timer
+                if(segundo === 10){
+                    text.setTint(0xff7200);
+                }else if(segundo === 5){
+                    text.setTint(0xff0000);
+                }
+                if (segundo === 0) {
+                    this.text.setText("0")
+                    clearInterval(interval);
+
+                    //frenamos el botón
+                    buttonStart.destroy();
+                    btnFinal.visible = true;
+                    stopDecrementa = true;
+                   
+                    //Deteniendo animacion de timer
+                    timer.anims.stop('timer');
+
+                    sonido_publico.play();
+
+                    //Mostramos el premio
+                    mostrarPremio();
+                }
+            }, 1000);
+        }
+
+        //Función que muestra premio
+        function mostrarPremio() {
+
+            //console.log('Porcentaje alcanzado: ',porcentajeDinamico);
+            let id = document.querySelector('#id').value;
+            let cedula = document.querySelector('#cedula').value;
+            let num_factura = document.querySelector('#num_factura').value;
+            let ciudad = document.querySelector('#ciudad').value;
+            let tienda = document.querySelector('#tienda').value;
+
+            if(id == "" || cedula == "" || num_factura == "" || ciudad == "" || tienda == ""){
+                return;
+            }
+
+            //Tomamos la fecha y la hora
+            //Fecha actual
+            let date = new Date()
+
+            let day = date.getDate()
+            let month = date.getMonth() + 1
+            let year = date.getFullYear();
+
+
+            if (month < 10) {
+                currentDate = `${day}/0${month}/${year}`;
+            } else {
+                currentDate = `${day}/${month}/${year}`;
+            }
+            
+            const info = {
+                id: id,
+                cedula: cedula,
+                num_factura: num_factura,
+                ciudad: ciudad,
+                tienda: tienda,
+                fecha: currentDate,
+                cant_clic: clickDinamico-1,
+                premio: premioFinal, 
+                juega: 1,
+                pais: 'ECU'
+            }
+
+            //Actualizamos los datos en la BD
+            const respuesta = actualizaDatosFinalizaJuego(info);
+
+            console.log('resp: ',respuesta);
+            if(!respuesta) console.log('se ha presentado un error al actualizar los datos del usuario')
+            
+            setTimeout(function () {
+                sessionStorage.setItem("info", JSON.stringify(info));
+                //eliminamos el JWT del usuario
+                 //eliminamos la cookie que almacena el token si existe 
+                /*if(req.cookies.jwtuser){
+                    res.clearCookie('jwt');
+                }*/
+
+
+                //Abrimos premio en nueva pestaña
+                //let newTab = window.open();
+                //newTab.location.href = "/game_end";
+
+                window.location.href = "juego_fin";
+
+            }, 7000);
+        
+        }
+
+
+
+        //Función que decrementa porcentaje
+        function decrementaPorcentaje(progressBar) {
+           
+            //Validamos pantalla para poder setear el valor de la longitud ed la barra
+            if(!pantallaDesktop){
+                longitudTotal = 105;
+            }
+
+            let fraccionDecrementar = longitudTotal * 0.01 / 100;
+
+            longitudDinamica = longitudDinamica + fraccionDecrementar;
+
+            porcentajeDinamico = ((longitudDinamica * -1) * 100) / longitudTotal;
+
+            controlaBtnPremio();
+
+            if(porcentajeDinamico > 100){
+                porcentajeDinamico == 100;
+            }
+
+           if(longitudDinamica < 0 && porcentajeDinamico < 100){
+
+                longitudDinamica = longitudDinamica + fraccionDecrementar;
+
+                progressBar.clear();
+                //progressBar.fillStyle(0xffffff, 1);
+                progressBar.fillGradientStyle(0xff0000, 0xff0000, 0xffff00, 0xffff00, 1);
+                
+                //Validamos pantalla para poder ubicar y vaciar la barra 
+                if(pantallaDesktop){
+                    progressBar.fillRect(668, 440, 30 , longitudDinamica);
+                }else{
+                    progressBar.fillRect(106, 456, 30 , longitudDinamica);
+                }
+             
+ 
+                if(!stopDecrementa){
+                    setTimeout(() => decrementaPorcentaje(progressBar), 100);
+                }
+            }
+        }
+
+
+
+        //Función que incrementa porcentaje
+        function incrementaPorcentaje() {
+
+            //Validamos pantalla para poder setear el valor de la longitud de la barra
+            if(!pantallaDesktop){
+                longitudTotal = 105;
+            }
+
+            //Poner en visible false todos los activos
+            btnMerchandisingActivo.visible=false;
+            btnVeinticincoActivo.visible=false;
+            btnCuarentaActivo.visible=false;
+            btnOchentaActivo.visible=false;
+            btnTrescientosveinteActivo.visible=false;
+
+            //Poner en visible true todos los inactivos
+            btnMerchandising.visible=true;
+            btnVeinticinco.visible=true;
+            btnCuarenta.visible=true;
+            btnOchenta.visible=true;
+            btnTrescientosveinte.visible=true;
+
+            //Limpiamos botones
+            /*btnMerchandising.clearTint();
+            btnVeinticinco.clearTint();
+            btnCuarenta.clearTint();
+            btnOchenta.clearTint();
+            btnTrescientosveinte.clearTint();*/
+
+            //Validamos cantidad de click
+            if(clickDinamico > 0 && clickDinamico <= clicksTotales1){
+                //poner en visible false el btn inactivo correspondinete
+                btnMerchandising.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnMerchandisingActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xffea03"; 
+
+                fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick1)/100;
+                premioFinal = premiosArray[0];
+            }else if(clickDinamico > clicksTotales1 && clickDinamico <= (clicksTotales1 + clicksTotales2)){
+                //poner en visible false el btn inactivo correspondinete
+                btnVeinticinco.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnVeinticincoActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xffcd03"; 
+                
+                fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick2)/100;
+                premioFinal = premiosArray[1];
+            }else if(clickDinamico > (clicksTotales1 + clicksTotales2) && 
+                     clickDinamico <= (clicksTotales1 + clicksTotales2 + clicksTotales3)){
+                //poner en visible false el btn inactivo correspondinete
+                btnCuarenta.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnCuarentaActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xffab03"; 
+                
+                fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick3)/100;
+                premioFinal = premiosArray[2];
+            }else if(clickDinamico > (clicksTotales1 + clicksTotales2 + clicksTotales3) && 
+                     clickDinamico <= (clicksTotales1 + clicksTotales2 + clicksTotales3 + clicksTotales4)){
+                //poner en visible false el btn inactivo correspondinete
+                btnOchenta.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnOchentaActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xff8103";
+
+                fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick3)/100;
+                premioFinal = premiosArray[3];
+            }else{
+
+                //poner en visible false el btn inactivo correspondinete
+                btnTrescientosveinte.visible = false;
+                //poner en visible true el btn activo correspondiente
+                btnTrescientosveinteActivo.visible=true;
+
+                //Cambiamos el color a llenar de la barra
+                colorBarra = "0xff3503";
+
+                //Esta en el premio de 1 millon
+                fragmentoLlenarClick = (longitudTotaPorFragmento * porcentajeClick1)/100;
+                premioFinal = premiosArray[4];
+            }
+
+            longitudDinamica = longitudDinamica - fragmentoLlenarClick;
+
+            if(longitudDinamica * -1 > longitudTotal){
+                porcentajeDinamico = 100;
+                longitudDinamica = longitudTotal * -1;
+            }
+
+            
+            progressBar.fillStyle(colorBarra, 0.8);
+
+            //progressBar.fillGradientStyle(0xff0000, 0xff0000, 0xffff00, 0xffff00, 1);
+
+            //Validamos pantalla para poder ubicar y llenar la barra 
+            if(pantallaDesktop){
+                progressBar.fillRect(660, 460, 35, longitudDinamica);
+            }else{
+                progressBar.fillRect(107, 465, 30, longitudDinamica);
+            }
+
+            //progressBar.fillStyle(0xffffff, 1);
+            //progressBar.fillRect(285, 407, 30, longitudDinamica);
+
+
+            /*let fraccionLlenar = longitudTotal * 0.7 / 100;
+
+            longitudDinamica = longitudDinamica - fraccionLlenar;
+
+            porcentajeDinamico = ((longitudDinamica * -1) * 100) / longitudTotal;
+
+            if(porcentajeDinamico > 100){
+                porcentajeDinamico = 100;
+                longitudDinamica = longitudTotal * -1;
+            }
+
+      
+            console.log('Longitud dinamica: ' + longitudDinamica * -1 + ' corresponde al : '+ porcentajeDinamico + '%');
+            console.log('Longitud total: ', longitudTotal);
+
+           //if ((longitudDinamica * -1) < longitudTotal && porcentajeDinamico < 100) {
+                console.log('es menor')
+                progressBar.clear();
+
+                progressBar.fillGradientStyle(0xff0000, 0xff0000, 0xffff00, 0xffff00, 1);
+
+                //Validamos pantalla para poder ubicar y llenar la barra 
+                if(pantallaDesktop){
+                    progressBar.fillRect(668, 440, 30, longitudDinamica);
+                }else{
+                    progressBar.fillRect(105, 456, 30, longitudDinamica);
+                }
+
+                //progressBar.fillStyle(0xffffff, 1);
+                //progressBar.fillRect(285, 407, 30, longitudDinamica);
+
+                controlaBtnPremio();
+            //}
+            /*else {
+                /*clicked.destroy();
+                stopDecrementa = true;
+                mostrarPremio();*/
+            //}
+        }
+
+        //Función que controla botones de premio
+        function controlaBtnPremio(){
+
+            btnMerchandising.clearTint();
+            btnCuarenta.clearTint();
+            btnOchenta.clearTint();
+            btnTrescientosveinte.clearTint();
+
+            
+            if(porcentajeDinamico >= 0 && porcentajeDinamico <= 39){
+                btnMerchandising.setTint(0x28D128);
+            }else if(porcentajeDinamico >= 40 && porcentajeDinamico <= 64){
+                btnCuarenta.setTint(0x28D128);
+            }else if(porcentajeDinamico >= 65 && porcentajeDinamico <= 89){
+                btnOchenta.setTint(0x28D128);
+            }else if(porcentajeDinamico >= 90){
+                btnTrescientosveinte.setTint(0x28D128);
+            }      
+        }
+
+
+
+
+        function update() {
+            /*if(!stopDecrementa){
+                decrementaPorcentaje(progressBar);
+            }
+            progressBar.lineTo(200, 200);*/
+        }
+
+
+        //Función que esala el juego
+        function resize() {
+            var canvas = document.querySelector("canvas");
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+            var windowRatio = windowWidth / windowHeight;
+            var gameRatio = game.config.width / game.config.height;
+            if (windowRatio < gameRatio) {
+                canvas.style.width = windowWidth + "px";
+                canvas.style.height = (windowWidth / gameRatio) + "px";
+            }
+            else {
+                canvas.style.width = (windowHeight * gameRatio) + "px";
+                canvas.style.height = windowHeight + "px";
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
