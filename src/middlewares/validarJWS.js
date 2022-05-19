@@ -20,9 +20,12 @@ isValidUserJWS = async (req, res , next) => {
     const jwtuser = req.cookies.jwtuser;
     
     if(!jwtuser){
-        return res.status(401).json({
+        
+        /*return res.status(401).json({
             msg: 'No se ha generado ningún token'
-        })
+        })*/
+
+        return res.redirect("/");
     }
 
     try {
@@ -52,7 +55,7 @@ isValidUserJWS = async (req, res , next) => {
         next();
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
         res.status(404).json({
             msg: 'Token no válido'
         })
@@ -69,7 +72,7 @@ isValidAdminJWS = async (req, res , next) => {
         })
     }
 
-    try {
+    try { 
         //Si la instrucción verify no se cumple , entonces se disparará el error del catch, de lo contrario ejecutará el next()
         //Obtenemos el userID del payload el token
         const {userID} = jwt.verify(jwtadmin, process.env.SECRETORPRIVATEKEY);
@@ -91,7 +94,7 @@ isValidAdminJWS = async (req, res , next) => {
         next();
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
         res.status(404).json({
             msg: 'Token no válido'
         })

@@ -84,6 +84,9 @@
           <p class="mb-0"><b>Ciudad: </b><span id="ciudad"></span></p>
           <p class="mb-0"><b>Tienda: </b><span id="tienda"></span></p>
           <p class="mb-0"><b>Cantidad de clics: </b><span id="cant_clic"></span></p>
+
+          <p class="mb-0"><b>Nombre jugador: </b><span id="nombreJugador"></span></p>
+          <p class="mb-0"><b>Número de identificación: </b><span id="numIdentificacion"></span></p>
           
           <h5 class="text-red"><b>N° Factura:</b> <b id="num_factura"></b></h5>
           <p>Puedes redimirlo dando clic en el siguiente botón:</p>
@@ -131,35 +134,57 @@
                 <p><b>Condiciones del premio:</b> No son redimibles en dinero. Personal e intransferible para el ganador del obsequio. Los obsequios no tienen cambio.</p>
         </div>
         <div class="legal bg-white rounded col-12 py-3 mt-3 px-5 mx-auto d-none" id="finLegalesECU">
-          <p>Vigencia del 20 de mayo de 2022 al domingo 31 de julio de 2022. Aplica en tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía. Ver:  
+          <p>Vigencia del 20 de mayo de 2022 al domingo 30 de julio de 2022. Aplica en tiendas físicas seleccionadas de los distribuidores autorizados por cada compañía. Ver:  
               <form action="/distribuidores_autorizados" method="POST" id="frmDistribuidoresAutorizadosEcuador">
                 <input type="text" value="ECU" name="pais" hidden>
                 <a href="#" onclick="document.getElementById('frmDistribuidoresAutorizadosEcuador').submit()">Distribuidores autorizados</a>
             </form>
             </p>
           <p><b>REQUISITOS PARA PARTICIPAR.</b></p>
-            <ol>
-              <li><p>Ser mayor de edad.</p></li>
-              <li><p>Realizar compras iguales o superiores a $120 USD en productos de las marcas Americanino, Chevignon y/o Esprit en cualquier tienda física de los distribuidores autorizados con exclusividad en la estrategia.</p></li>
-              <li><p>La compra se debe realizar en una única factura.</p></li>
-              <li><p>Vivir en Colombia.</p></li>
-              <li><p>Autorizar el tratamiento de datos personales.</p></li>
-            </ol>
+          <ol>
+            <li><p>Ser mayor de 18 años de edad y tener residencia en Ecuador.</p></li>
+            <li><p>Realizar compras iguales o superiores a USD120 en productos de las marcas Americanino, Chevignon y/o Esprit en cualquier tienda física de los distribuidores autorizados en la República del Ecuador.</p></li>
+            <li><p>La compra se debe realizar en una única factura.</p></li>
+          </ol>
           <p><b>MECÁNICA DEL CONCURSO.</b></p>
             <ol>
-              <li><p>El participante deberá realizar una (1) compra igual o superior a $120 USD en productos de las marcas Americanino, Chevignon y/o Esprit, en una única factura, en alguna de las tiendas físicas seleccionadas de los distribuidores autorizados de cada Compañía.</p></li>
-              <li><p>Inmediatamente el participante deberá ingresar al siguiente link: <a target="_blank" href="http://www.comprajuegaygana.com">www.comprajuegaygana.com</a> o escanear a través del celular el código QR ubicado en la tienda que lo llevará a la actividad, la cual consiste en presionar con un dedo el mayor número de veces el botón que aparece en pantalla durante 15 segundos generando los CLIC´S; después de los 15 segundos de presionar el botón, aparecerá en pantalla el número de la factura del cliente, el puntaje obtenido en el juego y el premio adquirido, al cual deberás tomarle un pantallazo para poder reclamarlo.</p></li>
-            </ol>
-              <p>El participante podrá obtener como premio una de las siguientes opciones:</p>
-              <ul>
-                <li><p>Si el jugador adquiere un puntaje entre 0 y 80 clics podrá reclamar Merchandising de cualquiera de las Marcas (sujeto a disponibilidad) el obsequio podrá ser: Marca Chevignon: una cartuchera, una libreta o una lonchera; Marca Esprit: un lapicero, un brillo, un pin de corazón, un abanico o una pinza mensaje; Marca Americanino: una riñonera o un bolso eco.</p></li>
-                <li><p>Si el jugador adquiere un puntaje entre 81 y 100 clics podrá reclamar un bono de $25 USD para redimir en prendas de las Marcas</p></li>
-                <li><p>Si el jugador adquiere un puntaje entre 101 y 150 clics podrá reclamar un bono de $40 USD para redimir en prendas de las Marcas.</p></li>
-                <li><p>Si el jugador adquiere un puntaje entre 151 y 180 clics podrá reclamar un bono de $80 USD para redimir en prendas de las Marcas.</p></li>
-                <li><p>Si el jugador adquiere un puntaje superior a 181 clic podrá reclamar un bono de $320 USD para redimir en prendas de las Marcas.</p></li>
-                </ul>
-                <p><b>Reclamo de los premios:</b> Los premios deben ser reclamados y/o redimidos únicamente en la tienda física donde se realizó la compra. Si el premio es un obsequio de las Marcas, los ganadores podrán reclamar inmediatamente el premio. Los bonos se pueden hacer efectivos en otra compra hasta el 31 de julio de 2022. Para redimir el premio es indispensable presentar la factura de compra original y el pantallazo de confirmación del premio obtenido.</p>
-                <p><b>Condiciones del premio:</b> No son redimibles en dinero. Personal e intransferible para el ganador del obsequio. Los obsequios no tienen cambio.</p>
+               
+                  <li><p><b>Condiciones generales de participación: </b>Los participantes de la Actividad deberán observar las siguientes condiciones generales:</p>
+                    <ol>
+                      <li><p>La persona podrá participar en el juego una (1) sola vez con cada factura de compra, independientemente del valor, siempre que este sea igual o superior a USD 120,00.</p></li>
+                      <li><p>El participante solamente tendrá una (1) oportunidad para jugar y podrá ganar un premio en una partida.</p></li>
+                      <li><p>Para participar en el juego, la persona deberá llenar la información requerida en el formulario de manera correcta, legal, legítima y corroborable, y deberá aceptar los términos y condiciones del juego, así como la política de privacidad y protección de datos.</p></li>
+                      <li><p>LA ORGANIZADORA no se hace responsable por los efectos o consecuencias que pueda tener el participante por su participación en el juego, principalmente, en caso de que sus equipos sufran daños.</li>
+                      <li><p>LA ORGANIZADORA no es desarrolladora del juego BONOMANÍA, ni es representante o licenciatario del mismo; por tanto, no puede garantizar su correcto funcionamiento, así como tampoco la continuidad del servicio. En tal sentido, no será responsable de ningún problema que pueda sufrir la plataforma desde la que opera el juego, así como cualquier dispositivo o equipo necesario para participar, ni de las consecuencias que ello pueda generar a los participantes o terceros.</p></li>
+                      <li><p>LA ORGANIZADORA se reserva el derecho de descalificar a cualquier participante que considere que esté manipulando el proceso o el funcionamiento la Actividad y/o red social, que haya diligenciado de manera incorrecta la información solicitada en el formulario de datos, que no cumpla con los términos del presente documento o pretenda afectar el normal desarrollo de LA ACTIVIDAD y/o perjudicar a LA ORGANIZADORA o a cualquier otro participante a través de actos como: intromisión al sistema informático de LA ORGANIZADORA, contaminar con cualquier tipo de virus informático, código, software, programa informático, equipo informático o de telecomunicaciones, que pueda provocar daños o alteraciones no autorizadas del juego, programas o sistemas accesibles a través de los servicios y cualquier sistema de LA ORGANIZADORA; modificar y/o adulterar cualquier información para participar en la Actividad; contratar, adquirir, elaborar o utilizar códigos, sistemas de información, aplicativos, desarrollos, bots o cualquier otra herramienta tecnológica que realice las pulsaciones en la pantalla del celular, adulterando en favor del participante el número de CLIC’s efectuados sobre la pantalla, entre otros.</p></li>
+                      <li><p>En caso de detectarse adulteración o manipulación de información, o que la misma sea errada o falsa, el participante responsable será eliminado de la actividad de manera inmediata.</p></li>
+                      <li><p>El ganador tendrá la obligación de devolver el premio recibido de parte de LA ORGANIZADORA o su valor en dinero, de detectarse con posterioridad que el participante violó cualquiera de las prohibiciones previstas en esta cláusula. En este caso, LA ORGANIZADORA se reserva el derecho de perseguir la devolución de dicho premio o su valor en dinero en efectivo.</p></li>
+                      <li><p>Se prohíbe suplantar personas o crear cuentas o usuarios ficticios en el juego.</p></li>
+                      <li><p>Una persona que ha participado en el juego (e incluso ganado un premio), no queda eximido de seguir participando y ganando nuevos premios, mientras tiene vigencia la Actividad.</p></li>
+                      <li><p>Los premios que se ofrecen no podrán ser sustituidas por dinero en efectivo ni por otro bien distinto al premio ofrecido.</p></li>
+                      <li><p>En caso de que el premio sea un bono, éste podrá ser utilizado únicamente en la tienda en la que hizo la compra que le permitió jugar y ser beneficiario del premio. Por tanto, el ganador no podrá utilizar el bono en otros establecimientos comerciales sean o no parte de LA ORGANIZADORA. El bono es personal e intransferible.</p></li>
+                      <li><p>El bono será entregado en la tienda donde se realizó la compra y se pueden hacer efectivos en otra compra hasta el 30 de agosto de 2022.</p></li>
+                      <li><p>Se aclara expresamente que el premio consistente en un bono NO constituye dinero en efectivo; por tanto, el ganador no podrá reclamar a LA ORGANIZADORA el valor en dinero del Bono. Éste únicamente podrá ser utilizado en los términos previstos en el presente documento y de no hacerlo así, el ganador perderá derecho a este bono, sin posibilidad de reclamo alguno a LA ORGANIZADORA.</p></li>
+                      <li><p>Si al momento de utilizar el bono en el establecimiento comercial participante, el ganador escogiere bienes que superan el valor del bono otorgado, deberá pagar la diferencia al establecimiento. Así mismo, si los productos no alcanzan el valor del bono, este saldo podrá ser utilizado en otra ocasión por el ganador, dentro del plazo previsto en el presente documento.</p></li>
+                      <li><p>En caso de que no se pueda contactar y/o entregar el premio a la persona que haya participado en el juego y haya salido beneficiado, el premio se declarará desierto, sin que esta persona pueda pretender el pago de compensaciones de ninguna naturaleza.</p></li>
+                      <li><p>Los premios serán personales y, consecuentemente, no podrán ser transferidos a terceros.</p></li>
+                    </ol>
+                  </li>
+                </ol>
+
+                 <p><b>Forma de entrega del premio:</b></p>
+                  <ol>
+                    <li><p>El ganador podrá reclamar el premio únicamente en la tienda física en la que hizo la compra que le permitió participar en el juego y máximo hasta el 30 de agosto de 2022. Sin perjuicio de ello, si el premio es un obsequio de las Marcas, los ganadores deberá reclamar inmediatamente el premio.</p></li>
+                    <li>
+                      <p>Para reclamar el premio, el ganador deberá cumplir con lo siguiente:</p>
+                      <ol>
+                        <li><p>Presentarse, en la tienda en la que realizó la compra y hasta la fecha indicada con su documento de identidad original físico, la factura original de la compra que le permitió participar en el juego y la captura de pantalla realizada de la confirmación del premio obtenido en el juego.</p></li>
+                        <li><p>Suscribir los documentos de respaldo de entrega de premio que le presente LA ORGANIZADORA, junto con aquellos necesarios para difundir los resultados de la actividad comercial. La negativa de suscripción de los documentos antes descritos implicará que el GANADOR renuncia al premio y no podrá formular reclamación alguna en contra de LA ORGANIZADORA ni sus sociedades o entidades vinculadas.</p></li>
+                        <li><p>El GANADOR deberá acercarse a la tienda a reclamar el premio hasta la fecha máxima establecida. De no hacerlo hasta esta fecha, el ganador perderá el derecho a recibir el premio, sin que tenga derecho a reclamar compensaciones o indemnizaciones de ninguna naturaleza o especie.</p></li>
+                      </ol>
+                    </li>
+                  </ol>
+                    
         </div>
         <img loading="lazy" src="../assets/Marcas-tutoriales.png" alt="Bonomanía" class="img-fluid mx-auto d-block mt-2" style="width: 320px;">
       </div>
@@ -187,6 +212,8 @@
         document.querySelector("#ciudad").innerHTML = info.ciudad;
         document.querySelector("#num_factura").innerHTML = info.num_factura;
         document.querySelector("#cant_clic").innerHTML = info.cant_clic;
+        document.querySelector("#nombreJugador").innerHTML = info.nombre;
+        document.querySelector("#numIdentificacion").innerHTML = info.cedula;
         
 
         //Seteando valores para lo inputs

@@ -1,14 +1,35 @@
 [
-   {   
-   "nombre_cliente": "TIENDAS HOBBY",
-   "ciudad": "ECUADOR"
-   },
-   {
-   "nombre_cliente": "JUAN C.- J.K. PLAY",
-   "ciudad": "ECUADOR - AGUACHICA"
-   },
-   {
-   "nombre_cliente": "DETROIT CITY STORE",
-   "ciudad": "ECUADOR - AGUACHICA"
-   }
-]
+   {"nombre_cliente":"BANDA EL BOSQUE","ciudad":"QUITO"},
+   {"nombre_cliente":"BANDA CCI","ciudad":"QUITO"},
+   {"nombre_cliente":"BANDA CONDADO","ciudad":"QUITO"},
+   {"nombre_cliente":"BANDA EL RECREO","ciudad":"QUITO"},
+   {"nombre_cliente":"NOVOMODE - 777 QUICENTRO","ciudad":"QUITO"},
+   {"nombre_cliente":"NOVOMODE - 777 JARDIN","ciudad":"QUITO"},
+   {"nombre_cliente":"NOVOMODE - 777 QUICENTRO SUR","ciudad":"QUITO"},
+   {"nombre_cliente":"NOVOMODE - 777 MALL EL PACIFICO","ciudad":"MANTA"},
+   {"nombre_cliente":"NOVOMODE - 777 MALL EL RIO","ciudad":"CUENCA"},
+   {"nombre_cliente":"SALSA SHOES CENTRO","ciudad":"SANTO DOMINGO"},
+   {"nombre_cliente":"SALSA SHOES PASEO SHOPPING","ciudad":"SANTO DOMINGO"},
+   {"nombre_cliente":"SALSA SHOES PASEO SHOPPING","ciudad":"PORTOVIEJO"},
+   {"nombre_cliente":"SUSAN SHOPPING CENTRO","ciudad":"ESMERALDAS"},
+   {"nombre_cliente":"SUSAN SHOPPING MULTIPLAZA","ciudad":"ESMERALDAS"},
+   {"nombre_cliente":"SEVENVIT JARDIN","ciudad":"QUITO"},
+   {"nombre_cliente":"HOUSE SPORT CENTRO","ciudad":"MACHALA"},
+   {"nombre_cliente":"HOUSE SPORT #1","ciudad":"MACHALA"},
+   {"nombre_cliente":"HOUSE SPORT #2","ciudad":"MACHALA"},
+   {"nombre_cliente":"INES ARMAS MALL LOS ANDES","ciudad":"AMBATO"},
+   {"nombre_cliente":"INES ARMAS PASEO SHOPPING","ciudad":"AMBATO"},
+   {"nombre_cliente":"INES ARMAS CENTRO","ciudad":"AMBATO"},
+   {"nombre_cliente":"INES ARMAS PASEO SHOPPING","ciudad":"RIOBAMBA"},
+   {"nombre_cliente":"SOHO MALTERIA","ciudad":"LATACUNGA"},
+   {"nombre_cliente":"SOHO CENTRO","ciudad":"LATACUNGA"},
+   {"nombre_cliente":"5TH AVENUE CENTRO #1","ciudad":"CAYAMBE"},
+   {"nombre_cliente":"5TH AVENUE CENTRO #2","ciudad":"CAYAMBE"},
+   {"nombre_cliente":"5TH AVENUE CENTRO","ciudad":"IBARRA"},
+   {"nombre_cliente":"KISS BOUTIQUE PASEO SHOPPING","ciudad":"PORTOVIEJO"},
+   {"nombre_cliente":"LADY SPORT CENTRO","ciudad":"LA MANA"},
+   {"nombre_cliente":"LADY SPORT PASEO SHOPPING","ciudad":"QUEVEDO"},
+   {"nombre_cliente":"DREAMS BOUTIQUE CENTRO #1","ciudad":"LOJA"},
+   {"nombre_cliente":"DREAMS BOUTIQUE CENTRO #2","ciudad":"LOJA"}
+   ]
+   

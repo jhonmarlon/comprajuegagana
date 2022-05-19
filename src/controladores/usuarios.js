@@ -80,7 +80,7 @@ const redimirPremioPost = async (req, res) => {
     if(usuarioEncontrado.estado_redimido){
         errors.push({text: "El registro que intenta redimir ya se ha redimido previamente"});
         res.render('redimir_premio_1', {
-            errors,
+            errors, pais
         })
         return;
     }
@@ -195,7 +195,7 @@ const loginUsuarioPost = async (req , res) =>{
 
     //eliminamos la cookie que almacena el token si existe 
     if(req.cookies.jwtuser){
-        res.clearCookie('jwt');
+        res.clearCookie('jwtuser');
     }
 
     const errors = [];
@@ -232,15 +232,28 @@ const loginUsuarioPost = async (req , res) =>{
     }
 
     let usuarioExiste;
+    let usuarioJugoDosVeces;
     //validamos que el numero de factura exista en la bd segun el pais
     if(pais == "COL"){
          usuarioExiste = await Usuario.findOne({num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
+        //Buscamos el usuario por cedula para validacion de haber jugado 2 veces
+        usuarioJugoDosVeces = await Usuario.countDocuments({cedula: cedula, juega: 1});
     }else if(pais == "ECU"){
         usuarioExiste = await UsuarioEcuador.findOne({num_factura: data.num_factura, ciudad: data.ciudad, tienda: data.tienda});
+        //Buscamos el usuario por cedula para validacion de haber jugado 2 veces
+        usuarioJugoDosVeces = await UsuarioEcuador.countDocuments({cedula: cedula, juega: 1});
     }
 
     //Si no existe , se crea
     if(!usuarioExiste){
+
+        //Si el usuario ya jugo dos veces
+        /*if(usuarioJugoDosVeces == 2){
+            errors.push({text: `Hubo un error, contáctate con soporte`});
+            return res.render('usuarios_login', {
+                errors, pais
+            })
+        }*/
 
         const codigoUnicoUser = "USR-" + helpers.randomCode();
 
@@ -296,6 +309,14 @@ const loginUsuarioPost = async (req , res) =>{
         //res.render('phaser/juego', {usuarioAutenticado});
     }else{
         
+        //Si el usuario ya jugo dos veces
+        /*if(usuarioJugoDosVeces == 2){
+            errors.push({text: `Hubo un error, contáctate con soporte`});
+            return res.render('usuarios_login', {
+                errors, pais
+            })
+        }*/
+
         //Si existe valida si ya jugó o no
         //Si no ha jugado
         if(usuarioExiste.juega === 0){
@@ -369,7 +390,17 @@ const gameGet = (req, res) => {
     }
 
 }
+ 
+//Renderiza la vista de errores
+const errorJuegoGet = (req, res) => {
+    //console.log(req.cookies.jwtuser)
+    //eliminamos la cookie que almacena el token si existe 
+    if(req.cookies.jwtuser){
+        res.clearCookie('jwtuser');
+    }
 
+    res.render('./phaser/juego_error');
+}
 
 //Renderiza la vista del final del juego
 const gameEnd = (req, res) => {
@@ -431,6 +462,7 @@ module.exports = {
     redimirPremioPost_1_1,
     actualizaDatosFinJuego,
     gameEnd,
+    errorJuegoGet,
 
 
 

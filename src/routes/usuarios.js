@@ -12,6 +12,7 @@ const {
     redimirPremioPost_1_1,
     actualizaDatosFinJuego,
     gameEnd,
+    errorJuegoGet, 
 
     loginUsuarioPostActual
 } = require('../controladores/usuarios');
@@ -29,7 +30,7 @@ router.get('/terminos_condiciones_ECU', terminosCondicionesEcuador);
 
 router.post('/redimir_premio_form', redimirPremioGet);
 router.get('/juego_fin', gameEnd);
-
+router.get('/errorJuego',errorJuegoGet);
 
 //Rutas post
 router.post('/loginUsuarios', loginUsuarioPostActual); //RUTA QUE MUESTRA EL FORMULARIO DE LOGIN

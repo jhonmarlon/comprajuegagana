@@ -8,6 +8,7 @@
 <body id="body">
     <input type="text" hidden id="id" name="id" value="{{usuarioAutenticado._id}}"></input>
     <input type="text" hidden id="cedula" name="cedula" value="{{usuarioAutenticado.cedula}}"></input>
+    <input type="text" hidden id="nombre" name="nombre" value="{{usuarioAutenticado.nombre}}"></input>
     <input type="text" hidden id="num_factura" name="num_factura" value="{{usuarioAutenticado.num_factura}}"></input>
     <input type="text" hidden id="ciudad" name="ciudad" value="{{usuarioAutenticado.ciudad}}"></input>
     <input type="text" hidden id="tienda" name="tienda" value="{{usuarioAutenticado.tienda}}"></input>
@@ -29,9 +30,14 @@
         let progressBar;
         let stopDecrementa = false;
 
+
         let colorBarra = "";
 
         let clickDinamico = 0;
+        let auxCantClicksSegundo = 0;
+        let auxClicks = false; //Determina si se estan haciendo ams de 7 clicks por segundo para comenzar a contar 1 click por cada dos
+        let auxClicksItervalo = 0 ; //controla el contador de 1 clic por acda dos clics
+
         let premios = 5;
         let premiosArray = ['Obsequio','$50.000','$100.000','$250.000','$1.000.000'];
         let premioFinal = "";
@@ -475,7 +481,8 @@
                 timer = this.add.sprite(180, 90, 'timer').setScale(0.4);
 
                 //Animación para el boton de jugabilidad - Solo con atlas - Mobile
-                buttonStart = this.add.sprite(175, 495, 'buttonstart').setScale(0.65);
+                //buttonStart = this.add.sprite(175, 495, 'buttonstart').setScale(0.65);
+                buttonStart = this.add.sprite(175, 495, 'buttonstart').setScale(0.4);
                 buttonStart.visible = false;
                 buttonStart.setDepth(1);
 
@@ -559,12 +566,12 @@
                 btnUnMillonActivo.visible=false;
 
                 //Este es el botón incial, es decir el botón sin animación
-                btnStart = this.add.image(175, 505, 'btnStart').setScale(0.65);
+                btnStart = this.add.image(175, 505, 'btnStart').setScale(0.4);
 
                 //clicked = this.add.image(175, 500, 'clicked').setInteractive().setScale(0.5);
                 //clicked.visible = false
 
-                btnFinal = this.add.image(175, 505, 'btnFinal').setInteractive().setScale(0.65);
+                btnFinal = this.add.image(175, 505, 'btnFinal').setInteractive().setScale(0.4);
                 btnFinal.visible = false;
 
                 //Texto timer mobile
@@ -596,16 +603,30 @@
 
                 clickDinamico = 1;
                 textCantClicks.visible = true;
-                textCantClicks.setText(''+(clickDinamico++));
-                //decrementaPorcentaje(progressBar);
-                btnStart.visible = false;
-                buttonStart.visible = true;
-                
-                contadorTiempo();
 
-                //Ejecutando animacion de timer
-                timer.anims.play('timer');
-                incrementaPorcentaje(progressBar);
+                //------------------------------------
+                auxClicksItervalo ++;
+
+                //if(auxClicksItervalo == 2){
+                    textCantClicks.setText(''+(clickDinamico++));
+
+                    //Aumentamos clicks por segundo
+                    auxCantClicksSegundo ++;
+
+                    //decrementaPorcentaje(progressBar);
+                    btnStart.visible = false;
+                    buttonStart.visible = true;
+                    
+                    contadorTiempo();
+
+                    //Ejecutando animacion de timer
+                    timer.anims.play('timer');
+                    incrementaPorcentaje(progressBar);
+
+                    auxClicksItervalo = 0;
+                //}
+
+          
 
             });
 
@@ -617,30 +638,78 @@
             buttonStart.on('pointerdown', () => {
                 sonido_clic.play();
 
-                textCantClicks.setText(''+(clickDinamico++));
-                buttonStart.anims.play('buttonStart_anim');
+                //Si esta haciendo mas de 7 clic por segundo , contará 1 solo click por cada 2
+                if(auxClicks == true){
+                    //------------------------------------
+                    auxClicksItervalo ++;
+                    if(auxClicksItervalo == 2){
 
-                //Ajustando texto de cantidad de clics
-                //Validamos pantalla para poder setear el valor de x del texto
-                if(!pantallaDesktop){
-                    if((clickDinamico-1) >= 10){
-                        textCantClicks.x=157; 
-                    } 
-                    if((clickDinamico-1) >= 100){
-                        textCantClicks.x=150; 
+                        textCantClicks.setText(''+(clickDinamico++));
+                        //Aumentamos clicks por segundo
+                        auxCantClicksSegundo ++;
+
+                        buttonStart.anims.play('buttonStart_anim');
+
+                        //Ajustando texto de cantidad de clics
+                        //Validamos pantalla para poder setear el valor de x del texto
+                        if(!pantallaDesktop){
+                            if((clickDinamico-1) >= 10){
+                                textCantClicks.x=157; 
+                            } 
+                            if((clickDinamico-1) >= 100){
+                                textCantClicks.x=150; 
+                            }
+                        }else{
+
+                            if((clickDinamico-1) >= 10){
+                                //console.log('mayor a 10')
+                                textCantClicks.x=729; 
+                            } 
+                            if((clickDinamico-1) >= 100){
+                                textCantClicks.x=720; 
+                            }
+                        }
+                        
+                        incrementaPorcentaje(progressBar);
+
+                        auxClicksItervalo = 0;
                     }
                 }else{
+                      textCantClicks.setText(''+(clickDinamico++));
+                        //Aumentamos clicks por segundo
+                        auxCantClicksSegundo ++;
 
-                    if((clickDinamico-1) >= 10){
-                        //console.log('mayor a 10')
-                         textCantClicks.x=729; 
-                    } 
-                    if((clickDinamico-1) >= 100){
-                        textCantClicks.x=720; 
-                    }
+                        buttonStart.anims.play('buttonStart_anim');
+
+                        //Ajustando texto de cantidad de clics
+                        //Validamos pantalla para poder setear el valor de x del texto
+                        if(!pantallaDesktop){
+                            if((clickDinamico-1) >= 10){
+                                textCantClicks.x=157; 
+                            } 
+                            if((clickDinamico-1) >= 100){
+                                textCantClicks.x=150; 
+                            }
+                        }else{
+
+                            if((clickDinamico-1) >= 10){
+                                //console.log('mayor a 10')
+                                textCantClicks.x=729; 
+                            } 
+                            if((clickDinamico-1) >= 100){
+                                textCantClicks.x=720; 
+                            }
+                        }
+                        
+                        incrementaPorcentaje(progressBar);
+
+                        auxClicksItervalo = 0;
                 }
+
                 
-                incrementaPorcentaje(progressBar);
+
+
+               
             });
   
         }
@@ -651,8 +720,24 @@
             let segundo = 15;
 
             let interval = setInterval(() => {
+
                 segundo--;
                 this.text.setText(segundo)
+                
+                
+                //Validamos cantidad de clisk por segunto
+                 //console.log(`La cantidad de clicks en el segundo ${segundo} es ${auxCantClicksSegundo}`)
+                 if(auxCantClicksSegundo > 7){
+                    auxClicks = true;
+                 }else if(auxCantClicksSegundo < 7){
+                    auxClicks = false;
+                 }else if(auxCantClicksSegundo > 14){
+                     //Terminamos juego y redireccionamos a la pagina de error
+                     window.location.href = "errorJuego";
+                 }
+
+                 auxCantClicksSegundo = 0;
+
 
                 //Ajustando texto del timer
                 //Validamos pantalla para poder setear el valor de x del texto
@@ -689,15 +774,18 @@
                     //Mostramos el premio
                     mostrarPremio();
                 }
-            }, 1000);
+            }, 
+            //1000
+            1035
+            );
         }
 
         //Función que muestra premio
         function mostrarPremio() {
-
             //console.log('Porcentaje alcanzado: ',porcentajeDinamico);
             let id = document.querySelector('#id').value;
             let cedula = document.querySelector('#cedula').value;
+            let nombre = document.querySelector('#nombre').value;
             let num_factura = document.querySelector('#num_factura').value;
             let ciudad = document.querySelector('#ciudad').value;
             let tienda = document.querySelector('#tienda').value;
@@ -724,6 +812,7 @@
             const info = {
                 id: id,
                 cedula: cedula,
+                nombre: nombre,
                 num_factura: num_factura,
                 ciudad: ciudad,
                 tienda: tienda,
@@ -733,7 +822,7 @@
                 juega: 1,
                 pais: 'COL'
             }
-
+  
             //Actualizamos los datos en la BD
             const respuesta = actualizaDatosFinalizaJuego(info);
 
@@ -982,6 +1071,11 @@
 
 
         function update() {
+            if(auxCantClicksSegundo > 14 
+            //&& clickDinamico
+            ){
+                window.location.href = "errorJuego";
+            }
             /*if(!stopDecrementa){
                 decrementaPorcentaje(progressBar);
             }
