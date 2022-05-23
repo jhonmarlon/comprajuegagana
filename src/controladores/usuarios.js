@@ -76,6 +76,15 @@ const redimirPremioPost = async (req, res) => {
     //console.log('este es el usuario encontrado para poedr redimir')
     //console.log(usuarioEncontrado)
 
+    //Si el uusario ya jugó
+    if(usuarioEncontrado.juega != 1){
+        errors.push({text: "Error, no es posible redimir sin antes haber participado"});
+        res.render('redimir_premio_1', {
+            errors, pais
+        })
+        return;
+    }
+
     //Si el usuario ya redimio el premio
     if(usuarioEncontrado.estado_redimido){
         errors.push({text: "El registro que intenta redimir ya se ha redimido previamente"});
@@ -153,6 +162,16 @@ const redimirPremioPost_1_1 = async (req, res) => {
 
     //console.log('este esera el que se redimira')
     //console.log(redimido)
+    
+    //Si el uusario ya jugó
+    if(redimido.juega != 1){
+        errors.push({text: "Error, no es posible redimir sin antes haber participado"});
+        res.render('redimir_premio_cod', {
+            errors, usuarioEncontrado
+        })
+        return;
+    }
+    
 
     if(redimido.estado_redimido){
         errors.push({text: "El registro que intenta redimir ya se ha redimido previamente"});
@@ -307,7 +326,15 @@ const loginUsuarioPost = async (req , res) =>{
    
         //console.log('Usuario autenticado desde login: '+usuarioAutenticado);
         //res.render('phaser/juego', {usuarioAutenticado});
-    }else{
+    }else{  
+        
+        if(usuarioJugoDosVeces == 2){
+            errors.push({text: `Hubo un error, contáctate con soporte`});
+            return res.render('usuarios_login', {
+                errors,
+            })
+        }
+              
         
         //Si el usuario ya jugo dos veces
         /*if(usuarioJugoDosVeces == 2){
@@ -366,6 +393,16 @@ const terminosCondicionesEcuador= (req, res) =>{
     res.render('terminos_condiciones_ecuador')
 }
 
+//Renderiza la vista de errores
+const errorJuegoGet = (req, res) => {
+    //console.log(req.cookies.jwtuser)
+    //eliminamos la cookie que almacena el token si existe 
+    if(req.cookies.jwtuser){
+        res.clearCookie('jwtuser');
+    }
+
+    res.render('./phaser/juego_error');
+}
 
 //Renderiza la vista principal del juego
 const gameGet = (req, res) => {
@@ -391,16 +428,6 @@ const gameGet = (req, res) => {
 
 }
  
-//Renderiza la vista de errores
-const errorJuegoGet = (req, res) => {
-    //console.log(req.cookies.jwtuser)
-    //eliminamos la cookie que almacena el token si existe 
-    if(req.cookies.jwtuser){
-        res.clearCookie('jwtuser');
-    }
-
-    res.render('./phaser/juego_error');
-}
 
 //Renderiza la vista del final del juego
 const gameEnd = (req, res) => {
