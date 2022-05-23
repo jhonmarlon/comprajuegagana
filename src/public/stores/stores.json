@@ -176,10 +176,6 @@
    "ciudad": "BELLO"
     },
     {
-   "nombre_cliente": "EXPRESO BELLO",
-   "ciudad": "BELLO"
-    },
-    {
    "nombre_cliente": "ESCAPE PUERTA DEL NORTE 2",
    "ciudad": "BELLO"
     },
@@ -664,14 +660,6 @@
    "ciudad": "IPIALES"
     },
     {
-   "nombre_cliente": "STORE ITAGUI",
-   "ciudad": "ITAGUI"
-    },
-    {
-   "nombre_cliente": "EXPRESO ITAGUI",
-   "ciudad": "ITAGUI"
-    },
-    {
    "nombre_cliente": "ESCAPE ARRAYANES ITAGÜÍ",
    "ciudad": "ITAGUI"
     },
@@ -837,14 +825,6 @@
     },
     {
    "nombre_cliente": "FRUTA FRESCA ARKADIA",
-   "ciudad": "MEDELLIN"
-    },
-    {
-   "nombre_cliente": "EXPRESOASTORIA",
-   "ciudad": "MEDELLIN"
-    },
-    {
-   "nombre_cliente": "STOREASTORIA",
    "ciudad": "MEDELLIN"
     },
     {
