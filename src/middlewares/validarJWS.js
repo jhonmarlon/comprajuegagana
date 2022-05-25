@@ -56,9 +56,10 @@ isValidUserJWS = async (req, res , next) => {
 
     } catch (error) {
         //console.log(error);
-        res.status(404).json({
+        /*res.status(404).json({
             msg: 'Token no válido'
-        })
+        })*/
+        return res.redirect("/");
     }
 }
 

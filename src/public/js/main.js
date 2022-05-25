@@ -120,7 +120,7 @@ function actualizaDatosFinalizaJuego(datos) {
         body: JSON.stringify(datos)
     })
     .then((response) => {
-        console.log(response)
+        //console.log(response)
 
         if(response.ok) {
             return true;
